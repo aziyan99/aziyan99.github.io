@@ -4,8 +4,6 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-someone who really likes coding from the middle of nowhere
+Here some project that I have done
 
-### Contact me
-
-[rajaazian08@gmail.com](mailto:rajaazian08@gmail.com)
+![First Post](/images/first-post.png "First Post")
