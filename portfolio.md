@@ -9,7 +9,10 @@ permalink: /portfolio/
 ---
 
 Before you read or see below please allocate your time to read this first 😏. Before fist, I want to you know that I am a junior web developer, in backend section excatly, and I think and I feel that what that I know now is little tiny part from a _Programming world_, so if you find I am wrong, please remind me, and I really appreciate it.
-First of all the project that I have done below is I wrote without testing like unit testing, feature testing, or intergrated testing this because I still learn about it and maybe the next time I will write it, but I cant promise, so please, if you know how to write the testing, feel free to contact me, I really appreciate it, and I want to learn from you. Second, there is some project that I can't share the code to you because this project is a product that I do for someone and he pays for it, so it's very unethical for me to randomly share the code, but if you want to take a look to the code feel free to contact me and I will ask that someone permission to share the code. And the last I also still learn how write and speaking in english, so please forgive me if my english sound horrible 😁. In the End I want to says thanks for allocate your time to read this section first. have a nice day's.
+
+First of all the project that I have done below is I wrote without testing like unit testing, feature testing, or intergrated testing this because I still learn about it and maybe the next time I will write it, but I cant promise, so please, if you know how to write the testing, feel free to contact me, I really appreciate it, and I want to learn from you. Second, there is some project that I can't share the code to you because this project is a product that I do for someone and he pays for it, so it's very unethical for me to randomly share the code, but if you want to take a look to the code feel free to contact me and I will ask that someone permission to share the code. And the last I also still learn how write and speaking in english, so please forgive me if my english sound horrible 😁.
+
+In the End I want to says thanks for allocate your time to read this section first. have a nice day's.
 
 ---
 
