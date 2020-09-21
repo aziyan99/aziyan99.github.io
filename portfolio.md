@@ -47,7 +47,7 @@ This web app was built with codeigniter 3.x.x framework and SbAdmin as a dashboa
 
 CI-Base-Development-System is a starter project or base, to start developing web app with Codeigniter framework. This starter include multiple user authorization access system, user management, auth system(login and register), menu management system and access management system to spesific user role.
 ![Ci Base](/images/portfolio/ci-base.png "CI BASE")
-This web app was built with codeigniter 3.x.x framework and AdminLTE as a dashboard template, if you want to use this starter project please chech the authentication and authorization system because this starter was built a long long time ago :D [Goto repository](https://github.com/aziyan99/ci-base-development-system "ci-base-development-system repository")
+This web app was built with codeigniter 3.x.x framework and AdminLTE as a dashboard template, if you want to use this starter project please chech the authentication and authorization system because this starter was built a long long time ago 😁 [Goto repository](https://github.com/aziyan99/ci-base-development-system "ci-base-development-system repository")
 
 ## Sistem-Informasi-RT
 
