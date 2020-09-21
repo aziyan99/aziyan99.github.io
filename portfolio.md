@@ -107,7 +107,7 @@ For more detail you can go to the [repository](https://github.com/aziyan99/la-bl
 
 ---
 
-HMTI Election is a web app for _Pemilihan Ketua Himpunan Mahasiswa Teknik Informatika_ in our University, for 2020-2021 priod, but in the end, we not use it for the election, but we use google form :D for avoid any fraud. This web app divided with 3 part, First the restful-api for handle the election (Built with lumen framework), second is a admin or dashboard area (built with angular framework), and the last the election area (also built with angular 😁). For deploy the the app, I use heroku to deploy the restful-api, and github pages as client app (admin or dashboard area)
+HMTI Election is a web app for _Pemilihan Ketua Himpunan Mahasiswa Teknik Informatika_ in our University, for 2020-2021 priod, but in the end, we not use it for the election, but we use google form 😁 for avoid any fraud. This web app divided with 3 part, First the restful-api for handle the election (Built with lumen framework), second is a admin or dashboard area (built with angular framework), and the last the election area (also built with angular 😁). For deploy the the app, I use heroku to deploy the restful-api, and github pages as client app (admin or dashboard area)
 ![hmti-ecletion](/images/portfolio/pemilihan-hima-restapi.JPG "hmti-ecletion")
 
 > When you bring a backend developer to doing frontend stuff, see the result below 😆
