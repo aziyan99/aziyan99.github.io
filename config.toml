@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Aziyan99'
 theme = "hugowi"
 copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+
 [author]
   name = 'Raja Azian'
   email = 'rajaazian08@gmail.com'
@@ -23,9 +24,12 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
     weight = 3
 
 [params]
+  introduction = "I am a Web Developer, iOS Developer enthusiast, and Machine Learning enthusiast. Spent more than 3 years learning in web programming with a focus on Backend service and learning about Machine Learning. Skilled in PHP, Javascript, Python, and Linux environments. I was also curious about iOS programming and Machine Learning, love to work collaboratively in a team and was a self-taught learner. 
   
+  Currently, I am undergraduate student from Informatics Department in Raja Ali Haji Marine University, Tanjungpinang, Indonesia."
+  
+  oneliner = ""
   githubAvatar = "https://avatars.githubusercontent.com/u/34334074?v=4"
-
   [[params.link]]
     name = "Github"
     url = "https://github.com/aziyan99"
