@@ -24,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="/css/gh-markdown.css">
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/34334074?v=4">
     
     
@@ -132,7 +131,12 @@
         <span>&copy;2022 Aziyan99</span>
     </div>
     <div class="mr-3">Powered by <img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div>
-    <script>hljs.highlightAll();</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
     <script>
         window.store = {
             

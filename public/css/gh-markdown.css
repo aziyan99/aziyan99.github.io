@@ -938,3 +938,20 @@
   .markdown-body ::-webkit-calendar-picker-indicator {
     filter: invert(50%);
   }
+
+  .hljs table tbody tr {
+    border: 0 !important;
+  }
+
+  .hljs table tbody tr td {
+    border: 0 !important;
+    background-color: #f6f8fa;
+  }
+
+  pre code.hljs {
+    padding: 0 !important;
+  }
+
+  pre code.hljs table {
+    margin-bottom: 0 !important;
+  }

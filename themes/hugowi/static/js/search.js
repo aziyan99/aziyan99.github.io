@@ -1,7 +1,7 @@
 function displayResults(results, store) {
   const searchResults = document.getElementById("results");
   if (results.length) {
-    let resultList = "<p class='ml-2 mt-5'>search results</p>"
+    let resultList = "<p class='ml-2 mt-5'>search results</p>";
     resultList += "<div class='border border-gray-400 p-2'>";
     // Iterate and build result list elements
     for (const n in results) {
