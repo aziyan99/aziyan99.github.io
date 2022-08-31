@@ -1,16 +1,19 @@
 function displayResults(results, store) {
   const searchResults = document.getElementById("results");
   if (results.length) {
-    let resultList = "";
+    let resultList = "<p class='ml-2 mt-5'>search results</p>"
+    resultList += "<div class='border border-gray-400 p-2'>";
     // Iterate and build result list elements
     for (const n in results) {
       const item = store[results[n].ref];
-      resultList +=
-        '<li><p><a href="' + item.url + '">' + item.title + "</a></p>";
-      resultList += "<p>" + item.content.substring(0, 150) + "...</p></li>";
+      resultList +=`
+        <a href="${item.url}" class="text-blue-700 hover:underline block">${item.title.substring(0, 15)} ...</a> 
+      `;
     }
+    resultList += "</div>";
     searchResults.innerHTML = resultList;
   } else {
+    resultList += "</div>";
     searchResults.innerHTML = "No results found.";
   }
 }

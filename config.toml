@@ -15,11 +15,11 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
     weight = 1
   [[menu.main]]
     name = "Posts"
-    url = "/posts/"
+    url = "/posts"
     weight = 2
   [[menu.main]]
     name = "Tags"
-    url = "/tags/"
+    url = "/tags"
     weight = 3
 
 [params]
@@ -43,3 +43,43 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
   changefreq = 'weekly'
   filename = 'sitemap.xml'
   priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      linkifyProtocol = 'https'
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+    [markup.tableOfContents]
+      endLevel = 3
+      ordered = false
+      startLevel = 2
+    [markup.highlight]
+      anchorLineNos = false
+      codeFences = true
+      guessSyntax = false
+      hl_Lines = ''
+      hl_inline = false
+      lineAnchors = ''
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = true
+      noClasses = true
+      noHl = false
+      style = 'monokai'
+      tabWidth = 4
