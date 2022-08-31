@@ -28,16 +28,16 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 
   [[params.link]]
     name = "Github"
-    url = "#"
+    url = "https://github.com/aziyan99"
   [[params.link]]
     name = "Linkedin"
-    url = "#"
+    url = "https://www.linkedin.com/in/raja-azian/"
   [[params.link]]
     name = "Youtube"
-    url = "#"
+    url = "https://www.youtube.com/channel/UCsHAn_jONDr7KHaM2Qz52RQ"
   [[params.link]]
     name = "Instagram"
-    url = "#"
+    url = "https://www.instagram.com/"
 
 [sitemap]
   changefreq = 'weekly'
