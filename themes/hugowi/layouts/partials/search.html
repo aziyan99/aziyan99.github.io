@@ -1,0 +1,13 @@
+<div class="my-5">
+    <p class="ml-2">search</p>
+    <div class="overflow-hidden border border-l-0 border-gray-500 bg-white p-3 text-center">
+        <form id="search" action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+            <label hidden for="search-input">Search site</label>
+            <input type="text" class="max-w-full border border-gray-500 px-1" placeholder="Search text" id="search-input" name="query">
+            <button class="mt-1 rounded border border-gray-500 bg-gray-100 px-1" type="submit">Search</button>
+        </form>
+
+        <div id="results"></div>
+    
+    </div>
+</div>

@@ -1,0 +1,45 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Aziyan99'
+theme = "hugowi"
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+[author]
+  name = 'Raja Azian'
+  email = 'rajaazian08@gmail.com'
+
+
+[menu]
+  [[menu.main]]
+    name = "Main page"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[params]
+  
+  githubAvatar = "https://avatars.githubusercontent.com/u/34334074?v=4"
+
+  [[params.link]]
+    name = "Github"
+    url = "#"
+  [[params.link]]
+    name = "Linkedin"
+    url = "#"
+  [[params.link]]
+    name = "Youtube"
+    url = "#"
+  [[params.link]]
+    name = "Instagram"
+    url = "#"
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
