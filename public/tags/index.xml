@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Aziyan99</title>
-    <link>http://example.org/tags/</link>
+    <link>https://Aziyan99.github.io/tags/</link>
     <description>Recent content in Tags on Aziyan99</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
     <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 10:40:28 +0700</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2022 10:40:28 +0700</lastBuildDate><atom:link href="https://Aziyan99.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginner</title>
-      <link>http://example.org/tags/beginner/</link>
+      <link>https://Aziyan99.github.io/tags/beginner/</link>
       <pubDate>Wed, 31 Aug 2022 10:40:28 +0700</pubDate>
       <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/tags/beginner/</guid>
+      <guid>https://Aziyan99.github.io/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PHP</title>
-      <link>http://example.org/tags/php/</link>
+      <link>https://Aziyan99.github.io/tags/php/</link>
       <pubDate>Wed, 31 Aug 2022 10:40:28 +0700</pubDate>
       <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/tags/php/</guid>
+      <guid>https://Aziyan99.github.io/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web Development</title>
-      <link>http://example.org/tags/web-development/</link>
+      <link>https://Aziyan99.github.io/tags/web-development/</link>
       <pubDate>Wed, 31 Aug 2022 10:40:28 +0700</pubDate>
       <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/tags/web-development/</guid>
+      <guid>https://Aziyan99.github.io/tags/web-development/</guid>
       <description></description>
     </item>
     
