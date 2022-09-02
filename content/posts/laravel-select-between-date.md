@@ -8,7 +8,8 @@ tags: ['Laravel', 'PHP', 'Database', 'Model']
 Mengambil data dari database berdasarkan range tanggal (tanggal awal dan tanggal akhir) di laravel  mudah dilakukan dengan bantuan Eloquent dari laravel (Model). Pengambilan data ini sangat membantu ketika kita ingin membuat laporan dari data atau kebutuhan lainnya yang membutuhkan pengguna bisa mengambil data berdasarkan tanggal.
 
 # Cara pertama (whereBetween)
-```php
+
+```
 <?php
   
 namespace App\Http\Controllers;
@@ -39,7 +40,8 @@ class UserController extends Controller
 
 # Cara kedua (where)
 Navigasi ke folder `/var/www/html/` kemudian buat 2 folder baru atau bisa dengan perintah
-```php
+
+```
 <?php
   
 namespace App\Http\Controllers;
@@ -71,7 +73,8 @@ class UserController extends Controller
 ```
 
 # Cara ketiga (whereDate)
-```php
+
+```
 ?php
   
 namespace App\Http\Controllers;

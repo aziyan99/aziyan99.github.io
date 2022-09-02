@@ -31,7 +31,7 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
   keywords = "HTML, CSS, Js, PHP, Programming, CPP, Python, Go, Web Programming, Java, C, Rust, MySQL, DBMS"
   description = "An learning journals and notes"
   [[params.link]]
-    name = "Github"
+    name = "GitHub"
     url = "https://github.com/aziyan99"
   [[params.link]]
     name = "Linkedin"

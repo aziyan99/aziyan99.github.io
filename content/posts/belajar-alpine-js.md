@@ -18,7 +18,7 @@ Ngebuat supaya HTML jadi interaktif, reaktif, dinamis dan kawan-kawanya agak sed
 Untuk ngeinstall Aplinejs ada dua cara. Kita bisa pake `<script>` tag HTML terus pangil file jsnya Alpine (entah make CDN atau local) atau kita bisa install Alpine sebagai `module` pake Nodejs (sebenarnya cara ini agak ribet, disaranin pake cara `script` tag aja, tapi kembali lagi ke preferensi masing-masing)
 
 ## `<script>` tag
-```html
+```
 <html>
   <head>
     ...
@@ -30,7 +30,7 @@ Untuk ngeinstall Aplinejs ada dua cara. Kita bisa pake `<script>` tag HTML terus
 ```
 
 `@3.x.x` pada link CDN akan mengembalikan Aplinejs versi tebaru, kalo buat production disarankan untuk versinya di harcoded aja, misal:
-```html
+```
 <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
 ```
 Sama, jangan lupa tambahin `defer` di `script` tagnya. Apa itu `defer` coba baca-baca dulu  [ini](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer)
@@ -55,7 +55,7 @@ Alpine.start()
 ## Attributes
 ### x-data
 Ngebuat plus ngeinisialisasikan komponen Alpine
-```html
+```
 <div x-data="{ open: false }">
     ...
 </div>
@@ -63,7 +63,7 @@ Ngebuat plus ngeinisialisasikan komponen Alpine
 
 ### x-bind
 Supaya nilai dari attribut yang dipasangin `x-bind` bisa jadi dinamis (mudah digonta ganti, gitulah)
-```html
+```
 <div x-bind:class="! open ? 'hidden' : 'block'">
   ...
 </div>
@@ -72,7 +72,7 @@ Kelas `div`-nya akan jadi `block` kalo misalkan variable `open` nilainya `true`.
 
 ### x-on
 Masang event listener ke elemen (misalkan kalo diklik gitu)
-```html
+```
 <button x-on:click="open = ! open">
   Toggle
 </button>
@@ -81,7 +81,7 @@ Kalo button diklik maka  variable `open` jadi kebalikan dari nilai sebelumnya (p
 
 ### x-text
 Ngubah teks dalam elemen
-```html
+```
 <span x-text="new Date().getFullYear()">
   Toggle
 </span>
@@ -90,7 +90,7 @@ Bisa pake js juga, tapi yang simple (bisa jalan satu baris)
 
 ### x-html
 Nambahin HTML kedalam HTML
-```html
+```
 <div x-html="(await axios.get('/some/html/partial')).data">
     ...
 </div>
@@ -99,7 +99,7 @@ sama dengan `x-html` bisa pake js juga, tapi yang simpel.
 
 ### x-model
 Ngehubungin nilai dari elemen html yang inputan gitu ke elemen HTML lain.
-```html
+```
 <div x-data="{ search: '' }">
   <input type="text" x-model="search">
  
@@ -109,7 +109,7 @@ Ngehubungin nilai dari elemen html yang inputan gitu ke elemen HTML lain.
 
 ### x-show
 Buta nampilin atau nyembunyiin elemen HTML
-```html
+```
 <div x-show="open">
   ...
 </div>
@@ -118,7 +118,7 @@ Buta nampilin atau nyembunyiin elemen HTML
 
 ### x-transition
 Nambahin animasi dikit (pake css `transition` transition kayanya)
-```html
+```
 <div x-show="open" x-transition>
   ...
 </div>
@@ -126,7 +126,7 @@ Nambahin animasi dikit (pake css `transition` transition kayanya)
 
 ### x-for
 Ngebuat looping (perulangan) dari data (biasanya data yang bisa dilooping `array of object` tapi array aja atau obejct aja kayanya bisa juga deh)
-```html
+```
 <template x-for="post in posts">
   <h2 x-text="post.title"></h2>
 </template>
@@ -134,7 +134,7 @@ Ngebuat looping (perulangan) dari data (biasanya data yang bisa dilooping `array
 
 ### x-if
 Ngebuat kondisi gitu (kalo kondisinya ga terpenuhi ya elemennya dihapus dari DOM)
-```html
+```
 <template x-if="open">
   <div>...</div>
 </template>
@@ -142,20 +142,20 @@ Ngebuat kondisi gitu (kalo kondisinya ga terpenuhi ya elemennya dihapus dari DOM
 
 ### x-init
 Constructor (otomatis jalan pas elemen Apline dibuat)
-```html
+```
 <div x-init="date = new Date()"></div>
 ```
 Membuat variable `date` dengan nilai dari object `Date`.
 
 ### x-effect
 Semacam `useEffect` pada React.js, akan dieksekusi ketika terjadi efek (efek gimana :v) pada DOM
-```html
+```
 <div x-effect="console.log('Count is '+count)"></div>
 ```
 
 ### x-ref
 Reference elements directly by their specified keys using the $refs magic property (bingung dibahasa indonesiakan gimana?), intinya semacam mereferensikan satu nilai di variable.
-```html
+```
 <input type="text" x-ref="content">
  
 <button x-on:click="navigator.clipboard.writeText($refs.content.value)">
@@ -166,7 +166,7 @@ Kalo button Copy nya diklik ntar tulisan diinputannya bakalan ke-copy (masuk ke 
 
 ### x-cloak
 Pokoknya selama Alpinejs belom kelar di-load elemen dengan attribut ini bakalan disembunyikan (hidden)
-```html
+```
 <div x-cloak>
   ...
 </div>
@@ -174,7 +174,7 @@ Pokoknya selama Alpinejs belom kelar di-load elemen dengan attribut ini bakalan 
 
 ### x-ignore
 Buat bilang ke Apline kalo elemen dengan attribut ni jangan dipedulikan (dinisialisasi)
-```html
+```
 <div x-cloak>
   ...
 </div>
@@ -183,19 +183,19 @@ Buat bilang ke Apline kalo elemen dengan attribut ni jangan dipedulikan (dinisia
 ## Properties
 ### $store
 Ngambil `global store` yang dibuat oleh `Alpine.store(...)`
-```html
+```
 <h1 x-text="$store.site.title"></h1>
 ```
 
 ### $el
 Ngambil elemen HTML yang dirinya sendiri (mangil dirinya sendiri gitu)
-```html
+```
 <div x-init="new Pikachu($el)"></div>
 ```
 
 ### $dispatch
 Nge-`dispatch` event kustom kebrowser (ntar ada yg ngedengerin `lister`-nya)
-```html
+```
 <div x-on:notify="...">
   <button x-on:click="$dispatch('notify')">...</button>
 </div>
@@ -204,7 +204,7 @@ Flownya, kalo buttonnya kita klik, ntar ada kaya pengumuman gitu dibrowser isiny
 
 ### $watch
 Ngedeteksi kalo nilai dari satu variabel berubah.
-```html
+```
 <div x-init="$watch('count', value => {
   console.log('count is ' + value)
 })">...</div>
@@ -213,7 +213,7 @@ Kalo misalkan nilai variabel `count` berubah `console.log('count is ' + value)` 
 
 ### $refs
 Pasangan dari attribut `x-ref`. Kaya ngereferensiin satu nilai berdasarkan namanya.
-```html
+```
 <div x-init="$refs.button.remove()">
   <button x-ref="button">Remove Me</button>
 </div>
@@ -221,7 +221,7 @@ Pasangan dari attribut `x-ref`. Kaya ngereferensiin satu nilai berdasarkan naman
 
 ### $nextTick
 Wait until the next "tick" (browser paint) to run a bit of code (gimana ya jelasinnya, coba aja baca-baca tentang browser paint)
-```html
+```
 <div
   x-text="count"
   x-text="$nextTick(() => {"
@@ -233,7 +233,7 @@ Wait until the next "tick" (browser paint) to run a bit of code (gimana ya jelas
 ## Methods
 ### Alpine.data
 Make ato ngambil data yang kita inisialisikan pake `x-data` die elemen HTML
-```html
+```
 <div x-data="dropdown">
   ...
 </div>
@@ -251,7 +251,7 @@ Alpine.data('dropdown', () => ({
 
 ### Alpine.store
 Ngebuat beberapa variable global yang datanya bisa kita panggil/baca dan pake. Buat ngambil datanya kita pake properti `$store`
-```html
+```
 <button @click="$store.notifications.notify('...')">
   Notify
 </button>
@@ -268,9 +268,9 @@ Alpine.store('notifications', {
 ```
 
 # Halo Dunia!
-Sebagai programmer yang ganteng :v serta dijalan yang lurus (baik maksudnya). Ga **afdhol** rasa ne kalo kita belajar teknologi baru ga dimulai dari **Halo Dunia** (kalo kata orang putih mah **Hello World**). Maka dari itu mari kita mulai **Hallo Dunia** dengan membuat file `html` baru beserta strukturnya dan jangan lupa juga script alpine nya di masukin.
+Sebagai programmer yang ganteng :v serta dijalan yang lurus (baik maksudnya). Ga **afdhol** rasa ne kalo kita belajar teknologi baru ga dimulai dari **Halo Dunia** (kalo kata orang putih mah **Hello World**). Maka dari itu mari kita mulai **Hallo Dunia** dengan membuat file `` baru beserta strukturnya dan jangan lupa juga script alpine nya di masukin.
 
-```html
+```
 <!DOCTYPE html>
 <html>
   <head>

@@ -8,33 +8,33 @@ tags: ['Nginx', 'OSX']
 NGINX adalah aplikasi open source untuk server web, NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, dan banyak lagi. Ini dimulai sebagai server web yang dirancang untuk kinerja dan stabilitas maksimum. Selain kemampuan server HTTP-nya, NGINX juga dapat berfungsi sebagai server proxy untuk email (IMAP, POP3, dan SMTP) dan proxy terbalik dan penyeimbang beban untuk server HTTP, TCP, dan UDP.
 
 # Install homebrew
-```sh
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 # Update home brew repository
-```sh
+```
 brew update
 ```
 
 # Install Nginx
-```sh
+```
 brew install nginx 
 ```
 
 Nginx akan diinstal di folder `usr/local/cellar` dan nginx berjalan dengan port default di `8080`
 
 ## Me-restart Nginx
-```sh
+```
 brew services restart nginx
 ```
 ## Men-stop Nginx
-```sh
+```
 brew services stop nginx
 ```
 
 Jika installasi berhasil maka hasil log akan lebih kurang seperti
-```sh
+```
 username@192.168.1.12:~$ brew install nginx
 Running `brew update --preinstall`...
 ==> Auto-updated Homebrew!

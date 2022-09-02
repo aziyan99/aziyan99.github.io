@@ -5,7 +5,6 @@ draft: false
 tags: ['Laravel', 'PHP', 'Sitemap']
 ---
 
----
 Sitemap adalah sebuah file yang memberikan informasi tentang halaman, video, ataupun media apa saja dalam sebuah website. Search engine seperti Google menggunakan sitemap untuk mencari halaman yang dicari pengguna sehingga dengan membuat sitemap untuk website akan sangat membantu supaya google mengindeks website kita.
 
 # How to
@@ -14,7 +13,7 @@ Sitemap adalah sebuah file yang memberikan informasi tentang halaman, video, ata
 - Buat model dan migration untuk post dengan `php artisan make:model Post -m`.
 - Ubah post migration dengan menambahkan kolom `title`, `slug`, dan `body` pada tabel posts.
 
-```php
+```
 <?php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -51,7 +50,7 @@ class CreatePostsTable extends Migration
 - Lakukan migrasi dengan perintah `php artisan migrate`.
 - Buat factory untuk mengenerate dummy data postingan `php artisan make:factory PostFactory --model=Post`. Kemudian isi dengan:
 
-```php
+```
 <?php
 namespace Database\Factories;
 use App\Models\Post;
@@ -88,7 +87,7 @@ class PostFactory extends Factory
 - Jalankan perintah `php artisan vendor:publish --provider="Spatie\Sitemap\SitemapServiceProvider" --tag=config` untuk memindahkan file `sitemap.php` kedalam konfigurasi laravel.
 - Buka file `web.php` dan buat routing baru
 
-```php
+```
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;

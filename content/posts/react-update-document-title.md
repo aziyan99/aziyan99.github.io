@@ -8,7 +8,8 @@ tags: ['React.js', 'DOM', 'React Hook']
 Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within `<body></body>` tag. Since React 16.8 we can built custom hook that can easly access the `document.title` and change the active page title.
 
 We can create a hook like:
-```javascript
+
+```
 import { useEffect } from "react";
 
 export default function useTitle(title) {
@@ -23,7 +24,8 @@ export default function useTitle(title) {
 ```
 
 And then we can use it anywhere in our pages. Like in `Home.jsx`
-```javascript
+
+```
 import useTitle from "./Hooks/useTitle"
 
 export default function Home () {

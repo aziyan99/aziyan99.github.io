@@ -8,29 +8,34 @@ tags: ['Nginx', 'VPS', 'Virtual Host', 'Ubuntu']
 Membuat satu VPS bisa menghost 2 atau lebih website gampang dilakukan dengan nginx. Untuk melakukannya kita akan memanfaatkan fitur dari nginx yaitu virtual host. Contoh ini dilakukan pada VPS dengan sistem operasi 18.0 atau diatasnya
 
 # Install Nginx
-```console
+
+```
 root@192.168.1.12:~$ sudo apt install nginx
 ```
 
 Setelah proses instalasi selesai, cek apakah nginx sudah terinstall dan berjalan dengan benar
-```console
+
+```
 root@192.168.1.12:~$ systemctl status nginx
 ```
 
 # Folder untuk website
 Navigasi ke folder `/var/www/html/` kemudian buat 2 folder baru atau bisa dengan perintah
-```console
+
+```
 root@192.168.1.12:~$ mkdir /var/www/html/web1.iniserver.com
 root@192.168.1.12:~$ mkdir /var/www/html/web2.iniserver.com
 ```
 
 kita akan membuat 1 file html untuk masing-masing folder yang sudah dibuat sebelumnya
-```console
+
+```
 root@192.168.1.12:~$ nano /var/www/html/web1.iniserver.com/index.html
 ```
 
 kemudian file `index.html` isi dengan
-```html
+
+```
 <html>
   <title>web1.iniserver.com</title>
   <h1>Welcome to the web1.iniserver.com.</h1>
@@ -38,12 +43,14 @@ kemudian file `index.html` isi dengan
 ```
 
 dan untuk folder `we2.iniserver.com` juga
-```console
+
+```
 root@192.168.1.12:~$ nano /var/www/html/web2.iniserver.com/index.html
 ```
 
 kemudian file `index.html` isi dengan
-```html
+
+```
 <html>
   <title>web2.iniserver.com</title>
   <h1>Welcome to the web2.iniserver.com.</h1>
@@ -51,18 +58,21 @@ kemudian file `index.html` isi dengan
 ```
 
 Jika kedua folder tadi sudah diisi dengan file `index.html`, kita akan mengubah hak akses untuk masing-masing folder supaya bisa diakses melalu browser
-```console
+
+```
 root@192.168.1.12:~$ chown -R www-data:www-data /var/www/html/web1.iniserver.com
 root@192.168.1.12:~$ chown -R www-data:www-data /var/www/html/web2.iniserver.com
 ```
 
 # Konfigurasi untuk virtual host nginx
 Buat konfigurasi untuk masing-masing website
-```console
+
+```
 root@192.168.1.12:~$ nano /etc/nginx/sites-available/web1.iniserver.com.conf
 ```
 
 kemudian isi dengan
+
 ```
 server {
         listen 80;
@@ -78,10 +88,13 @@ server {
 ```
 
 dan untuk `web2.iniserver.com`
-```console
+
+```
 root@192.168.1.12:~$ nano /etc/nginx/sites-available/web2.iniserver.com.conf
 ```
+
 kemudian isi dengan
+
 ```
 server {
         listen 80;
@@ -97,24 +110,28 @@ server {
 ```
 
 Untuk menghidupkan konfigurasinya kita bisa dengan membuat `symlink` antara `sites-available` dengan `sites-enabled`
-```console
+
+```
 root@192.168.1.12:~$ ln -s /etc/nginx/sites-available/web1.iniserver.com.conf /etc/nginx/sites-enabled/
 root@192.168.1.12:~$ ln -s /etc/nginx/sites-available/web2.iniserver.com.conf /etc/nginx/sites-enabled/
 ```
 
 Validasi konfigurasi dengan
-```console
+
+```
 root@192.168.1.12:~$ nginx -t
 ```
 
 Jika tidak ada masalah maka akan keluar pesan seperti
+
 ```
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
 Restart nginx
-```console
+
+```
 root@192.168.1.12:~$ systemctl restart nginx
 ```
 
@@ -122,6 +139,7 @@ Coba kunjugi domain `web1.iniserver.com` dan`web2.iniserver.com` jika tidak ada 
 
 # Menghubungkan dengan PHP-FPM
 Tambahkan konfigurasi virtual host untuk website yang dinginkan bisa mengeksekusi file `php` dengan:
+
 ```
 server {
         listen 80;
@@ -152,7 +170,7 @@ server {
 
 Contoh menambahkan support php pada folder `web1.iniserver.com`. Jangan lupa restart `php-fpm` dan `nginx` (contoh menggunakan php7.3).
 
-```console
+```
 root@192.168.1.12:~$ systemctl restart nginx
 root@192.168.1.12:~$ systemctl restart php7.3-fpm
 ```

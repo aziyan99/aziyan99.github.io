@@ -20,7 +20,7 @@ Cara terbaik untuk menginstall composer adalah dengan mengikuti petunjuk pengins
 
 ## Sitem Operasi Keluarga *NIX
 Menginstall composer pada keluarga sistem operasi bisa melalui executeable file dari [installer composer](https://getcomposer.org/installer) atau kita bisa mengotomisasi penginstallan dengan:
-```sh
+```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
@@ -30,12 +30,12 @@ php -r "unlink('composer-setup.php');"
 Perintah diatas akan mendownloadkan sebuah file baru dengan nama `composer.phar` dan membuat composer bisa kita gunakan secara lokal (satu projek). PHAR (PHP archive) sendiri adalah binary file kompress dari kodingan PHP yang bisa kita jalankan lewat terminal.
 
 Untuk menjalan composer kita bisa menggunakan perintah:
-```sh
+```
 php composer.phar <command>
 ```
 
 Langkah terbaik adalah memindahkan composer kedalam `PATH` dari sistem operasi kita sehingga kita tidak perlu mendownload composer lagi ketika memulai projek baru (install secara global).
-```sh
+```
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
@@ -47,11 +47,11 @@ Pada sistem operasi windows penginstallan composer diawali dengan mendownload [i
 
 
 Jika proses penginstalasi compser berhasil maka ketika kita menjalan perintah:
-```sh
+```
 composer
 ```
 pada terminal, kita akan mendapatkan output yang lebih kurang seperi ini:
-```sh
+```
 Output
 ______
 / ____/___ ____ ___ ____ ____ ________ _____
@@ -178,17 +178,17 @@ Bagian **konfigurasi** biasanya berisi konfigurasi serta keterangan bagaimana co
 
 ## Init
 Perintah `composer init` adalah perintah untuk menginisialisasi projek composer dalam satu folder.
-```sh
+```
 cd path/to/composer-project
 ```
 
-```sh
+```
 composer init
 ```
 
 Perintah ini akan menampilkan prompt yang harus dilengkapi seperti nama project, author, keywords, dan lain-lain. Silahkan lengkapi sesuai kebutuhan.
 
-```sh
+```
 
                                             
   Welcome to the Composer config generator  
@@ -205,7 +205,7 @@ Perintah `composer init` akan membuat satu file baru dengan nama `composer.json`
 
 ## Require
 Perintah `composer require` merupakan perintah yang digunakan untuk menginstall satu atau lebih library. Seperti contoh ketika mau menginstall library `Guzzle`:
-```sh
+```
 composer require guzzlehttp/guzzle
 ```
 perintah ini akan menambahkan attribut baru dalam file `composer.json` pada bagian `require`.

@@ -10,13 +10,13 @@ Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spas
 
 Ada banyak `package` yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah `milon/barcode` untuk menginstallnya pada laravel bisa menggunakan composer:
 
-```console
+```
 root@192.168.1.12:~$ composer require milon/barcode
 ```
 
 Jika proses penginstallasian sudah selesai. Bisa mendaftarkan packagenya pada `providers` dan `alias` di `config/app.php`.
 
-```php
+```
 <?php
     return [
     'providers' => [
@@ -36,7 +36,8 @@ Jika proses penginstallasian sudah selesai. Bisa mendaftarkan packagenya pada `p
 ```
 
 Untuk menggunakannya bisa langsung digunakan pada `blade` dengan merendernya seperti:
-```html
+
+```
 <!DOCTYPE html>
 <html>
 <head>

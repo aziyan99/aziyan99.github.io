@@ -57,29 +57,34 @@ Installation prerequisites:
 <h1 id="nice_to_have">2 Nice to have custom middlewares (optionals)</h1>
 <h2 id="#force_json">2.1 Force json request middleware</h2>
 Force convert request to have header of
-```json
+
+```
 {
   'Accept': 'application/json'
 }
 ```
 
 Generate the middleware using artisan
+
 ```
 php artisan make:middleware ForceJsonRequestMiddleware
 ```
 
 Content of `ForceJsonRequestMiddleware.php` in `handle()` function. The file locate at `App/Http/Middleware/ForceJsonRequestMiddleware.php`.
-```php
+
+```
   $request->headers->set('Accept', 'application/json');
   return $next($request);
 ```
 
 Register the middleware to `$routeMiddleware` array at `app/Http/Kernel.php`.
+
 ```
 'json.response' => \App\Http\Middleware\ForceJsonRequestMiddleware::class,
 ```
 
 Then, we’ll also add it to the `$middleware` array in the same file:
+
 ```
 \App\Http\Middleware\ForceJsonRequestMiddleware::class,
 ```
@@ -95,7 +100,7 @@ php artisan make:middleware CorsMiddleware
 
 Update the `handle()` function:
 
-```php
+```
     return $next($request)
         ->header('Access-Control-Allow-Origin', '*')
         ->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
@@ -103,17 +108,20 @@ Update the `handle()` function:
 ```
 
 Register the middleware to `$routeMiddleware` array at `app/Http/Kernel.php`.
-```php
+
+```
 'cors' => \App\Http\Middleware\CorsMiddleware::class,
 ```
 
 Then, we’ll also add it to the `$middleware` array in the same file:
-```php
+
+```
 \App\Http\Middleware\CorsMiddleware::class,
 ```
 
 We can use the middlewares in our `api.php` routing like:
-```php
+
+```
 Route::group(['middleware' => ['cors', 'json.response']], function () {
     // route path...
 });
@@ -121,22 +129,26 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
 
 <h1 id="laravel_passport">3 Setup Laravel Passport</h1>
 Installing passport
+
 ```
 composer require laravel/passport
 ```
 
 Migrating the tables
+
 ```
 php artisan migrate
 ```
 
 Generate secure access token using artisan
+
 ```
 php artisan passport:install
 ```
 
 Updating `User` model
-```php
+
+```
 <?php
 
 namespace App\Models;
@@ -151,14 +163,16 @@ class User extends Authenticatable
 ```
 
 Registering passport routes to `AuthServiceProvider`, place at `boot()` function
-```php
+
+```
 if (!$this->app->routesAreCached()) {
   Passport::routes();
 }
 ```
 
 Add passport `TokenGuard` at `config/auth.php`
-```php
+
+```
 'guards' => [
     'web' => [
         'driver' => 'session',
@@ -174,18 +188,21 @@ Add passport `TokenGuard` at `config/auth.php`
 
 <h1 id="auth">4 Authentication Controller</h1>
 Create controller:
+
 ```
 php artisan make:controller Api/AuthController
 ```
 
 At top of the controller don't forget to import used depedencies
-```php
+
+```
 use Illuminate\Support\Facades\Validator;
 ```
 
 <h2 id="auth_login">4.1 Login Function</h2>
 The `login` function
-```php
+
+```
   public function login(Request $request) {
     $validator = Validator::make($request->all(), [
             'email' => 'required|email',
@@ -224,7 +241,8 @@ The `login` function
 
 <h2 id="auth_logout">4.2 Logout Function</h2>
 The `logout` function:
-```php
+
+```
   public function logout(Request $request)
     {
         $token = $request->user()->token();
@@ -239,7 +257,8 @@ The `logout` function:
 
 <h2 id="auth_route">4.3 Routing</h2>
 Last, we can add our routing path to `api.php` file
-```php
+
+```
 Route::group(['middleware' => ['cors', 'json.response']], function () {
     Route::post('/login', [AuthController::class, 'login']);
 

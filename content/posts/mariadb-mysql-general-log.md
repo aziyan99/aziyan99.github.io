@@ -9,16 +9,19 @@ Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sek
 
 # Mengaktifkan General Log
 Login kedalam console MariaDB:
-```sh
+
+```
 mariadb -u<username> -p
 ```
 Setelah berhasil login masukkan perintah:
-```sh
+
+```
 SET GLOBAL general_log = 1 ;
 ```
 
 # Mematikan General Log
-```sh
+
+```
 SET GLOBAL general_log = 0 ;
 ```
 
