@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DBTransaction on Aziyan99</title>
+    <link>https://aziyan99.github.io/tags/dbtransaction/</link>
+    <description>Recent content in DBTransaction on Aziyan99</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 08 Feb 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/dbtransaction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel: Database Transaction</title>
+      <link>https://aziyan99.github.io/posts/laravel-database-transaction/</link>
+      <pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate>
+      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-database-transaction/</guid>
+      <description>Database trasaction sangat berguna ketika kita bermain dengan database karena ketika terjadi kesalahan atau error ketika mengeksekusi perintah yang berkaitan dengan database, semua transaksi yang terjadi sebelumnya akan dibatalkan sehingag database tidak akan terganggu atau cacat. Penggunaan pada laravel sangat mudah dengan library yang sudah laravel sediakan jadi kita tidak perlu lagi menulis transaksi secara manual menggunakan SQL.
+Contoh DB::transaction(function() { // database operation goes here }); Selesai!!!</description>
+    </item>
+    
+  </channel>
+</rss>

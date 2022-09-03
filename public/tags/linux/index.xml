@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Aziyan99</title>
+    <link>https://aziyan99.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Aziyan99</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 04 Feb 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Lemp Stack Ubuntu</title>
+      <link>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</link>
+      <pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate>
+      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</guid>
+      <description>LEMP merupakan singakatan dari Linux, Nginx, MariDB atau MySQL dan PHP. LEMP merupakan bundelan aplikasi yang biasa kita gunakan untuk menghost sebuah website, terutama yang ditulis dengan bahasa pemrograman PHP.
+Refresh repository ubuntu
+sudo apt update Upgrade package yang harus diupgrade, jika ada.
+sudo apt upgrade Instalasi Nginx sudo apt install nginx Jika instalasi sudah selesai, kita bisa memverifiasinya dengan mengunjungi url didalam browser
+http://&amp;lt;ip&amp;gt; Jika ada pesan Welcome to nginx!</description>
+    </item>
+    
+  </channel>
+</rss>

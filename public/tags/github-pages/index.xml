@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub Pages on Aziyan99</title>
+    <link>https://aziyan99.github.io/tags/github-pages/</link>
+    <description>Recent content in GitHub Pages on Aziyan99</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 04 Feb 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jekyll: Menambahkan Searching</title>
+      <link>https://aziyan99.github.io/posts/pencarian-jekyll/</link>
+      <pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate>
+      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/pencarian-jekyll/</guid>
+      <description>Untuk membuat pencarian pada halaman github pages yang menggunakan jekyll bisa dilakukan dengan 3 cara: Lunr, Google Custom Search Engine dan Simple Jekyll Search. Lunr sangat senang diimplementasikan tetapi akan membuat halaman menjadi berat. Sedangkan Google Custom Search Engine terbilang cukup ringan dan sangat sulit untuk diimplementasikan. Sehingga pilihan kita jatuh pada opsi ketiga yaitu menggunakan Simple Jekyll Search
+Pada dasarnya Simple Jekyll Search akan mengenerate sebuah file json yang berisi judul dari postingan-postingan yang pernah kita buat.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,162 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MySQL on Aziyan99</title>
-    <link>http://example.org/tags/mysql/</link>
+    <link>https://aziyan99.github.io/tags/mysql/</link>
     <description>Recent content in MySQL on Aziyan99</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
     <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 25 Aug 2022 18:34:33 +0700</lastBuildDate><atom:link href="http://example.org/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/cool-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
+      <title>MariaDB/MySQL: Menggunakan General Log</title>
+      <link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link>
+      <pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate>
       <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/cool-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
+      <guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid>
+      <description>Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik debugging kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable general_log dimana ketika kita ubah nilainya menjadi 1 MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di /usr/local/var/mysql.
+Mengaktifkan General Log Login kedalam console MariaDB:</description>
     </item>
     
     <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/dsdfzzyeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
+      <title>Install Lemp Stack Ubuntu</title>
+      <link>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</link>
+      <pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate>
       <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/dsdfzzyeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/dsxvyeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/dsxvyeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/first-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/first-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/great-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/great-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/idk-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/idk-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/sddfsxvsfah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/sddfsxvsfah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/sddfsxvyeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/sddfsxvyeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/sdfsdfsxvsfah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/sdfsdfsxvsfah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/sdfsxvsfah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/sdfsxvsfah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/second-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/second-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/third-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/third-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/xvyeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/xvyeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/yeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/yeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>http://example.org/posts/zzyeah-post/</link>
-      <pubDate>Thu, 25 Aug 2022 18:34:33 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
-      <guid>http://example.org/posts/zzyeah-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet vehicula purus. Fusce sed elementum nibh. Nunc vel dapibus elit. Nulla facilisi. Curabitur sed odio dolor. Integer congue odio laoreet, congue neque dignissim, scelerisque orci. Proin bibendum cursus sem, sed hendrerit dolor.
-Donec aliquet Ac quam ac fermentum. Sed nec maximus tortor. Vivamus in turpis eu ligula auctor congue. Nam aliquam vulputate ipsum quis dictum. Suspendisse consequat varius rutrum. Praesent vitae purus vel odio feugiat commodo sit amet vel ante.</description>
+      <guid>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</guid>
+      <description>LEMP merupakan singakatan dari Linux, Nginx, MariDB atau MySQL dan PHP. LEMP merupakan bundelan aplikasi yang biasa kita gunakan untuk menghost sebuah website, terutama yang ditulis dengan bahasa pemrograman PHP.
+Refresh repository ubuntu
+sudo apt update Upgrade package yang harus diupgrade, jika ada.
+sudo apt upgrade Instalasi Nginx sudo apt install nginx Jika instalasi sudah selesai, kita bisa memverifiasinya dengan mengunjungi url didalam browser
+http://&amp;lt;ip&amp;gt; Jika ada pesan Welcome to nginx!</description>
     </item>
     
   </channel>

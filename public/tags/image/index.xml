@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image on Aziyan99</title>
+    <link>https://aziyan99.github.io/tags/image/</link>
+    <description>Recent content in Image on Aziyan99</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 08 Feb 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/image/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel: Path Gambar dari Model</title>
+      <link>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</link>
+      <pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate>
+      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</guid>
+      <description>Avatar untuk pengguna (foto profile) bisa dibuat dinamis, jika pengguna tidak mengupload avatar nya sendiri kita bisa menggunakan inisialnya dan membuat avatar untuk pengguna tadi.
+Requirement Laravel project Kolom avatar pada table users Kolom avatar harus nullable Eksekusi Buka model User.php dan jangan lupa untuk menambahkan avatar pada $protected array. Kemudian buat sebuah accessor dengan nama getAvatarPathAttribute(). Kemudian bisa ikuti kode dibawah (dan bisa dimodifikasi sesuka hati)
+use Illuminate\Support\Facades\Storage; // jangan lupa import Facades Storage public function getAvatarPathAttribute() { if ($this-&amp;gt;avatar == null) { return &amp;#34;https://ui-avatars.</description>
+    </item>
+    
+  </channel>
+</rss>

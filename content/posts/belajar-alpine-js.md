@@ -3,6 +3,7 @@ title: "Belajar Alpinejs"
 date: 2022-04-01T21:29:54+07:00
 draft: false
 tags: ['Js', 'Alpinejs']
+summary: "Alpinejs adalah salah satu library yang bisa digunakan untuk membuat halaman HTML menjadi interaktif"
 ---
 
 Ngebuat supaya HTML jadi interaktif, reaktif, dinamis dan kawan-kawanya agak sedikit susah kalo pake javascript aja. Sedikit susahnya mungkin karena kita harus bikin dulu `listener` nya (kalo mau bikin dinamis gitu), kalo mau `render`, ya `innerhtml` harus dibikin sendiri juga, kalo mau ambil elemen HTML harus disiapin dulu variablenya, pokonya proses yang kudu kita lewatin (sebagai programmer) jadi banyak (tapi kalo rajin, bikin aja sendiri :v). Pada zaman dahulu kala kita kenal dengan JQuery tapi makin kesini JQuery ternyata makin berat juga, sama cukup lawas juga kalo kita bandingin dengan perkembangan javascript sejauh ini. Ada salah satu javascipt framework yang agak sedikit mirip dengan JQuery (buat manipulasi DOM) namanya Aplinejs. Ketika kita pake JQuery semua kodingan kita ada di file js, tapi kalo pake Alpine sebagian besar kodingan kita akan ada di HTML, karena Apline kita cuma perlu nambahin beberapa attribut baru aja kedalam elemen HTML kita.
@@ -18,6 +19,7 @@ Ngebuat supaya HTML jadi interaktif, reaktif, dinamis dan kawan-kawanya agak sed
 Untuk ngeinstall Aplinejs ada dua cara. Kita bisa pake `<script>` tag HTML terus pangil file jsnya Alpine (entah make CDN atau local) atau kita bisa install Alpine sebagai `module` pake Nodejs (sebenarnya cara ini agak ribet, disaranin pake cara `script` tag aja, tapi kembali lagi ke preferensi masing-masing)
 
 ## `<script>` tag
+
 ```
 <html>
   <head>
@@ -40,8 +42,10 @@ Kita install package (tapi pastikan udah ngeinstall nodejs ama npm nya)
 ```
 npm install alpinejs
 ```
+
 Jika udah, kita import kedalam project atau bundle app kita
-```js
+
+```
 import Alpine from 'alpinejs'
 
 window.Apline = Apline

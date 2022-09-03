@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React.js on Aziyan99</title>
+    <link>https://aziyan99.github.io/tags/react.js/</link>
+    <description>Recent content in React.js on Aziyan99</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 04 Feb 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/react.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React: Mengubah Title Halaman Secara Dinamis</title>
+      <link>https://aziyan99.github.io/posts/react-update-document-title/</link>
+      <pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate>
+      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/react-update-document-title/</guid>
+      <description>Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.
+We can create a hook like:
+import { useEffect } from &amp;#34;react&amp;#34;; export default function useTitle(title) { useEffect(() =&amp;gt; { const prevTitle = document.title; document.title = title; return () =&amp;gt; { document.</description>
+    </item>
+    
+  </channel>
+</rss>

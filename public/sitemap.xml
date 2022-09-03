@@ -2,112 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Aziyan99.github.io/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/alpinejs/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/tags/beginner/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/mysql-untuk-mahir/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/belajar-alpine-js/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/tags/php/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/database/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/dbms/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/tags/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/js/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/tags/web-development/</loc>
-    <lastmod>2022-08-31T10:40:28+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/mariadb/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/mysql-untuk-pemula/</loc>
-    <lastmod>2022-08-31T10:40:24+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/mysql-untuk-menengah/</loc>
-    <lastmod>2022-08-31T10:40:19+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/mysql/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/js-untuk-menengah/</loc>
-    <lastmod>2022-08-31T10:40:12+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/js-untuk-pemula/</loc>
-    <lastmod>2022-08-31T10:40:05+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/</loc>
+    <lastmod>2022-04-01T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/js-untuk-mahir/</loc>
-    <lastmod>2022-08-31T10:40:00+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/composer/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/css-untuk-mahir/</loc>
-    <lastmod>2022-08-31T10:39:55+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/composer-for-dummies/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/css-untuk-menengah/</loc>
-    <lastmod>2022-08-31T10:39:52+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/laravel/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/css-untuk-pemula/</loc>
-    <lastmod>2022-08-31T10:39:46+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/laravel-membuat-folder/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/html-untuk-menengah/</loc>
-    <lastmod>2022-08-31T10:39:25+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/nginx/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/html-untuk-pemula/</loc>
-    <lastmod>2022-08-31T10:39:18+07:00</lastmod>
+    <loc>https://aziyan99.github.io/posts/install-nginx-macos/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/html-untuk-mahir/</loc>
-    <lastmod>2022-08-31T10:39:12+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/osx/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/php-untuk-mahir/</loc>
-    <lastmod>2022-08-31T10:39:04+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/php/</loc>
+    <lastmod>2022-02-20T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/php-untuk-menengah/</loc>
-    <lastmod>2022-08-31T10:38:59+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/dbtransaction/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/posts/php-untuk-pemula/</loc>
-    <lastmod>2022-08-31T10:38:49+07:00</lastmod>
+    <loc>https://aziyan99.github.io/tags/image/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://Aziyan99.github.io/categories/</loc>
+    <loc>https://aziyan99.github.io/posts/laravel-database-transaction/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-generate-sitemap/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/model/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/sitemap/</loc>
+    <lastmod>2022-02-08T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/barcode/</loc>
+    <lastmod>2022-02-06T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-generate-barcode/</loc>
+    <lastmod>2022-02-06T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-select-between-date/</loc>
+    <lastmod>2022-02-06T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/nginx-virtual-host/</loc>
+    <lastmod>2022-02-05T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/ubuntu/</loc>
+    <lastmod>2022-02-05T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/virtual-host/</loc>
+    <lastmod>2022-02-05T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/vps/</loc>
+    <lastmod>2022-02-05T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/apache2/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/authentication/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/dom/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/github-pages/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/jekyll/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/pencarian-jekyll/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-setup-laravel-passport/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/lemp/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/linux/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/react-hook/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/react-update-document-title/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/react.js/</loc>
+    <lastmod>2022-02-04T21:29:54+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/planning/</loc>
+    <lastmod>2019-04-23T21:28:52+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://aziyan99.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -2,12 +2,11 @@ baseURL = 'https://aziyan99.github.io/'
 languageCode = 'en-us'
 title = 'Aziyan99'
 theme = "hugowi"
-copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright = '2022 Raja Azian All rights reserved'
 
 [author]
   name = 'Raja Azian'
   email = 'rajaazian08@gmail.com'
-
 
 [menu]
   [[menu.main]]
@@ -22,6 +21,12 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
     name = "Tags"
     url = "/tags"
     weight = 3
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
 
 [params]
   introduction = "An learning journals and notes"
