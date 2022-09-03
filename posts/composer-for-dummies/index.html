@@ -30,77 +30,77 @@ verbose output and 3 for debug
 --profile Display timing and memory usage information
 --working-dir (-d) If specified, use the given directory as working directory.
 ....
-</code></pre><h1 id=autoloading-dengan-composer>Autoloading Dengan Composer</h1><p>Untuk library yang sudah menggunakan <code>autoloading</code>, composer akan meng-generate file <code>autoload.php</code> yang ada pada <code>vendor/autoload.php</code>. Sehingga untuk menggunakan library yang sudah diinstall kita cukup me-load library-nya dengan:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span><span style=color:#66d9ef>require_once</span> <span style=color:#66d9ef>__DIR__</span> <span style=color:#f92672>.</span> <span style=color:#e6db74>&#39;/vendor/autoload.php&#39;</span>;
-</span></span></code></pre></div><blockquote><p>require_once digunakan karena secara proses require_once akan mengecek apakah file sudah diload sebelumnya, jika sudah maka tidak perlu diload lagi, jika belum maka proses load file akan dilakukan.</p></blockquote><p>Hal ini sangat memudahkan programmer untuk menggunakan library yang sudah diinstall. Sebagai contoh jika projek kita menggunakan library <code>Monolog</code> kita bisa langsung menggunakannya seperti:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=display:flex><span>$log <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Monolog\Logger</span>(<span style=color:#e6db74>&#39;name&#39;</span>);
-</span></span><span style=display:flex><span>$log<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>pushHandler</span>(<span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Monolog\Handler\StreamHandler</span>(<span style=color:#e6db74>&#39;app.log&#39;</span>, <span style=color:#a6e22e>Monolog\Logger</span><span style=color:#f92672>::</span><span style=color:#a6e22e>WARNING</span>));
-</span></span><span style=display:flex><span>$log<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>addWarning</span>(<span style=color:#e6db74>&#39;Foo&#39;</span>);
-</span></span></code></pre></div><p>Kita juga bisa menambahkan kode kita kedalam <code>autoloading</code>-nya composer dengan menambahkan attribut kedalam file <code>composer.json</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;autoload&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;psr-4&#34;</span>: {<span style=color:#f92672>&#34;MyCode\\&#34;</span>: <span style=color:#e6db74>&#34;src/&#34;</span>}
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><blockquote><p>psr-4 merupakan bagian dari PHP Standard Recommendation (PSR) bagian 4 yang mengatur tentang autoloading</p></blockquote><h1 id=perintah-composer-yang-sering-digunakan>Perintah Composer yang Sering Digunakan</h1><p>Sebelum jauh membahas tentang perintah-perintah composer yang sering digunakan sebaiknya kita kenalan dulu dengan file <code>composer.json</code>. Pada umumnya file <code>composer.json</code> yang digenerate oleh composer akan terlihat seperti:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;laravel/laravel&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;project&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;description&#34;</span>: <span style=color:#e6db74>&#34;The Laravel Framework.&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;keywords&#34;</span>: [<span style=color:#e6db74>&#34;framework&#34;</span>, <span style=color:#e6db74>&#34;laravel&#34;</span>],
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;license&#34;</span>: <span style=color:#e6db74>&#34;MIT&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;require&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;php&#34;</span>: <span style=color:#e6db74>&#34;^8.0.2&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;guzzlehttp/guzzle&#34;</span>: <span style=color:#e6db74>&#34;^7.2&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;laravel/framework&#34;</span>: <span style=color:#e6db74>&#34;^9.2&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;laravel/sanctum&#34;</span>: <span style=color:#e6db74>&#34;^2.14.1&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;laravel/tinker&#34;</span>: <span style=color:#e6db74>&#34;^2.7&#34;</span>
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;require-dev&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;fakerphp/faker&#34;</span>: <span style=color:#e6db74>&#34;^1.9.1&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;laravel/sail&#34;</span>: <span style=color:#e6db74>&#34;^1.0.1&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;mockery/mockery&#34;</span>: <span style=color:#e6db74>&#34;^1.4.4&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;nunomaduro/collision&#34;</span>: <span style=color:#e6db74>&#34;^6.1&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;phpunit/phpunit&#34;</span>: <span style=color:#e6db74>&#34;^9.5.10&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;spatie/laravel-ignition&#34;</span>: <span style=color:#e6db74>&#34;^1.0&#34;</span>
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;autoload&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;psr-4&#34;</span>: {
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;App\\&#34;</span>: <span style=color:#e6db74>&#34;app/&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;Database\\Factories\\&#34;</span>: <span style=color:#e6db74>&#34;database/factories/&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;Database\\Seeders\\&#34;</span>: <span style=color:#e6db74>&#34;database/seeders/&#34;</span>
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;autoload-dev&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;psr-4&#34;</span>: {
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;Tests\\&#34;</span>: <span style=color:#e6db74>&#34;tests/&#34;</span>
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;scripts&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;post-autoload-dump&#34;</span>: [
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;Illuminate\\Foundation\\ComposerScripts::postAutoloadDump&#34;</span>,
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;@php artisan package:discover --ansi&#34;</span>
-</span></span><span style=display:flex><span>        ],
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;post-update-cmd&#34;</span>: [
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;@php artisan vendor:publish --tag=laravel-assets --ansi --force&#34;</span>
-</span></span><span style=display:flex><span>        ],
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;post-root-package-install&#34;</span>: [
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;@php -r \&#34;file_exists(&#39;.env&#39;) || copy(&#39;.env.example&#39;, &#39;.env&#39;);\&#34;&#34;</span>
-</span></span><span style=display:flex><span>        ],
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;post-create-project-cmd&#34;</span>: [
-</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;@php artisan key:generate --ansi&#34;</span>
-</span></span><span style=display:flex><span>        ]
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;extra&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;laravel&#34;</span>: {
-</span></span><span style=display:flex><span>            <span style=color:#f92672>&#34;dont-discover&#34;</span>: []
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;config&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;optimize-autoloader&#34;</span>: <span style=color:#66d9ef>true</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;preferred-install&#34;</span>: <span style=color:#e6db74>&#34;dist&#34;</span>,
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;sort-packages&#34;</span>: <span style=color:#66d9ef>true</span>
-</span></span><span style=display:flex><span>    },
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;minimum-stability&#34;</span>: <span style=color:#e6db74>&#34;dev&#34;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;prefer-stable&#34;</span>: <span style=color:#66d9ef>true</span>
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>File <code>composer.json</code> diatas adalah contoh dari file <a href=https://github.com/laravel/laravel/blob/9.x/composer.json>composer</a> pada projek <a href=https://laravel.com/>Laravel</a> versi 9.x.</p><p>Bagian-bagian pada file <code>composer.json</code> terbagi menjadi 3 kategori besar: deskripsi projek, dependencies, dan konfigurasi.</p><p>Bagian <strong>deskripsi</strong> merupakan bagian yang berisi informasi dari projek yang sedang dikerjakan bagian ini berisi informasi seperti: nama projek, tipe projek, keterangan, keywords, dan lisensi yang digunakan.</p><p>Bagian <strong>depedencies</strong> merupakan bagian yang digunakan untuk mendeklarasikan libraries atau packages yang digunakan. Bagian ini termasuk: <code>require</code> dan <code>require-dev</code>. <code>require</code> dan <code>require-dev</code> sama-sama berperan sebagai tempat pendeklarasian libraries atau packages yang digunakan yang nantinya akan composer install, yang menjadi perbedaan adalah segala libraries atau packages yang dideklarasikan pada <code>require-dev</code> hanya akan digunakan pada proses development saja sehingga ketika projek memasuki area production packages atau libraries yang dideklarasikan di <code>require-dev</code> tidak akan diinstall oleh composer. Sebaliknya packages atau libraries yang didekalarasikan pada <code>require</code> akan diinstall oleh composer baik untuk proses development ataupun production.</p><blockquote><p>Perbedaan area menjalankan koding umumnya terbagi menjadi 3: development, staging, dan production. Untuk membuat composer mengetahui koding yang dibuat akan dijalankan pada area yang mana, biasanya dibuat sebuah environment variabel yang berisi status area yang digunakan saat ini.</p></blockquote><p>Bagian <strong>konfigurasi</strong> biasanya berisi konfigurasi serta keterangan bagaimana composer harus men-treat projek kita. Bagian ini dimulai dari <code>autoload</code> sampai dengan <code>prefer-stable</code>. Bagian <code>autoload</code> dan <code>autoload-dev</code> merupakan bagian yang akan menginformasikan kepada composer untuk meng-autoloading sebuah file PHP ke PHP autoload.</p><blockquote><p>Penjelasan lebih detail tentang keterangan dan kegunaan masing-masing bagian pada file composer.json bisa dilihat pada <a href=https://getcomposer.org/doc/04-schema.md>The composer.json Schema</a></p></blockquote><h2 id=init>Init</h2><p>Perintah <code>composer init</code> adalah perintah untuk menginisialisasi projek composer dalam satu folder.</p><pre tabindex=0><code>cd path/to/composer-project
+</code></pre><h1 id=autoloading-dengan-composer>Autoloading Dengan Composer</h1><p>Untuk library yang sudah menggunakan <code>autoloading</code>, composer akan meng-generate file <code>autoload.php</code> yang ada pada <code>vendor/autoload.php</code>. Sehingga untuk menggunakan library yang sudah diinstall kita cukup me-load library-nya dengan:</p><pre tabindex=0><code>require_once __DIR__ . &#39;/vendor/autoload.php&#39;;
+</code></pre><blockquote><p>require_once digunakan karena secara proses require_once akan mengecek apakah file sudah diload sebelumnya, jika sudah maka tidak perlu diload lagi, jika belum maka proses load file akan dilakukan.</p></blockquote><p>Hal ini sangat memudahkan programmer untuk menggunakan library yang sudah diinstall. Sebagai contoh jika projek kita menggunakan library <code>Monolog</code> kita bisa langsung menggunakannya seperti:</p><pre tabindex=0><code>$log = new Monolog\Logger(&#39;name&#39;);
+$log-&gt;pushHandler(new Monolog\Handler\StreamHandler(&#39;app.log&#39;, Monolog\Logger::WARNING));
+$log-&gt;addWarning(&#39;Foo&#39;);
+</code></pre><p>Kita juga bisa menambahkan kode kita kedalam <code>autoloading</code>-nya composer dengan menambahkan attribut kedalam file <code>composer.json</code>:</p><pre tabindex=0><code>{
+    &#34;autoload&#34;: {
+        &#34;psr-4&#34;: {&#34;MyCode\\&#34;: &#34;src/&#34;}
+    }
+}
+</code></pre><blockquote><p>psr-4 merupakan bagian dari PHP Standard Recommendation (PSR) bagian 4 yang mengatur tentang autoloading</p></blockquote><h1 id=perintah-composer-yang-sering-digunakan>Perintah Composer yang Sering Digunakan</h1><p>Sebelum jauh membahas tentang perintah-perintah composer yang sering digunakan sebaiknya kita kenalan dulu dengan file <code>composer.json</code>. Pada umumnya file <code>composer.json</code> yang digenerate oleh composer akan terlihat seperti:</p><pre tabindex=0><code>{
+    &#34;name&#34;: &#34;laravel/laravel&#34;,
+    &#34;type&#34;: &#34;project&#34;,
+    &#34;description&#34;: &#34;The Laravel Framework.&#34;,
+    &#34;keywords&#34;: [&#34;framework&#34;, &#34;laravel&#34;],
+    &#34;license&#34;: &#34;MIT&#34;,
+    &#34;require&#34;: {
+        &#34;php&#34;: &#34;^8.0.2&#34;,
+        &#34;guzzlehttp/guzzle&#34;: &#34;^7.2&#34;,
+        &#34;laravel/framework&#34;: &#34;^9.2&#34;,
+        &#34;laravel/sanctum&#34;: &#34;^2.14.1&#34;,
+        &#34;laravel/tinker&#34;: &#34;^2.7&#34;
+    },
+    &#34;require-dev&#34;: {
+        &#34;fakerphp/faker&#34;: &#34;^1.9.1&#34;,
+        &#34;laravel/sail&#34;: &#34;^1.0.1&#34;,
+        &#34;mockery/mockery&#34;: &#34;^1.4.4&#34;,
+        &#34;nunomaduro/collision&#34;: &#34;^6.1&#34;,
+        &#34;phpunit/phpunit&#34;: &#34;^9.5.10&#34;,
+        &#34;spatie/laravel-ignition&#34;: &#34;^1.0&#34;
+    },
+    &#34;autoload&#34;: {
+        &#34;psr-4&#34;: {
+            &#34;App\\&#34;: &#34;app/&#34;,
+            &#34;Database\\Factories\\&#34;: &#34;database/factories/&#34;,
+            &#34;Database\\Seeders\\&#34;: &#34;database/seeders/&#34;
+        }
+    },
+    &#34;autoload-dev&#34;: {
+        &#34;psr-4&#34;: {
+            &#34;Tests\\&#34;: &#34;tests/&#34;
+        }
+    },
+    &#34;scripts&#34;: {
+        &#34;post-autoload-dump&#34;: [
+            &#34;Illuminate\\Foundation\\ComposerScripts::postAutoloadDump&#34;,
+            &#34;@php artisan package:discover --ansi&#34;
+        ],
+        &#34;post-update-cmd&#34;: [
+            &#34;@php artisan vendor:publish --tag=laravel-assets --ansi --force&#34;
+        ],
+        &#34;post-root-package-install&#34;: [
+            &#34;@php -r \&#34;file_exists(&#39;.env&#39;) || copy(&#39;.env.example&#39;, &#39;.env&#39;);\&#34;&#34;
+        ],
+        &#34;post-create-project-cmd&#34;: [
+            &#34;@php artisan key:generate --ansi&#34;
+        ]
+    },
+    &#34;extra&#34;: {
+        &#34;laravel&#34;: {
+            &#34;dont-discover&#34;: []
+        }
+    },
+    &#34;config&#34;: {
+        &#34;optimize-autoloader&#34;: true,
+        &#34;preferred-install&#34;: &#34;dist&#34;,
+        &#34;sort-packages&#34;: true
+    },
+    &#34;minimum-stability&#34;: &#34;dev&#34;,
+    &#34;prefer-stable&#34;: true
+}
+</code></pre><p>File <code>composer.json</code> diatas adalah contoh dari file <a href=https://github.com/laravel/laravel/blob/9.x/composer.json>composer</a> pada projek <a href=https://laravel.com/>Laravel</a> versi 9.x.</p><p>Bagian-bagian pada file <code>composer.json</code> terbagi menjadi 3 kategori besar: deskripsi projek, dependencies, dan konfigurasi.</p><p>Bagian <strong>deskripsi</strong> merupakan bagian yang berisi informasi dari projek yang sedang dikerjakan bagian ini berisi informasi seperti: nama projek, tipe projek, keterangan, keywords, dan lisensi yang digunakan.</p><p>Bagian <strong>depedencies</strong> merupakan bagian yang digunakan untuk mendeklarasikan libraries atau packages yang digunakan. Bagian ini termasuk: <code>require</code> dan <code>require-dev</code>. <code>require</code> dan <code>require-dev</code> sama-sama berperan sebagai tempat pendeklarasian libraries atau packages yang digunakan yang nantinya akan composer install, yang menjadi perbedaan adalah segala libraries atau packages yang dideklarasikan pada <code>require-dev</code> hanya akan digunakan pada proses development saja sehingga ketika projek memasuki area production packages atau libraries yang dideklarasikan di <code>require-dev</code> tidak akan diinstall oleh composer. Sebaliknya packages atau libraries yang didekalarasikan pada <code>require</code> akan diinstall oleh composer baik untuk proses development ataupun production.</p><blockquote><p>Perbedaan area menjalankan koding umumnya terbagi menjadi 3: development, staging, dan production. Untuk membuat composer mengetahui koding yang dibuat akan dijalankan pada area yang mana, biasanya dibuat sebuah environment variabel yang berisi status area yang digunakan saat ini.</p></blockquote><p>Bagian <strong>konfigurasi</strong> biasanya berisi konfigurasi serta keterangan bagaimana composer harus men-treat projek kita. Bagian ini dimulai dari <code>autoload</code> sampai dengan <code>prefer-stable</code>. Bagian <code>autoload</code> dan <code>autoload-dev</code> merupakan bagian yang akan menginformasikan kepada composer untuk meng-autoloading sebuah file PHP ke PHP autoload.</p><blockquote><p>Penjelasan lebih detail tentang keterangan dan kegunaan masing-masing bagian pada file composer.json bisa dilihat pada <a href=https://getcomposer.org/doc/04-schema.md>The composer.json Schema</a></p></blockquote><h2 id=init>Init</h2><p>Perintah <code>composer init</code> adalah perintah untuk menginisialisasi projek composer dalam satu folder.</p><pre tabindex=0><code>cd path/to/composer-project
 </code></pre><pre tabindex=0><code>composer init
 </code></pre><p>Perintah ini akan menampilkan prompt yang harus dilengkapi seperti nama project, author, keywords, dan lain-lain. Silahkan lengkapi sesuai kebutuhan.</p><pre tabindex=0><code>
                                             
@@ -114,14 +114,14 @@ Package name (&lt;vendor&gt;/&lt;name&gt;) [budiganteng/composer-pemula]:
 
 ... 
 </code></pre><p>Perintah <code>composer init</code> akan membuat satu file baru dengan nama <code>composer.json</code>. File <code>composer.json</code> ini berisi informasi dari projek kita, mulai dari nama projek hingga depedencies yang digunakan.</p><h2 id=require>Require</h2><p>Perintah <code>composer require</code> merupakan perintah yang digunakan untuk menginstall satu atau lebih library. Seperti contoh ketika mau menginstall library <code>Guzzle</code>:</p><pre tabindex=0><code>composer require guzzlehttp/guzzle
-</code></pre><p>perintah ini akan menambahkan attribut baru dalam file <code>composer.json</code> pada bagian <code>require</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span>{
-</span></span><span style=display:flex><span>     <span style=color:#f92672>&#34;require&#34;</span>: {
-</span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;guzzlehttp/guzzle&#34;</span>: <span style=color:#e6db74>&#34;^7.4&#34;</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline">Tags:</a>
+</code></pre><p>perintah ini akan menambahkan attribut baru dalam file <code>composer.json</code> pada bagian <code>require</code>.</p><pre tabindex=0><code>{
+     &#34;require&#34;: {
+        &#34;guzzlehttp/guzzle&#34;: &#34;^7.4&#34;
+    }
+}
+</code></pre></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline">Tags:</a>
 <a href=https://aziyan99.github.io/tags/composer class="border-r border-gray-400 px-2 text-blue-700 hover:underline">Composer</a>
-<a href=https://aziyan99.github.io/tags/php class="border-r border-gray-400 px-2 text-blue-700 hover:underline">PHP</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-02-20>This page was published on 20 February 2022</time></div></div></div></main></div><footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3 text-xs"><div></div><div><span>©2022 Aziyan99</span></div><div class=mr-3>Powered by <img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js></script>
+<a href=https://aziyan99.github.io/tags/php class="border-r border-gray-400 px-2 text-blue-700 hover:underline">PHP</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-02-20>This page was published on 20 February 2022</time></div></div></div></main></div><footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3 text-xs"><div></div><div><span>©2022 Aziyan99</span></div><div class=mr-3>Powered by <img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div><script src=/highlight/highlight.min.js></script>
 <script>hljs.highlightAll()</script><script>window.store={"https://aziyan99.github.io/posts/belajar-alpine-js/":{title:"Belajar Alpinejs",tags:["Js","Alpinejs"],content:`Ngebuat supaya HTML jadi interaktif, reaktif, dinamis dan kawan-kawanya agak sedikit susah kalo pake javascript aja. Sedikit susahnya mungkin karena kita harus bikin dulu listener nya (kalo mau bikin dinamis gitu), kalo mau render, ya innerhtml harus dibikin sendiri juga, kalo mau ambil elemen HTML harus disiapin dulu variablenya, pokonya proses yang kudu kita lewatin (sebagai programmer) jadi banyak (tapi kalo rajin, bikin aja sendiri :v). Pada zaman dahulu kala kita kenal dengan JQuery tapi makin kesini JQuery ternyata makin berat juga, sama cukup lawas juga kalo kita bandingin dengan perkembangan javascript sejauh ini. Ada salah satu javascipt framework yang agak sedikit mirip dengan JQuery (buat manipulasi DOM) namanya Aplinejs. Ketika kita pake JQuery semua kodingan kita ada di file js, tapi kalo pake Alpine sebagian besar kodingan kita akan ada di HTML, karena Apline kita cuma perlu nambahin beberapa attribut baru aja kedalam elemen HTML kita.
 Hanya terjemahan dari dokumentasi Alpinejs dengan tambahan disana-sini :)
 Sebelum Belajar Alpinejs terbilang cukup kecil karena ia dibangun dengan 15 attribut, 6 properti, dan 2 fungsi
