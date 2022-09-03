@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Aziyan99'
 theme = "hugowi"
 copyright = '2022 Raja Azian All rights reserved'
+enableRobotsTXT = true
 
 [author]
   name = 'Raja Azian'
