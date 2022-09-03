@@ -1,0 +1,97 @@
+User-agent: *
+
+Allow: /tags/alpinejs/
+
+Allow: /
+
+Allow: /posts/belajar-alpine-js/
+
+Allow: /tags/database/
+
+Allow: /tags/dbms/
+
+Allow: /tags/js/
+
+Allow: /tags/mariadb/
+
+Allow: /posts/mariadb-mysql-general-log/
+
+Allow: /tags/mysql/
+
+Allow: /posts/
+
+Allow: /tags/
+
+Allow: /tags/composer/
+
+Allow: /posts/composer-for-dummies/
+
+Allow: /tags/laravel/
+
+Allow: /posts/laravel-membuat-folder/
+
+Allow: /tags/nginx/
+
+Allow: /posts/install-nginx-macos/
+
+Allow: /tags/osx/
+
+Allow: /tags/php/
+
+Allow: /tags/dbtransaction/
+
+Allow: /tags/image/
+
+Allow: /posts/laravel-database-transaction/
+
+Allow: /posts/laravel-generate-sitemap/
+
+Allow: /posts/laravel-path-gambar-dari-model/
+
+Allow: /tags/model/
+
+Allow: /tags/sitemap/
+
+Allow: /tags/barcode/
+
+Allow: /posts/laravel-generate-barcode/
+
+Allow: /posts/laravel-select-between-date/
+
+Allow: /posts/nginx-virtual-host/
+
+Allow: /tags/ubuntu/
+
+Allow: /tags/virtual-host/
+
+Allow: /tags/vps/
+
+Allow: /tags/apache2/
+
+Allow: /tags/authentication/
+
+Allow: /tags/dom/
+
+Allow: /tags/github-pages/
+
+Allow: /posts/install-lemp-stack-ubuntu/
+
+Allow: /tags/jekyll/
+
+Allow: /posts/pencarian-jekyll/
+
+Allow: /posts/laravel-setup-laravel-passport/
+
+Allow: /tags/lemp/
+
+Allow: /tags/linux/
+
+Allow: /tags/react-hook/
+
+Allow: /posts/react-update-document-title/
+
+Allow: /tags/react.js/
+
+Allow: /posts/planning/
+
+Allow: /categories/
