@@ -20,6 +20,7 @@ Cara terbaik untuk menginstall composer adalah dengan mengikuti petunjuk pengins
 
 ## Sitem Operasi Keluarga *NIX
 Menginstall composer pada keluarga sistem operasi bisa melalui executeable file dari [installer composer](https://getcomposer.org/installer) atau kita bisa mengotomisasi penginstallan dengan:
+
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
@@ -30,11 +31,13 @@ php -r "unlink('composer-setup.php');"
 Perintah diatas akan mendownloadkan sebuah file baru dengan nama `composer.phar` dan membuat composer bisa kita gunakan secara lokal (satu projek). PHAR (PHP archive) sendiri adalah binary file kompress dari kodingan PHP yang bisa kita jalankan lewat terminal.
 
 Untuk menjalan composer kita bisa menggunakan perintah:
+
 ```
 php composer.phar <command>
 ```
 
 Langkah terbaik adalah memindahkan composer kedalam `PATH` dari sistem operasi kita sehingga kita tidak perlu mendownload composer lagi ketika memulai projek baru (install secara global).
+
 ```
 sudo mv composer.phar /usr/local/bin/composer
 ```
@@ -47,10 +50,12 @@ Pada sistem operasi windows penginstallan composer diawali dengan mendownload [i
 
 
 Jika proses penginstalasi compser berhasil maka ketika kita menjalan perintah:
+
 ```
 composer
 ```
 pada terminal, kita akan mendapatkan output yang lebih kurang seperi ini:
+
 ```
 Output
 ______
@@ -78,19 +83,22 @@ verbose output and 3 for debug
 
 # Autoloading Dengan Composer
 Untuk library yang sudah menggunakan `autoloading`, composer akan meng-generate file `autoload.php` yang ada pada `vendor/autoload.php`. Sehingga untuk menggunakan library yang sudah diinstall kita cukup me-load library-nya dengan:
-```php
+
+```
 require_once __DIR__ . '/vendor/autoload.php';
 ```
 > require_once digunakan karena secara proses require_once akan mengecek apakah file sudah diload sebelumnya, jika sudah maka tidak perlu diload lagi, jika belum maka proses load file akan dilakukan.
 
 Hal ini sangat memudahkan programmer untuk menggunakan library yang sudah diinstall. Sebagai contoh jika projek kita menggunakan library `Monolog` kita bisa langsung menggunakannya seperti:
-```php
+
+```
 $log = new Monolog\Logger('name');
 $log->pushHandler(new Monolog\Handler\StreamHandler('app.log', Monolog\Logger::WARNING));
 $log->addWarning('Foo');
 ```
 Kita juga bisa menambahkan kode kita kedalam `autoloading`-nya composer dengan menambahkan attribut kedalam file `composer.json`:
-```json
+
+```
 {
     "autoload": {
         "psr-4": {"MyCode\\": "src/"}
@@ -101,7 +109,8 @@ Kita juga bisa menambahkan kode kita kedalam `autoloading`-nya composer dengan m
 
 # Perintah Composer yang Sering Digunakan
 Sebelum jauh membahas tentang perintah-perintah composer yang sering digunakan sebaiknya kita kenalan dulu dengan file `composer.json`. Pada umumnya file `composer.json` yang digenerate oleh composer akan terlihat seperti:
-```json
+
+```
 {
     "name": "laravel/laravel",
     "type": "project",
@@ -178,6 +187,7 @@ Bagian **konfigurasi** biasanya berisi konfigurasi serta keterangan bagaimana co
 
 ## Init
 Perintah `composer init` adalah perintah untuk menginisialisasi projek composer dalam satu folder.
+
 ```
 cd path/to/composer-project
 ```
@@ -208,8 +218,10 @@ Perintah `composer require` merupakan perintah yang digunakan untuk menginstall 
 ```
 composer require guzzlehttp/guzzle
 ```
+
 perintah ini akan menambahkan attribut baru dalam file `composer.json` pada bagian `require`.
-```json
+
+```
 {
      "require": {
         "guzzlehttp/guzzle": "^7.4"
