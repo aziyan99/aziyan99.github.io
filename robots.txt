@@ -1,8 +1,20 @@
 User-agent: *
 
-Allow: /tags/alpinejs/
-
 Allow: /
+
+Allow: /tags/laravel/
+
+Allow: /posts/belajar-laravel-queue/
+
+Allow: /tags/php/
+
+Allow: /posts/
+
+Allow: /tags/queue/
+
+Allow: /tags/
+
+Allow: /tags/alpinejs/
 
 Allow: /posts/belajar-alpine-js/
 
@@ -18,15 +30,9 @@ Allow: /posts/mariadb-mysql-general-log/
 
 Allow: /tags/mysql/
 
-Allow: /posts/
-
-Allow: /tags/
-
 Allow: /tags/composer/
 
 Allow: /posts/composer-for-dummies/
-
-Allow: /tags/laravel/
 
 Allow: /posts/laravel-membuat-folder/
 
@@ -35,8 +41,6 @@ Allow: /tags/nginx/
 Allow: /posts/install-nginx-macos/
 
 Allow: /tags/osx/
-
-Allow: /tags/php/
 
 Allow: /tags/dbtransaction/
 
