@@ -14,6 +14,10 @@ Allow: /tags/queue/
 
 Allow: /tags/
 
+Allow: /tags/composer/
+
+Allow: /posts/laravel-membuat-simple-package/
+
 Allow: /tags/alpinejs/
 
 Allow: /posts/belajar-alpine-js/
@@ -29,8 +33,6 @@ Allow: /tags/mariadb/
 Allow: /posts/mariadb-mysql-general-log/
 
 Allow: /tags/mysql/
-
-Allow: /tags/composer/
 
 Allow: /posts/composer-for-dummies/
 
