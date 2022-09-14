@@ -1,7 +1,7 @@
 ---
 title: "Backup Mysql/MariaDB Database"
 date: 2022-09-12T16:55:21+07:00
-draft: true
+draft: false
 tags: ['Database', 'MySQL', 'MariaDB']
 summary: "Membackup dan merestrore database (MySQl dan MariaDB) pada dasarnya sangat mudah dilakukan dengan memanfaatkan perintah mysqldump, hanya dengan satu perintah kita bisa membackup dan merestore database"
 ---
