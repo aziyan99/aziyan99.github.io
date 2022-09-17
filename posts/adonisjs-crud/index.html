@@ -1,88 +1,602 @@
-<!doctype html><html prefix="og: http://ogp.me/ns#" lang=en><head itemscope itemtype=https://aziyan99.github.io/><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=google-site-verification content="r6crExYmwMlxrLMZbeL-qhluBe7m3eRvqH-fRWCr4J0"><meta name=description content="An learning journals and notes"><meta itemprop=description content="An learning journals and notes"><meta property="og:description" content="An learning journals and notes"><meta name=twitter:description content="An learning journals and notes"><meta name=keywords content="Laravel,PHP,Barcode,"><meta name=author content="Raja Azian"><link rel=stylesheet type=text/css href=/css/main.css><link rel=stylesheet type=text/css href=/css/gh-markdown.css><link rel=stylesheet href=/highlight/styles/default.min.css><link rel=icon type=image/x-icon href="https://avatars.githubusercontent.com/u/34334074?v=4"><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script>
-<base href=https://aziyan99.github.io/posts/laravel-generate-barcode/><link rel=canonical href=https://aziyan99.github.io/posts/laravel-generate-barcode/ itemprop=url><meta name=url content="https://aziyan99.github.io/posts/laravel-generate-barcode/"><meta name=twitter:url content="https://aziyan99.github.io/posts/laravel-generate-barcode/"><meta property="og:url" content="https://aziyan99.github.io/posts/laravel-generate-barcode/"><meta property="og:updated_time" content="2022-02-06T21:29:54+0700"><link rel=sitemap type=application/xml title=Sitemap href=https://aziyan99.github.io/sitemap.xml><meta property="og:locale" content="en"><meta name=language content="English"><title>Aziyan99 | Laravel: Mengenerate Barcode</title><meta property="og:title" content="Aziyan99"><meta name=twitter:title content="Aziyan99"><meta itemprop=name content="Aziyan99"><meta name=application-name content="Aziyan99"><meta property="og:site_name" content="Aziyan99"><meta name=robots content="index,follow"><meta name=googlebot content="index,follow"></head><body class="bg-gray-50 max-w-screen min-w-screen" x-data="{ showMenu: false }"><div class="hidden justify-between bg-gray-50 md:flex lg:flex"><div></div><div><a href=/sitemap.xml class="mr-3 text-blue-700 hover:underline focus:outline focus:outline-blue-700">sitemap</a>
+<!doctype html><html prefix="og: http://ogp.me/ns#" lang=en><head itemscope itemtype=https://aziyan99.github.io/><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=google-site-verification content="r6crExYmwMlxrLMZbeL-qhluBe7m3eRvqH-fRWCr4J0"><meta name=description content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"><meta itemprop=description content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"><meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"><meta name=twitter:description content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"><meta name=keywords content="Foo,Bar,"><meta name=author content="Raja Azian"><link rel=stylesheet type=text/css href=/css/main.css><link rel=stylesheet type=text/css href=/css/gh-markdown.css><link rel=stylesheet href=/highlight/styles/default.min.css><link rel=icon type=image/x-icon href="https://avatars.githubusercontent.com/u/34334074?v=4"><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script>
+<base href=https://aziyan99.github.io/posts/adonisjs-crud/><link rel=canonical href=https://aziyan99.github.io/posts/adonisjs-crud/ itemprop=url><meta name=url content="https://aziyan99.github.io/posts/adonisjs-crud/"><meta name=twitter:url content="https://aziyan99.github.io/posts/adonisjs-crud/"><meta property="og:url" content="https://aziyan99.github.io/posts/adonisjs-crud/"><meta property="og:updated_time" content="2022-09-17T19:02:23+0700"><link rel=sitemap type=application/xml title=Sitemap href=https://aziyan99.github.io/sitemap.xml><meta property="og:locale" content="en"><meta name=language content="English"><title>Aziyan99 | Adonisjs CRUD</title><meta property="og:title" content="Aziyan99"><meta name=twitter:title content="Aziyan99"><meta itemprop=name content="Aziyan99"><meta name=application-name content="Aziyan99"><meta property="og:site_name" content="Aziyan99"><meta name=robots content="index,follow"><meta name=googlebot content="index,follow"></head><body class="bg-gray-50 max-w-screen min-w-screen" x-data="{ showMenu: false }"><div class="hidden justify-between bg-gray-50 md:flex lg:flex"><div></div><div><a href=/sitemap.xml class="mr-3 text-blue-700 hover:underline focus:outline focus:outline-blue-700">sitemap</a>
 <a href=# class="mr-3 text-blue-700 hover:underline focus:outline focus:outline-blue-700">rss</a></div></div><div class="hidden bg-gray-50 py-5 md:flex lg:flex"><aside class="grow-0 w-40 mr-2"><a href=/ class="focus:outline focus:outline-blue-700"><img src="https://avatars.githubusercontent.com/u/34334074?v=4" alt="github logo" class="ml-2 h-32 w-32 border border-gray-500 bg-gray-200"></a><div class=my-5><p class=ml-2>navigation</p><nav class="border border-l-0 border-gray-500 bg-white p-2"><ul class="list-square ml-5"><li class=text-gray-500><a href=/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Main page</a></li><li class=text-gray-500><a href=/posts class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Posts</a></li><li class=text-gray-500><a href=/tags class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Tags</a></li></ul></nav></div><div class=my-5><p class=ml-2>search</p><div class="overflow-hidden border border-l-0 border-gray-500 bg-white p-3 text-center"><form id=search method=get><label hidden for=search-input>Search site</label>
 <input type=text class="max-w-full border border-gray-500 px-1" placeholder="Search text" id=search-input name=query>
-<button class="mt-1 rounded-sm border border-gray-500 bg-gray-100 px-1 focus:outline focus:outline-blue-700" type=submit>search</button></form><div id=results class="text-left text-sm"></div></div></div><div class=my-5><p class=ml-2>links</p><nav class="border border-l-0 border-gray-500 bg-white p-2"><ul class="list-square ml-5"><li class=text-gray-500><a href=https://github.com/aziyan99 class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>GitHub</a></li><li class=text-gray-500><a href=https://www.linkedin.com/in/raja-azian/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Linkedin</a></li><li class=text-gray-500><a href=https://www.youtube.com/channel/UCsHAn_jONDr7KHaM2Qz52RQ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Youtube</a></li><li class=text-gray-500><a href=https://www.instagram.com/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Instagram</a></li></ul></nav></div></aside><main class="grow mt-4 border border-r-0 border-gray-500 bg-white"><div id=content class=p-4><div class="border-b border-gray-500 mb-3"><h1 class="text-3xl w-full">Laravel: Mengenerate Barcode</h1></div><div class=markdown-body><p>Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spasi) dengan berbagai lebar dan jarak garis paralel. Mesin menguraikan kode batang karena ditampilkan dalam bentuk yang dapat dibaca mesin.</p><p>Ada banyak <code>package</code> yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah <code>milon/barcode</code> untuk menginstallnya pada laravel bisa menggunakan composer:</p><pre tabindex=0><code>root@192.168.1.12:~$ composer require milon/barcode
-</code></pre><p>Jika proses penginstallasian sudah selesai. Bisa mendaftarkan packagenya pada <code>providers</code> dan <code>alias</code> di <code>config/app.php</code>.</p><pre tabindex=0><code>&lt;?php
-    return [
-    &#39;providers&#39; =&gt; [
-        ....
-        ....
-        ....                
-        Milon\Barcode\BarcodeServiceProvider::class,
-    ],
-    
-    &#39;aliases&#39; =&gt; [
-        ....
-        ....
-        ....                
-        &#39;DNS1D&#39; =&gt; Milon\Barcode\Facades\DNS1DFacade::class,
-        &#39;DNS2D&#39; =&gt; Milon\Barcode\Facades\DNS2DFacade::class,
-    ]
-</code></pre><p>Untuk menggunakannya bisa langsung digunakan pada <code>blade</code> dengan merendernya seperti:</p><pre tabindex=0><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+<button class="mt-1 rounded-sm border border-gray-500 bg-gray-100 px-1 focus:outline focus:outline-blue-700" type=submit>search</button></form><div id=results class="text-left text-sm"></div></div></div><div class=my-5><p class=ml-2>links</p><nav class="border border-l-0 border-gray-500 bg-white p-2"><ul class="list-square ml-5"><li class=text-gray-500><a href=https://github.com/aziyan99 class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>GitHub</a></li><li class=text-gray-500><a href=https://www.linkedin.com/in/raja-azian/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Linkedin</a></li><li class=text-gray-500><a href=https://www.youtube.com/channel/UCsHAn_jONDr7KHaM2Qz52RQ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Youtube</a></li><li class=text-gray-500><a href=https://www.instagram.com/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700" target=_blank>Instagram</a></li></ul></nav></div></aside><main class="grow mt-4 border border-r-0 border-gray-500 bg-white"><div id=content class=p-4><div class="border-b border-gray-500 mb-3"><h1 class="text-3xl w-full">Adonisjs CRUD</h1></div><div class=markdown-body><h2 id=membuat-projek>Membuat Projek</h2><pre tabindex=0><code>npm init adonis-ts-app@latest crud
+</code></pre><p>Lengkapi data projek</p><pre tabindex=0><code>     _       _             _         _ ____
+    / \   __| | ___  _ __ (_)___    | / ___|
+   / _ \ / _` |/ _ \| &#39;_ \| / __|_  | \___ \
+  / ___ \ (_| | (_) | | | | \__ \ |_| |___) |
+ /_/   \_\__,_|\___/|_| |_|_|___/\___/|____/
+
+
+
+CUSTOMIZE PROJECT
+❯ Select the project structure · web
+❯ Enter the project name · crud
+❯ Setup eslint? (y/N) · true
+❯ Setup prettier? (y/N) · true
+❯ Configure webpack encore for compiling frontend assets? (y/N) · true
+
+RUNNING TASKS
+❯ Scaffold project 58 ms
+❯ Install dependencies
+  [ wait ]  eslint, eslint-plugin-adonis, prettier, and 8 others (dev)   .
+❯ Configure installed packages
+❯ Configure webpack encore
+</code></pre><h3 id=install-bootstrap-opsional>Install Bootstrap (Opsional)</h3><pre tabindex=0><code>npm install bootstrap
+</code></pre><p>Ubah <code>resources/js/app.js</code></p><pre tabindex=0><code>// import &#39;../css/app.css&#39;
+import &#39;bootstrap/dist/css/bootstrap.css&#39;;
+</code></pre><h3 id=template>Template</h3><p>Buat file baru di <code>resources/views/layouts/main.edge</code></p><pre tabindex=0><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
 &lt;head&gt;
-    &lt;meta charset=&#34;utf-8&#34;&gt;
-    &lt;title&gt;Laravel Generate Barcode Examples&lt;/title&gt;
-    &lt;meta name=&#34;csrf-token&#34; content=&#34;{{ csrf_token() }}&#34;&gt;
-    &lt;link href=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&#34; rel=&#34;stylesheet&#34;/&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+  &lt;title&gt;AdonisJS - CRUD&lt;/title&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;http://127.0.0.1:8080/assets/app.css&#34; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class=&#34;container mt-4&#34;&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS2D::getBarcodeHTML(&#39;4445645656&#39;, &#39;QRCODE&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;PHARMA&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;PHARMA2T&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;CODABAR&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;KIX&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;RMS4CC&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;UPCA&#39;) !!}&lt;/div&gt;        
+  &lt;nav class=&#34;navbar navbar-expand-lg bg-light border-bottom&#34;&gt;
+    &lt;div class=&#34;container&#34;&gt;
+      &lt;a class=&#34;navbar-brand&#34; href=&#34;/&#34;&gt;AdonisJS CRUD&lt;/a&gt;
+      &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNav&#34; aria-controls=&#34;navbarNav&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+        &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNav&#34;&gt;
+        &lt;ul class=&#34;navbar-nav&#34;&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;/&#34;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;{{ route(&#39;categories.index&#39;) }}&#34;&gt;Categories&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Post&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;div class=&#34;container mt-3&#34;&gt;
+    @!section(&#39;content&#39;)
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>Selesai!!!!</p></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Tags:</a>
-<a href=https://aziyan99.github.io/tags/laravel class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Laravel</a>
-<a href=https://aziyan99.github.io/tags/php class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">PHP</a>
-<a href=https://aziyan99.github.io/tags/barcode class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Barcode</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-02-06>This page was published on 6 February 2022</time></div></div></div></main></div><nav class="flex justify-between border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden"><div><div class=py-3><button class="border border-yellow-500 bg-white p-1 focus:outline focus:outline-blue-700" type=button x-on:click="showMenu = ! showMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentcolor" class="h-7 w-7"><path fill-rule="evenodd" d="M12.53 16.28a.75.75.0 01-1.06.0l-7.5-7.5a.75.75.0 011.06-1.06L12 14.69l6.97-6.97a.75.75.0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"/></svg></button></div></div><div></div></nav><nav class="border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden" x-show=showMenu><ul class=py-3><li class=py-2><a href=/ class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Main page</a></li><li class=py-2><a href=/posts class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Posts</a></li><li class=py-2><a href=/tags class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Tags</a></li></ul></nav><section class="block md:hidden lg:hidden bg-white p-5"><div class="border-b border-gray-500 mb-3"><h1 class="text-3xl w-full">Laravel: Mengenerate Barcode</h1></div><div class=markdown-body><p>Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spasi) dengan berbagai lebar dan jarak garis paralel. Mesin menguraikan kode batang karena ditampilkan dalam bentuk yang dapat dibaca mesin.</p><p>Ada banyak <code>package</code> yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah <code>milon/barcode</code> untuk menginstallnya pada laravel bisa menggunakan composer:</p><pre tabindex=0><code>root@192.168.1.12:~$ composer require milon/barcode
-</code></pre><p>Jika proses penginstallasian sudah selesai. Bisa mendaftarkan packagenya pada <code>providers</code> dan <code>alias</code> di <code>config/app.php</code>.</p><pre tabindex=0><code>&lt;?php
-    return [
-    &#39;providers&#39; =&gt; [
-        ....
-        ....
-        ....                
-        Milon\Barcode\BarcodeServiceProvider::class,
-    ],
-    
-    &#39;aliases&#39; =&gt; [
-        ....
-        ....
-        ....                
-        &#39;DNS1D&#39; =&gt; Milon\Barcode\Facades\DNS1DFacade::class,
-        &#39;DNS2D&#39; =&gt; Milon\Barcode\Facades\DNS2DFacade::class,
-    ]
-</code></pre><p>Untuk menggunakannya bisa langsung digunakan pada <code>blade</code> dengan merendernya seperti:</p><pre tabindex=0><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+</code></pre><h3 id=menghubungkan-ke-database>Menghubungkan ke database</h3><p>Install depedency</p><pre tabindex=0><code>npm i @adonisjs/lucid
+</code></pre><p>Konfigurasi database</p><pre tabindex=0><code> ➜  crud node ace configure @adonisjs/lucid
+❯ Select the database driver you want to use …  Press &lt;SPACE&gt; to select
+◯ SQLite
+◯ MySQL / MariaDB
+◯ PostgreSQL
+◯ OracleDB
+◯ Microsoft SQL Server
+</code></pre><p>Pilih <code>MySQL / MariaDB</code> dan ubah file <code>.env</code></p><pre tabindex=0><code>DB_CONNECTION=mysql
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+MYSQL_DB_NAME=adoniscrud
+</code></pre><h2 id=setup-migrasi-dan-model>Setup Migrasi dan Model</h2><p>Table <code>categories</code></p><pre tabindex=0><code>node ace make:model  Category -m
+</code></pre><p>Migrasi table <code>categories</code></p><pre tabindex=0><code>import BaseSchema from &#39;@ioc:Adonis/Lucid/Schema&#39;
+
+export default class extends BaseSchema {
+  protected tableName = &#39;categories&#39;
+
+  public async up () {
+    this.schema.createTable(this.tableName, (table) =&gt; {
+      table.increments(&#39;id&#39;)
+      table.string(&#39;name&#39;)
+
+      /**
+       * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
+       */
+      table.timestamp(&#39;created_at&#39;, { useTz: true })
+      table.timestamp(&#39;updated_at&#39;, { useTz: true })
+    })
+  }
+
+  public async down () {
+    this.schema.dropTable(this.tableName)
+  }
+}
+</code></pre><p>Model <code>Category</code></p><pre tabindex=0><code>import { DateTime } from &#39;luxon&#39;
+import { BaseModel, column } from &#39;@ioc:Adonis/Lucid/Orm&#39;
+
+export default class Category extends BaseModel {
+  @column({ isPrimary: true })
+  public id: number
+
+  @column()
+  public name: string
+
+  @column.dateTime({ autoCreate: true })
+  public createdAt: DateTime
+
+  @column.dateTime({ autoCreate: true, autoUpdate: true })
+  public updatedAt: DateTime
+}
+</code></pre><p>Install <code>mysql2</code></p><pre tabindex=0><code>npm install mysql2 --save
+</code></pre><p>Jalankan migrasi</p><pre tabindex=0><code>node ace migration:run 
+</code></pre><h2 id=controller-kategori>Controller Kategori</h2><p>Perintah membuat controller</p><pre tabindex=0><code>node ace make:controller Category -r
+</code></pre><p>Ubah file controller</p><pre tabindex=0><code>import type { HttpContextContract } from &#39;@ioc:Adonis/Core/HttpContext&#39;
+import { schema } from &#39;@ioc:Adonis/Core/Validator&#39;
+import Category from &#39;App/Models/Category&#39;
+
+
+export default class CategoriesController {
+  public async index({view}: HttpContextContract) {
+    const categories = await Category.all();
+    return view.render(&#39;category/index&#39;, {
+      categories
+    })
+  }
+
+  public async create({view}: HttpContextContract) {
+    const category = {
+      name: &#39;&#39;
+    }
+
+    return view.render(&#39;category/create&#39;, {
+      category
+    })
+  }
+
+  public async store({request, response, session}: HttpContextContract) {
+    const newCategorySchema = schema.create({
+      name: schema.string(),
+    })
+    const payload = await request.validate({ schema: newCategorySchema })
+
+    await Category.create({
+      name: payload.name
+    })
+
+    session.flash(&#39;success&#39;, &#39;Category created&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;);
+  }
+
+  public async edit({view, params}: HttpContextContract) {
+    const category = await Category.findOrFail(params.id)
+
+    return view.render(&#39;category/edit&#39;, {
+      category
+    })
+  }
+
+  public async update({params, request, response, session}: HttpContextContract) {
+    const newCategorySchema = schema.create({
+      name: schema.string(),
+    })
+    const payload = await request.validate({ schema: newCategorySchema })
+
+    const category = await Category.findOrFail(params.id)
+    category.name = payload.name
+    await category.save()
+
+    session.flash(&#39;success&#39;, &#39;Category updated&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;)
+  }
+
+  public async destroy({response, params, session}: HttpContextContract) {
+    const category = await Category.findOrFail(params.id)
+    await category.delete()
+
+    session.flash(&#39;success&#39;, &#39;Category deleted&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;)
+  }
+}
+</code></pre><h2 id=views-kategori>Views Kategori</h2><p>Views kategori akan dipecah menjadi:</p><ol><li><code>resources/views/category/index.edge</code></li><li><code>resources/views/category/create.edge</code></li><li><code>resources/views/category/edit.edge</code></li><li><code>resources/views/category/_form.edge</code></li></ol><p>File <code>resources/views/category/index.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Categories&lt;/h3&gt;
+
+  &lt;div class=&#34;text-end my-3&#34;&gt;
+    &lt;a href=&#34;{{ route(&#39;categories.create&#39;) }}&#34; class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Add&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  @if(flashMessages.has(&#39;success&#39;))
+    &lt;div class=&#34;alert alert-success&#34;&gt;
+      {{ flashMessages.get(&#39;success&#39;) }}
+    &lt;/div&gt;
+  @end
+
+  @each(category in categories)
+    &lt;div class=&#34;card mb-3&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h3&gt;&lt;a href=&#34;{{ route(&#39;categories.edit&#39;, category) }}&#34;&gt;{{ category.name }}&lt;/a&gt;&lt;/h3&gt;
+        &lt;div&gt;
+          &lt;small class=&#34;text-muted&#34;&gt;&lt;i&gt;{{ category.createdAt.toISODate() }}&lt;/i&gt;&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  @endeach
+
+@end
+</code></pre><p>File <code>resources/views/category/create.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Add Category&lt;/h3&gt;
+  &lt;hr&gt;
+  &lt;form action=&#34;{{ route(&#39;categories.store&#39;) }}&#34; method=&#34;POST&#34;&gt;
+
+    @include(&#39;category/_form&#39;)
+
+    &lt;div class=&#34;mb-3&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Save&lt;/b&gt;&lt;/button&gt;
+      &lt;a href=&#34;{{ route(&#39;categories.index&#39;) }}&#34; class=&#34;btn btn-default&#34;&gt;&lt;b&gt;Cancel&lt;/b&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/form&gt;
+@end
+</code></pre><p>File <code>resources/views/category/edit.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Edit Category&lt;/h3&gt;
+  &lt;hr&gt;
+  &lt;form action=&#34;{{ route(&#39;categories.update&#39;, category) }}?_method=PUT&#34; method=&#34;POST&#34;&gt;
+
+    @include(&#39;category/_form&#39;)
+
+    &lt;div class=&#34;mb-3&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Save&lt;/b&gt;&lt;/button&gt;
+      &lt;a href=&#34;{{ route(&#39;categories.index&#39;) }}&#34; class=&#34;btn btn-default&#34;&gt;&lt;b&gt;Cancel&lt;/b&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/form&gt;
+
+  &lt;hr&gt;
+
+  &lt;div class=&#34;mt-2&#34;&gt;
+    &lt;form action=&#34;{{ route(&#39;categories.destroy&#39;, category) }}?_method=DELETE&#34; method=&#34;POST&#34;&gt;
+      &lt;button class=&#34;btn btn-danger&#34; type=&#34;submit&#34; onclick=&#34;return confirm(&#39;Are you sure to delete this data?&#39;)&#34;&gt;&lt;b&gt;Delete&lt;/b&gt;&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+@end
+</code></pre><p>File <code>resources/views/category/_form.edge</code></p><pre tabindex=0><code>&lt;div class=&#34;mb-3&#34;&gt;
+  &lt;label for=&#34;name&#34; class=&#34;form-label&#34;&gt;Category name&lt;/label&gt;
+  &lt;input type=&#34;text&#34; name=&#34;name&#34; id=&#34;name&#34; class=&#34;form-control {{ (flashMessages.has(&#39;errors.name&#39;)) ? &#39;is-invalid&#39; : &#39;&#39; }}&#34; value=&#34;{{ category.name }}&#34;&gt;
+  @if(flashMessages.has(&#39;errors.name&#39;))
+    &lt;small class=&#34;invalid-feedback ms-2&#34; role=&#34;alert&#34;&gt;{{ flashMessages.get(&#39;errors.name&#39;) }}&lt;/small&gt;
+  @end
+&lt;/div&gt;
+</code></pre><p>Serta untuk melengkapi kita juga akan mengubah file <code>resources/views/welcome.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+  &lt;div class=&#34;p-5 mb-4 bg-light rounded-3&#34;&gt;
+      &lt;div class=&#34;container-fluid py-5&#34;&gt;
+        &lt;h1 class=&#34;display-5 fw-bold&#34;&gt;Custom jumbotron&lt;/h1&gt;
+        &lt;p class=&#34;col-md-8 fs-4&#34;&gt;Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.&lt;/p&gt;
+        &lt;button class=&#34;btn btn-primary btn-lg&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;row align-items-md-stretch&#34;&gt;
+      &lt;div class=&#34;col-md-6&#34;&gt;
+        &lt;div class=&#34;h-100 p-5 text-bg-dark rounded-3&#34;&gt;
+          &lt;h2&gt;Change the background&lt;/h2&gt;
+          &lt;p&gt;Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.&lt;/p&gt;
+          &lt;button class=&#34;btn btn-outline-light&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;col-md-6&#34;&gt;
+        &lt;div class=&#34;h-100 p-5 bg-light border rounded-3&#34;&gt;
+          &lt;h2&gt;Add borders&lt;/h2&gt;
+          &lt;p&gt;Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we&#39;ve adjusted the alignment and sizing of both column&#39;s content for equal-height.&lt;/p&gt;
+          &lt;button class=&#34;btn btn-outline-secondary&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+@end
+</code></pre><h2 id=menghubungkan-controller-kategori-dengan-view>Menghubungkan Controller Kategori Dengan View</h2><p>View dan controller dihubungkan dengan routing file yang ada di <code>start/routes.ts</code></p><pre tabindex=0><code>import Route from &#39;@ioc:Adonis/Core/Route&#39;
+
+
+Route.resource(&#39;/categories&#39;, &#39;CategoriesController&#39;).except([&#39;show&#39;])
+Route.get(&#39;/&#39;, async ({ view }) =&gt; {
+  return view.render(&#39;welcome&#39;)
+})
+</code></pre><p>Ketika kita mengirim form untuk mengubah dan menghapus data kita perlu men-spoofing Http Method dari POST menjadi PUT/PATCH atau DELETE supaya dikenali oleh controller dengan mengubah konfigurasi di file <code>config/app.ts</code>, cari baris kode <code>allowMethodSpoofing: false,</code> dan ubah menjadi <code>allowMethodSpoofing: true,</code></p></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Tags:</a>
+<a href=https://aziyan99.github.io/tags/foo class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Foo</a>
+<a href=https://aziyan99.github.io/tags/bar class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Bar</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-09-17>This page was published on 17 September 2022</time></div></div></div></main></div><nav class="flex justify-between border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden"><div><div class=py-3><button class="border border-yellow-500 bg-white p-1 focus:outline focus:outline-blue-700" type=button x-on:click="showMenu = ! showMenu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentcolor" class="h-7 w-7"><path fill-rule="evenodd" d="M12.53 16.28a.75.75.0 01-1.06.0l-7.5-7.5a.75.75.0 011.06-1.06L12 14.69l6.97-6.97a.75.75.0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"/></svg></button></div></div><div></div></nav><nav class="border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden" x-show=showMenu><ul class=py-3><li class=py-2><a href=/ class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Main page</a></li><li class=py-2><a href=/posts class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Posts</a></li><li class=py-2><a href=/tags class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">Tags</a></li></ul></nav><section class="block md:hidden lg:hidden bg-white p-5"><div class="border-b border-gray-500 mb-3"><h1 class="text-3xl w-full">Adonisjs CRUD</h1></div><div class=markdown-body><h2 id=membuat-projek>Membuat Projek</h2><pre tabindex=0><code>npm init adonis-ts-app@latest crud
+</code></pre><p>Lengkapi data projek</p><pre tabindex=0><code>     _       _             _         _ ____
+    / \   __| | ___  _ __ (_)___    | / ___|
+   / _ \ / _` |/ _ \| &#39;_ \| / __|_  | \___ \
+  / ___ \ (_| | (_) | | | | \__ \ |_| |___) |
+ /_/   \_\__,_|\___/|_| |_|_|___/\___/|____/
+
+
+
+CUSTOMIZE PROJECT
+❯ Select the project structure · web
+❯ Enter the project name · crud
+❯ Setup eslint? (y/N) · true
+❯ Setup prettier? (y/N) · true
+❯ Configure webpack encore for compiling frontend assets? (y/N) · true
+
+RUNNING TASKS
+❯ Scaffold project 58 ms
+❯ Install dependencies
+  [ wait ]  eslint, eslint-plugin-adonis, prettier, and 8 others (dev)   .
+❯ Configure installed packages
+❯ Configure webpack encore
+</code></pre><h3 id=install-bootstrap-opsional>Install Bootstrap (Opsional)</h3><pre tabindex=0><code>npm install bootstrap
+</code></pre><p>Ubah <code>resources/js/app.js</code></p><pre tabindex=0><code>// import &#39;../css/app.css&#39;
+import &#39;bootstrap/dist/css/bootstrap.css&#39;;
+</code></pre><h3 id=template>Template</h3><p>Buat file baru di <code>resources/views/layouts/main.edge</code></p><pre tabindex=0><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
 &lt;head&gt;
-    &lt;meta charset=&#34;utf-8&#34;&gt;
-    &lt;title&gt;Laravel Generate Barcode Examples&lt;/title&gt;
-    &lt;meta name=&#34;csrf-token&#34; content=&#34;{{ csrf_token() }}&#34;&gt;
-    &lt;link href=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&#34; rel=&#34;stylesheet&#34;/&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+  &lt;title&gt;AdonisJS - CRUD&lt;/title&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;http://127.0.0.1:8080/assets/app.css&#34; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class=&#34;container mt-4&#34;&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS2D::getBarcodeHTML(&#39;4445645656&#39;, &#39;QRCODE&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;PHARMA&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;PHARMA2T&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;CODABAR&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;KIX&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;RMS4CC&#39;) !!}&lt;/div&gt;
-        &lt;div class=&#34;mb-3&#34;&gt;{!! DNS1D::getBarcodeHTML(&#39;4445645656&#39;, &#39;UPCA&#39;) !!}&lt;/div&gt;        
+  &lt;nav class=&#34;navbar navbar-expand-lg bg-light border-bottom&#34;&gt;
+    &lt;div class=&#34;container&#34;&gt;
+      &lt;a class=&#34;navbar-brand&#34; href=&#34;/&#34;&gt;AdonisJS CRUD&lt;/a&gt;
+      &lt;button class=&#34;navbar-toggler&#34; type=&#34;button&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#navbarNav&#34; aria-controls=&#34;navbarNav&#34; aria-expanded=&#34;false&#34; aria-label=&#34;Toggle navigation&#34;&gt;
+        &lt;span class=&#34;navbar-toggler-icon&#34;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&#34;collapse navbar-collapse&#34; id=&#34;navbarNav&#34;&gt;
+        &lt;ul class=&#34;navbar-nav&#34;&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;/&#34;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;{{ route(&#39;categories.index&#39;) }}&#34;&gt;Categories&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&#34;nav-item&#34;&gt;
+            &lt;a class=&#34;nav-link&#34; href=&#34;#&#34;&gt;Post&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;div class=&#34;container mt-3&#34;&gt;
+    @!section(&#39;content&#39;)
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>Selesai!!!!</p></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Tags:</a>
-<a href=https://aziyan99.github.io/tags/laravel class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Laravel</a>
-<a href=https://aziyan99.github.io/tags/php class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">PHP</a>
-<a href=https://aziyan99.github.io/tags/barcode class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Barcode</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-02-06>This page was published on 6 February 2022</time></div></div></section><footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3"><div class="hidden md:block lg:block"></div><div><span>©2022 Aziyan99</span></div><div class=mr-3>Powered by <img width=88 height=85 src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div><script src=/highlight/highlight.min.js></script>
+</code></pre><h3 id=menghubungkan-ke-database>Menghubungkan ke database</h3><p>Install depedency</p><pre tabindex=0><code>npm i @adonisjs/lucid
+</code></pre><p>Konfigurasi database</p><pre tabindex=0><code> ➜  crud node ace configure @adonisjs/lucid
+❯ Select the database driver you want to use …  Press &lt;SPACE&gt; to select
+◯ SQLite
+◯ MySQL / MariaDB
+◯ PostgreSQL
+◯ OracleDB
+◯ Microsoft SQL Server
+</code></pre><p>Pilih <code>MySQL / MariaDB</code> dan ubah file <code>.env</code></p><pre tabindex=0><code>DB_CONNECTION=mysql
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+MYSQL_DB_NAME=adoniscrud
+</code></pre><h2 id=setup-migrasi-dan-model>Setup Migrasi dan Model</h2><p>Table <code>categories</code></p><pre tabindex=0><code>node ace make:model  Category -m
+</code></pre><p>Migrasi table <code>categories</code></p><pre tabindex=0><code>import BaseSchema from &#39;@ioc:Adonis/Lucid/Schema&#39;
+
+export default class extends BaseSchema {
+  protected tableName = &#39;categories&#39;
+
+  public async up () {
+    this.schema.createTable(this.tableName, (table) =&gt; {
+      table.increments(&#39;id&#39;)
+      table.string(&#39;name&#39;)
+
+      /**
+       * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
+       */
+      table.timestamp(&#39;created_at&#39;, { useTz: true })
+      table.timestamp(&#39;updated_at&#39;, { useTz: true })
+    })
+  }
+
+  public async down () {
+    this.schema.dropTable(this.tableName)
+  }
+}
+</code></pre><p>Model <code>Category</code></p><pre tabindex=0><code>import { DateTime } from &#39;luxon&#39;
+import { BaseModel, column } from &#39;@ioc:Adonis/Lucid/Orm&#39;
+
+export default class Category extends BaseModel {
+  @column({ isPrimary: true })
+  public id: number
+
+  @column()
+  public name: string
+
+  @column.dateTime({ autoCreate: true })
+  public createdAt: DateTime
+
+  @column.dateTime({ autoCreate: true, autoUpdate: true })
+  public updatedAt: DateTime
+}
+</code></pre><p>Install <code>mysql2</code></p><pre tabindex=0><code>npm install mysql2 --save
+</code></pre><p>Jalankan migrasi</p><pre tabindex=0><code>node ace migration:run 
+</code></pre><h2 id=controller-kategori>Controller Kategori</h2><p>Perintah membuat controller</p><pre tabindex=0><code>node ace make:controller Category -r
+</code></pre><p>Ubah file controller</p><pre tabindex=0><code>import type { HttpContextContract } from &#39;@ioc:Adonis/Core/HttpContext&#39;
+import { schema } from &#39;@ioc:Adonis/Core/Validator&#39;
+import Category from &#39;App/Models/Category&#39;
+
+
+export default class CategoriesController {
+  public async index({view}: HttpContextContract) {
+    const categories = await Category.all();
+    return view.render(&#39;category/index&#39;, {
+      categories
+    })
+  }
+
+  public async create({view}: HttpContextContract) {
+    const category = {
+      name: &#39;&#39;
+    }
+
+    return view.render(&#39;category/create&#39;, {
+      category
+    })
+  }
+
+  public async store({request, response, session}: HttpContextContract) {
+    const newCategorySchema = schema.create({
+      name: schema.string(),
+    })
+    const payload = await request.validate({ schema: newCategorySchema })
+
+    await Category.create({
+      name: payload.name
+    })
+
+    session.flash(&#39;success&#39;, &#39;Category created&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;);
+  }
+
+  public async edit({view, params}: HttpContextContract) {
+    const category = await Category.findOrFail(params.id)
+
+    return view.render(&#39;category/edit&#39;, {
+      category
+    })
+  }
+
+  public async update({params, request, response, session}: HttpContextContract) {
+    const newCategorySchema = schema.create({
+      name: schema.string(),
+    })
+    const payload = await request.validate({ schema: newCategorySchema })
+
+    const category = await Category.findOrFail(params.id)
+    category.name = payload.name
+    await category.save()
+
+    session.flash(&#39;success&#39;, &#39;Category updated&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;)
+  }
+
+  public async destroy({response, params, session}: HttpContextContract) {
+    const category = await Category.findOrFail(params.id)
+    await category.delete()
+
+    session.flash(&#39;success&#39;, &#39;Category deleted&#39;)
+    return response.redirect().toRoute(&#39;categories.index&#39;)
+  }
+}
+</code></pre><h2 id=views-kategori>Views Kategori</h2><p>Views kategori akan dipecah menjadi:</p><ol><li><code>resources/views/category/index.edge</code></li><li><code>resources/views/category/create.edge</code></li><li><code>resources/views/category/edit.edge</code></li><li><code>resources/views/category/_form.edge</code></li></ol><p>File <code>resources/views/category/index.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Categories&lt;/h3&gt;
+
+  &lt;div class=&#34;text-end my-3&#34;&gt;
+    &lt;a href=&#34;{{ route(&#39;categories.create&#39;) }}&#34; class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Add&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  @if(flashMessages.has(&#39;success&#39;))
+    &lt;div class=&#34;alert alert-success&#34;&gt;
+      {{ flashMessages.get(&#39;success&#39;) }}
+    &lt;/div&gt;
+  @end
+
+  @each(category in categories)
+    &lt;div class=&#34;card mb-3&#34;&gt;
+      &lt;div class=&#34;card-body&#34;&gt;
+        &lt;h3&gt;&lt;a href=&#34;{{ route(&#39;categories.edit&#39;, category) }}&#34;&gt;{{ category.name }}&lt;/a&gt;&lt;/h3&gt;
+        &lt;div&gt;
+          &lt;small class=&#34;text-muted&#34;&gt;&lt;i&gt;{{ category.createdAt.toISODate() }}&lt;/i&gt;&lt;/small&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  @endeach
+
+@end
+</code></pre><p>File <code>resources/views/category/create.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Add Category&lt;/h3&gt;
+  &lt;hr&gt;
+  &lt;form action=&#34;{{ route(&#39;categories.store&#39;) }}&#34; method=&#34;POST&#34;&gt;
+
+    @include(&#39;category/_form&#39;)
+
+    &lt;div class=&#34;mb-3&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Save&lt;/b&gt;&lt;/button&gt;
+      &lt;a href=&#34;{{ route(&#39;categories.index&#39;) }}&#34; class=&#34;btn btn-default&#34;&gt;&lt;b&gt;Cancel&lt;/b&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/form&gt;
+@end
+</code></pre><p>File <code>resources/views/category/edit.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+
+  &lt;h3&gt;Edit Category&lt;/h3&gt;
+  &lt;hr&gt;
+  &lt;form action=&#34;{{ route(&#39;categories.update&#39;, category) }}?_method=PUT&#34; method=&#34;POST&#34;&gt;
+
+    @include(&#39;category/_form&#39;)
+
+    &lt;div class=&#34;mb-3&#34;&gt;
+      &lt;button class=&#34;btn btn-primary&#34;&gt;&lt;b&gt;Save&lt;/b&gt;&lt;/button&gt;
+      &lt;a href=&#34;{{ route(&#39;categories.index&#39;) }}&#34; class=&#34;btn btn-default&#34;&gt;&lt;b&gt;Cancel&lt;/b&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/form&gt;
+
+  &lt;hr&gt;
+
+  &lt;div class=&#34;mt-2&#34;&gt;
+    &lt;form action=&#34;{{ route(&#39;categories.destroy&#39;, category) }}?_method=DELETE&#34; method=&#34;POST&#34;&gt;
+      &lt;button class=&#34;btn btn-danger&#34; type=&#34;submit&#34; onclick=&#34;return confirm(&#39;Are you sure to delete this data?&#39;)&#34;&gt;&lt;b&gt;Delete&lt;/b&gt;&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+@end
+</code></pre><p>File <code>resources/views/category/_form.edge</code></p><pre tabindex=0><code>&lt;div class=&#34;mb-3&#34;&gt;
+  &lt;label for=&#34;name&#34; class=&#34;form-label&#34;&gt;Category name&lt;/label&gt;
+  &lt;input type=&#34;text&#34; name=&#34;name&#34; id=&#34;name&#34; class=&#34;form-control {{ (flashMessages.has(&#39;errors.name&#39;)) ? &#39;is-invalid&#39; : &#39;&#39; }}&#34; value=&#34;{{ category.name }}&#34;&gt;
+  @if(flashMessages.has(&#39;errors.name&#39;))
+    &lt;small class=&#34;invalid-feedback ms-2&#34; role=&#34;alert&#34;&gt;{{ flashMessages.get(&#39;errors.name&#39;) }}&lt;/small&gt;
+  @end
+&lt;/div&gt;
+</code></pre><p>Serta untuk melengkapi kita juga akan mengubah file <code>resources/views/welcome.edge</code></p><pre tabindex=0><code>@layout(&#39;layouts/main&#39;)
+
+@section(&#39;content&#39;)
+  &lt;div class=&#34;p-5 mb-4 bg-light rounded-3&#34;&gt;
+      &lt;div class=&#34;container-fluid py-5&#34;&gt;
+        &lt;h1 class=&#34;display-5 fw-bold&#34;&gt;Custom jumbotron&lt;/h1&gt;
+        &lt;p class=&#34;col-md-8 fs-4&#34;&gt;Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.&lt;/p&gt;
+        &lt;button class=&#34;btn btn-primary btn-lg&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;row align-items-md-stretch&#34;&gt;
+      &lt;div class=&#34;col-md-6&#34;&gt;
+        &lt;div class=&#34;h-100 p-5 text-bg-dark rounded-3&#34;&gt;
+          &lt;h2&gt;Change the background&lt;/h2&gt;
+          &lt;p&gt;Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.&lt;/p&gt;
+          &lt;button class=&#34;btn btn-outline-light&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;col-md-6&#34;&gt;
+        &lt;div class=&#34;h-100 p-5 bg-light border rounded-3&#34;&gt;
+          &lt;h2&gt;Add borders&lt;/h2&gt;
+          &lt;p&gt;Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we&#39;ve adjusted the alignment and sizing of both column&#39;s content for equal-height.&lt;/p&gt;
+          &lt;button class=&#34;btn btn-outline-secondary&#34; type=&#34;button&#34;&gt;Example button&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+@end
+</code></pre><h2 id=menghubungkan-controller-kategori-dengan-view>Menghubungkan Controller Kategori Dengan View</h2><p>View dan controller dihubungkan dengan routing file yang ada di <code>start/routes.ts</code></p><pre tabindex=0><code>import Route from &#39;@ioc:Adonis/Core/Route&#39;
+
+
+Route.resource(&#39;/categories&#39;, &#39;CategoriesController&#39;).except([&#39;show&#39;])
+Route.get(&#39;/&#39;, async ({ view }) =&gt; {
+  return view.render(&#39;welcome&#39;)
+})
+</code></pre><p>Ketika kita mengirim form untuk mengubah dan menghapus data kita perlu men-spoofing Http Method dari POST menjadi PUT/PATCH atau DELETE supaya dikenali oleh controller dengan mengubah konfigurasi di file <code>config/app.ts</code>, cari baris kode <code>allowMethodSpoofing: false,</code> dan ubah menjadi <code>allowMethodSpoofing: true,</code></p></div><div class="p-2 mt-3"><div class="w-full border border-gray-400 bg-gray-50 p-1"><a href=/tags/ class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">Tags:</a>
+<a href=https://aziyan99.github.io/tags/foo class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Foo</a>
+<a href=https://aziyan99.github.io/tags/bar class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">Bar</a></div><div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700"><time datetime=2022-09-17>This page was published on 17 September 2022</time></div></div></section><footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3"><div class="hidden md:block lg:block"></div><div><span>©2022 Aziyan99</span></div><div class=mr-3>Powered by <img width=88 height=85 src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div><script src=/highlight/highlight.min.js></script>
 <script>hljs.highlightAll()</script><script>window.store={"https://aziyan99.github.io/posts/adonisjs-crud/":{title:"Adonisjs CRUD",tags:["Foo","Bar"],content:`Membuat Projek npm init adonis-ts-app@latest crud Lengkapi data projek
 _ _ _ _ ____ / \\ __| | ___ _ __ (_)___ | / ___| / _ \\ / _\` |/ _ \\| \u0026#39;_ \\| / __|_ | \\___ \\ / ___ \\ (_| | (_) | | | | \\__ \\ |_| |___) | /_/ \\_\\__,_|\\___/|_| |_|_|___/\\___/|____/ CUSTOMIZE PROJECT ❯ Select the project structure · web ❯ Enter the project name · crud ❯ Setup eslint? (y/N) · true ❯ Setup prettier? (y/N) · true ❯ Configure webpack encore for compiling frontend assets? (y/N) · true RUNNING TASKS ❯ Scaffold project 58 ms ❯ Install dependencies [ wait ] eslint, eslint-plugin-adonis, prettier, and 8 others (dev) . ❯ Configure installed packages ❯ Configure webpack encore Install Bootstrap (Opsional) npm install bootstrap Ubah resources/js/app.js
 // import \u0026#39;../css/app.css\u0026#39; import \u0026#39;bootstrap/dist/css/bootstrap.css\u0026#39;; Template Buat file baru di resources/views/layouts/main.edge

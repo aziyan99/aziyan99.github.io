@@ -1,6 +1,18 @@
 User-agent: *
 
+Allow: /posts/adonisjs-crud/
+
 Allow: /
+
+Allow: /tags/bar/
+
+Allow: /tags/foo/
+
+Allow: /posts/
+
+Allow: /tags/
+
+Allow: /posts/dasar-dasar-php-programming/
 
 Allow: /posts/backup-mysql-database/
 
@@ -9,10 +21,6 @@ Allow: /tags/database/
 Allow: /tags/mariadb/
 
 Allow: /tags/mysql/
-
-Allow: /posts/
-
-Allow: /tags/
 
 Allow: /tags/laravel/
 
