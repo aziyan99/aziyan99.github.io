@@ -1,18 +1,24 @@
 User-agent: *
 
+Allow: /tags/adonisjs/
+
 Allow: /posts/adonisjs-crud/
 
 Allow: /
 
-Allow: /tags/bar/
+Allow: /tags/crud/
 
-Allow: /tags/foo/
+Allow: /tags/framework/
 
 Allow: /posts/
 
 Allow: /tags/
 
+Allow: /tags/bar/
+
 Allow: /posts/dasar-dasar-php-programming/
+
+Allow: /tags/foo/
 
 Allow: /posts/backup-mysql-database/
 
