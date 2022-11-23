@@ -1,18 +1,24 @@
 User-agent: *
 
-Allow: /tags/adonisjs/
+Allow: /tags/angular/
 
-Allow: /posts/adonisjs-crud/
+Allow: /posts/angular-deploy-to-docker/
 
 Allow: /
 
-Allow: /tags/crud/
-
-Allow: /tags/framework/
+Allow: /tags/docker/
 
 Allow: /posts/
 
 Allow: /tags/
+
+Allow: /tags/adonisjs/
+
+Allow: /posts/adonisjs-crud/
+
+Allow: /tags/crud/
+
+Allow: /tags/framework/
 
 Allow: /tags/bar/
 
