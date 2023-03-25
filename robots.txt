@@ -1,16 +1,32 @@
 User-agent: *
 
+Allow: /tags/acceptance-test/
+
+Allow: /
+
+Allow: /tags/behat/
+
+Allow: /tags/moodle/
+
+Allow: /tags/php/
+
+Allow: /tags/phpunit/
+
+Allow: /posts/
+
+Allow: /posts/moodle-setup-unit-and-behat-test/
+
+Allow: /tags/software-testing/
+
+Allow: /tags/
+
+Allow: /tags/unit-test/
+
 Allow: /tags/angular/
 
 Allow: /posts/angular-deploy-to-docker/
 
-Allow: /
-
 Allow: /tags/docker/
-
-Allow: /posts/
-
-Allow: /tags/
 
 Allow: /tags/adonisjs/
 
@@ -37,8 +53,6 @@ Allow: /tags/mysql/
 Allow: /tags/laravel/
 
 Allow: /posts/belajar-laravel-queue/
-
-Allow: /tags/php/
 
 Allow: /tags/queue/
 
