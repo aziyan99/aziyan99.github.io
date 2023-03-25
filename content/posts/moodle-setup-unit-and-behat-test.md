@@ -103,3 +103,13 @@ vendor/bin/behat --config <lokasi-folder>/beh_moodledata/behatrun/behat/behat.ym
 // Menjalankan semua testcase yang punya tags @local_myplugin
 vendor/bin/behat --config <lokasi-folder>/beh_moodledata/behatrun/behat/behat.yml --tags=@local_myplugin
 ```
+
+### Referensi
+
+1. [https://moodledev.io/general/development/tools/phpunit](https://moodledev.io/general/development/tools/phpunit)
+2. [https://moodledev.io/general/development/tools/behat/running](https://moodledev.io/general/development/tools/behat/running)
+3. [https://docs.moodle.org/dev/PHPUnit_integration](https://docs.moodle.org/dev/PHPUnit_integration)
+4. [https://docs.moodle.org/dev/Writing_PHPUnit_tests](https://docs.moodle.org/dev/Writing_PHPUnit_tests)
+5. [https://moodledev.io/general/development/tools/behat/writing](https://moodledev.io/general/development/tools/behat/writing)
+6. [https://moodledev.io/general/development/tools/behat](https://moodledev.io/general/development/tools/behat)
+7. [https://docs.moodle.org/dev/Acceptance_testing](https://docs.moodle.org/dev/Acceptance_testing)
