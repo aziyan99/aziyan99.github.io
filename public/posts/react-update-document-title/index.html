@@ -1,119 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us" dir="ltr">
 
-    <head>
-    <meta charset="utf-8">
-    <meta
-        name="description"
-        content="An learning journals and notes"
-    />
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>React: Mengubah Title Halaman Secara Dinamis | Raja Azian</title>
+  <meta name="description" content="Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;body&gt;&lt;/body&gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.
+We can create a hook like:
+code snippet start" />
 
-    <meta name="keywords" content="React.js,DOM,React Hook,">
-    <link rel="canonical" href="https://aziyan99.github.io/posts/react-update-document-title/" />
-    <meta name="author" content="Raja Azian">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/gh-markdown.css">
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/34334074?v=4">
-    
-    
-    <title>Aziyan99 | React: Mengubah Title Halaman Secara Dinamis</title>
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<meta property="og:url" content="https://aziyan99.github.io/posts/react-update-document-title/">
+  <meta property="og:site_name" content="Raja Azian">
+  <meta property="og:title" content="React: Mengubah Title Halaman Secara Dinamis">
+  <meta property="og:description" content="Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;body&gt;&lt;/body&gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.
+We can create a hook like:
+code snippet start">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-02-04T21:29:54+07:00">
+    <meta property="article:tag" content="React.js">
+    <meta property="article:tag" content="DOM">
+    <meta property="article:tag" content="React Hook">
+
+
+  <meta itemprop="name" content="React: Mengubah Title Halaman Secara Dinamis">
+  <meta itemprop="description" content="Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;body&gt;&lt;/body&gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.
+We can create a hook like:
+code snippet start">
+  <meta itemprop="datePublished" content="2022-02-04T21:29:54+07:00">
+  <meta itemprop="wordCount" content="126">
+  <meta itemprop="keywords" content="React.js,DOM,React Hook">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="React: Mengubah Title Halaman Secara Dinamis">
+  <meta name="twitter:description" content="Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;body&gt;&lt;/body&gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.
+We can create a hook like:
+code snippet start">
+
+
+<link rel="canonical" href="https://aziyan99.github.io/posts/react-update-document-title/" />
+
+
+      <link rel="stylesheet" href="/css/main.min.4f096e937d1f361032dd6840c2b239432f1981edfa98e449accf03a916cae83d.css" integrity="sha256-Twluk30fNhAy3WhAwrI5Qy8Zge36mORJrM8DqRbK6D0=" crossorigin="anonymous">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+      <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+  
+
+      <script src="/js/search.17ec636f46c468d993e83f237613539d875ddc1aaac03cf14b7fbc059c7343c6.js" integrity="sha256-F&#43;xjb0bEaNmT6D8jdhNTnYdd3BqqwDzxS3&#43;8BZxzQ8Y=" crossorigin="anonymous" defer></script>
+
 </head>
 
-<body class="text-sm bg-gray-50">
-    <div class="flex justify-between bg-gray-50 text-sm">
-    <div></div>
+<body class="font-lato">
+  <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
     <div>
-        <a href="/sitemap.xml" class="mr-3 text-blue-700 hover:underline">sitemap</a>
-        <a href="#" class="mr-3 text-blue-700 hover:underline">rss</a>
+        <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+        <a class="font-semibold" href="/">Raja Azian</a>
     </div>
-</div>
-    <div class="flex bg-gray-50 py-5 text-sm">
-        <aside class="grow-0 w-40 mr-2">
-            
-            <a href="/">
-    <img src="https://avatars.githubusercontent.com/u/34334074?v=4" alt="image" class="ml-2 h-32 w-32 border border-gray-500 bg-gray-200">
-</a>
-
-            <div class="my-5">
-    <p class="ml-2">navigation</p>
-    <nav class="border border-l-0 border-gray-500 bg-white p-2">
-        <ul class="list-square ml-5">
-            
-                <li class="text-gray-500">
-                    
-                    <a href="/" class="text-blue-700 hover:underline">Main page</a>
-                </li>
-            
-                <li class="text-gray-500">
-                    
-                    <a href="/posts" class="text-blue-700 hover:underline">Posts</a>
-                </li>
-            
-                <li class="text-gray-500">
-                    
-                    <a href="/tags" class="text-blue-700 hover:underline">Tags</a>
-                </li>
-            
-        </ul>
-    </nav>
-</div>
-
-            <div class="my-5">
-    <p class="ml-2">search</p>
-    <div class="overflow-hidden border border-l-0 border-gray-500 bg-white p-3 text-center">
-        <form id="search" action='' method="get">
-            <label hidden for="search-input">Search site</label>
-            <input type="text" class="max-w-full border border-gray-500 px-1" placeholder="Search text" id="search-input" name="query">
-            <button class="mt-1 rounded-sm border border-gray-500 bg-gray-100 px-1" type="submit">search</button>
-        </form>
-
-        <div id="results" class="text-left text-xs"></div>
+    <form id="search" action='https://aziyan99.github.io/search/' method="get">
+    <label hidden for="search-input">Search</label>
+    <input type="text" id="search-input" name="query" placeholder="Search" class="outline-none focus:outline-none border border-neutral-300 focus:border-neutral-600 rounded py-1 px-2" autocomplete="off">
+</form>
     
-    </div>
-</div>
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
 
-            <div class="my-5">
-    <p class="ml-2">links</p>
-    <nav class="border border-l-0 border-gray-500 bg-white p-2">
-        <ul class="list-square ml-5">
-            
-            <li class="text-gray-500">
-                
-                <a href="https://github.com/aziyan99" class="text-blue-700 hover:underline" target="_blank">GitHub</a>
-            </li>
-            
-            <li class="text-gray-500">
-                
-                <a href="https://www.linkedin.com/in/raja-azian/" class="text-blue-700 hover:underline" target="_blank">Linkedin</a>
-            </li>
-            
-            <li class="text-gray-500">
-                
-                <a href="https://www.youtube.com/channel/UCsHAn_jONDr7KHaM2Qz52RQ" class="text-blue-700 hover:underline" target="_blank">Youtube</a>
-            </li>
-            
-            <li class="text-gray-500">
-                
-                <a href="https://www.instagram.com/" class="text-blue-700 hover:underline" target="_blank">Instagram</a>
-            </li>
-            
-        </ul>
-    </nav>
-</div>
-            
-        </aside>
-        <main class="grow mt-4 border border-r-0 border-gray-500 bg-white">
-            <div id="content" class="p-4">
-    <div class="border-b border-gray-500 mb-3">
-        <h1 class="text-3xl w-full">React: Mengubah Title Halaman Secara Dinamis</h1>
-    </div>
+</header>
     
-    <div class="markdown-body text-sm">
-        <p>Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within <code>&lt;body&gt;&lt;/body&gt;</code> tag. Since React 16.8 we can built custom hook that can easly access the <code>document.title</code> and change the active page title.</p>
+
+    <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+      <article class="main">
+    <header>
+      <h1 class="!mb-1">React: Mengubah Title Halaman Secara Dinamis</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2022-02-04T21:29:54&#43;07:00"
+            >February 4, 2022</time
+          >
+        </div>
+    </header>
+
+    <p>Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within <code>&lt;body&gt;&lt;/body&gt;</code> tag. Since React 16.8 we can built custom hook that can easly access the <code>document.title</code> and change the active page title.</p>
 <p>We can create a hook like:</p>
-<pre tabindex="0"><code>import { useEffect } from &#34;react&#34;;
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative"></span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-01 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-01"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only"> code snippet start</p>
+  <pre tabindex="0"><code>import { useEffect } from &#34;react&#34;;
 
 export default function useTitle(title) {
   useEffect(() =&gt; {
@@ -123,9 +161,73 @@ export default function useTitle(title) {
       document.title = prevTitle;
     };
   });
-}
-</code></pre><p>And then we can use it anywhere in our pages. Like in <code>Home.jsx</code></p>
-<pre tabindex="0"><code>import useTitle from &#34;./Hooks/useTitle&#34;
+}</code></pre>
+  <p class="sr-only"> code snippet end</p>
+
+  
+</figure>
+<p>And then we can use it anywhere in our pages. Like in <code>Home.jsx</code></p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-02">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative"></span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-02 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-02"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only"> code snippet start</p>
+  <pre tabindex="0"><code>import useTitle from &#34;./Hooks/useTitle&#34;
 
 export default function Home () {
   useTitle(&#34;Webname - Home&#34;);
@@ -134,173 +236,92 @@ export default function Home () {
     ...
     &lt;/div&gt;
   )
-}
-</code></pre><p>Done!!</p>
+}</code></pre>
+  <p class="sr-only"> code snippet end</p>
 
-    </div>
-    <div class="p-2 mt-3">
-    <div class="w-full border border-gray-400 bg-gray-50 p-1">
-        <a href="/tags/" class="text-blue-700 hover:underline">Tags:</a>
-        
-        
-        
-        <a href="https://aziyan99.github.io/tags/react.js" class="border-r border-gray-400 px-2 text-blue-700 hover:underline">React.js</a>
-        
-        
-        <a href="https://aziyan99.github.io/tags/dom" class="border-r border-gray-400 px-2 text-blue-700 hover:underline">DOM</a>
-        
-        
-        <a href="https://aziyan99.github.io/tags/react-hook" class="border-r border-gray-400 px-2 text-blue-700 hover:underline">React Hook</a>
-        
-        
-    </div>
-    <div class="w-full border border-gray-400 bg-gray-50 p-1 mt-2 text-gray-700">
+  
+</figure>
+<p>Done!!</p>
+
+
     
-    
-    <time datetime="2022-02-04">This page was published on 4 February 2022</time>
-    </div>
+     
+  </article>
+
+    </main>
+    <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+      <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <div
+        xmlns:cc="https://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+        about="https://creativecommons.org"
+      >
+        Content is available under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" class="inline-block" title="Creative Commons Attribution-ShareAlike 4.0 International"
+          >CC BY-SA 4.0</a
+        >
+        unless otherwise noted.
+      </div>
+        <div
+          class="mt-2 flex items-center space-x-2 fill-slate-400 hover:fill-slate-600 motion-safe:transition-colors"
+        >
+          <div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+  aria-hidden="true"
+>
+  <title>Creative Commons</title>
+  <circle fill="transparent" cx="37.785" cy="28.501" r="28.836" />
+  <path
+    d="M37.441-3.5c8.951 0 16.572 3.125 22.857 9.372 3.008 3.009 5.295 6.448 6.857 10.314 1.561 3.867 2.344 7.971 2.344 12.314 0 4.381-.773 8.486-2.314 12.313-1.543 3.828-3.82 7.21-6.828 10.143-3.123 3.085-6.666 5.448-10.629 7.086-3.961 1.638-8.057 2.457-12.285 2.457s-8.276-.808-12.143-2.429c-3.866-1.618-7.333-3.961-10.4-7.027-3.067-3.066-5.4-6.524-7-10.372S5.5 32.767 5.5 28.5c0-4.229.809-8.295 2.428-12.2 1.619-3.905 3.972-7.4 7.057-10.486C21.08-.394 28.565-3.5 37.441-3.5zm.116 5.772c-7.314 0-13.467 2.553-18.458 7.657-2.515 2.553-4.448 5.419-5.8 8.6a25.204 25.204 0 0 0-2.029 9.972c0 3.429.675 6.734 2.029 9.913 1.353 3.183 3.285 6.021 5.8 8.516 2.514 2.496 5.351 4.399 8.515 5.715a25.652 25.652 0 0 0 9.943 1.971c3.428 0 6.75-.665 9.973-1.999 3.219-1.335 6.121-3.257 8.713-5.771 4.99-4.876 7.484-10.99 7.484-18.344 0-3.543-.648-6.895-1.943-10.057-1.293-3.162-3.18-5.98-5.654-8.458-5.146-5.143-11.335-7.715-18.573-7.715zm-.401 20.915-4.287 2.229c-.458-.951-1.019-1.619-1.685-2-.667-.38-1.286-.571-1.858-.571-2.856 0-4.286 1.885-4.286 5.657 0 1.714.362 3.084 1.085 4.113.724 1.029 1.791 1.544 3.201 1.544 1.867 0 3.181-.915 3.944-2.743l3.942 2c-.838 1.563-2 2.791-3.486 3.686-1.484.896-3.123 1.343-4.914 1.343-2.857 0-5.163-.875-6.915-2.629-1.752-1.752-2.628-4.19-2.628-7.313 0-3.048.886-5.466 2.657-7.257 1.771-1.79 4.009-2.686 6.715-2.686 3.963-.002 6.8 1.541 8.515 4.627zm18.457 0-4.229 2.229c-.457-.951-1.02-1.619-1.686-2-.668-.38-1.307-.571-1.914-.571-2.857 0-4.287 1.885-4.287 5.657 0 1.714.363 3.084 1.086 4.113.723 1.029 1.789 1.544 3.201 1.544 1.865 0 3.18-.915 3.941-2.743l4 2c-.875 1.563-2.057 2.791-3.541 3.686a9.233 9.233 0 0 1-4.857 1.343c-2.896 0-5.209-.875-6.941-2.629-1.736-1.752-2.602-4.19-2.602-7.313 0-3.048.885-5.466 2.658-7.257 1.77-1.79 4.008-2.686 6.713-2.686 3.962-.002 6.783 1.541 8.458 4.627z"
+  />
+</svg>
+</div><div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+>
+  <title>Credit must be given to the creator</title>
+  <circle fill="transparent" cx="37.637" cy="28.806" r="28.276" />
+  <path
+    d="M37.443-3.5c8.988 0 16.57 3.085 22.742 9.257C66.393 11.967 69.5 19.548 69.5 28.5c0 8.991-3.049 16.476-9.145 22.456-6.476 6.363-14.113 9.544-22.912 9.544-8.649 0-16.153-3.144-22.514-9.43C8.644 44.784 5.5 37.262 5.5 28.5c0-8.761 3.144-16.342 9.429-22.742C21.101-.415 28.604-3.5 37.443-3.5zm.114 5.772c-7.276 0-13.428 2.553-18.457 7.657-5.22 5.334-7.829 11.525-7.829 18.572 0 7.086 2.59 13.22 7.77 18.398 5.181 5.182 11.352 7.771 18.514 7.771 7.123 0 13.334-2.607 18.629-7.828 5.029-4.838 7.543-10.952 7.543-18.343 0-7.276-2.553-13.465-7.656-18.571-5.104-5.104-11.276-7.656-18.514-7.656zm8.572 18.285v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557c0-.572.2-1.057.599-1.457.401-.399.887-.6 1.457-.6h13.144c.533 0 1.01.2 1.428.6.417.4.628.886.628 1.457zm-13.087-8.228c0-3.008 1.485-4.514 4.458-4.514s4.457 1.504 4.457 4.514c0 2.971-1.486 4.457-4.457 4.457s-4.458-1.486-4.458-4.457z"
+  />
+</svg>
+</div><div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+>
+  <title>Adaptations must be shared under the same terms</title>
+  <circle fill="transparent" cx="36.944" cy="28.631" r="29.105" />
+  <path
+    d="M37.443-3.5c8.951 0 16.531 3.105 22.742 9.315C66.393 11.987 69.5 19.548 69.5 28.5c0 8.954-3.049 16.457-9.145 22.514-6.437 6.324-14.076 9.486-22.912 9.486-8.649 0-16.153-3.143-22.514-9.429C8.644 44.786 5.5 37.264 5.5 28.501c0-8.723 3.144-16.285 9.429-22.685C21.138-.395 28.643-3.5 37.443-3.5zm.114 5.772c-7.276 0-13.428 2.572-18.457 7.715-5.22 5.296-7.829 11.467-7.829 18.513 0 7.125 2.59 13.257 7.77 18.4 5.181 5.182 11.352 7.771 18.514 7.771 7.123 0 13.334-2.609 18.629-7.828 5.029-4.876 7.543-10.99 7.543-18.343 0-7.313-2.553-13.485-7.656-18.513-5.067-5.145-11.239-7.715-18.514-7.715zM23.271 23.985c.609-3.924 2.189-6.962 4.742-9.114 2.552-2.152 5.656-3.228 9.314-3.228 5.027 0 9.029 1.62 12 4.856 2.971 3.238 4.457 7.391 4.457 12.457 0 4.915-1.543 9-4.627 12.256-3.088 3.256-7.086 4.886-12.002 4.886-3.619 0-6.743-1.085-9.371-3.257-2.629-2.172-4.209-5.257-4.743-9.257H31.1c.19 3.886 2.533 5.829 7.029 5.829 2.246 0 4.057-.972 5.428-2.914 1.373-1.942 2.059-4.534 2.059-7.771 0-3.391-.629-5.971-1.885-7.743-1.258-1.771-3.066-2.657-5.43-2.657-4.268 0-6.667 1.885-7.2 5.656h2.343l-6.342 6.343-6.343-6.343 2.512.001z"
+  />
+</svg>
 </div>
+        </div>
 
-            </div>
-        </main>
-    </div>
-    <footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3 text-xs">
-    <div></div>
+  </div>
     <div>
-        <span>©2022 Aziyan99</span>
+      <a
+        href="https://github.com/aziyan99/gohugo-theme-simpla"
+        title="Simpla &#8212; A Hugo theme"
+        data-theme-version="1.0.0">
+        theme: simpla
+      </a>
     </div>
-    <div class="mr-3">Powered by <img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
-    <script>
-        window.store = {
-            
-            "https:\/\/aziyan99.github.io\/posts\/belajar-alpine-js\/": {
-                "title": "Belajar Alpinejs",
-                "tags": ["Js","Alpinejs",],
-                "content": "Ngebuat supaya HTML jadi interaktif, reaktif, dinamis dan kawan-kawanya agak sedikit susah kalo pake javascript aja. Sedikit susahnya mungkin karena kita harus bikin dulu listener nya (kalo mau bikin dinamis gitu), kalo mau render, ya innerhtml harus dibikin sendiri juga, kalo mau ambil elemen HTML harus disiapin dulu variablenya, pokonya proses yang kudu kita lewatin (sebagai programmer) jadi banyak (tapi kalo rajin, bikin aja sendiri :v). Pada zaman dahulu kala kita kenal dengan JQuery tapi makin kesini JQuery ternyata makin berat juga, sama cukup lawas juga kalo kita bandingin dengan perkembangan javascript sejauh ini. Ada salah satu javascipt framework yang agak sedikit mirip dengan JQuery (buat manipulasi DOM) namanya Aplinejs. Ketika kita pake JQuery semua kodingan kita ada di file js, tapi kalo pake Alpine sebagian besar kodingan kita akan ada di HTML, karena Apline kita cuma perlu nambahin beberapa attribut baru aja kedalam elemen HTML kita.\nHanya terjemahan dari dokumentasi Alpinejs dengan tambahan disana-sini :)\nSebelum Belajar Alpinejs terbilang cukup kecil karena ia dibangun dengan 15 attribut, 6 properti, dan 2 fungsi\nReferensi Utama https://alpinejs.dev/start-here Install Aplinejs Untuk ngeinstall Aplinejs ada dua cara. Kita bisa pake \u0026lt;script\u0026gt; tag HTML terus pangil file jsnya Alpine (entah make CDN atau local) atau kita bisa install Alpine sebagai module pake Nodejs (sebenarnya cara ini agak ribet, disaranin pake cara script tag aja, tapi kembali lagi ke preferensi masing-masing)\n\u0026lt;script\u0026gt; tag \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; ... \u0026lt;script defer src=\u0026#34;https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;/head\u0026gt; ... \u0026lt;/html\u0026gt; @3.x.x pada link CDN akan mengembalikan Aplinejs versi tebaru, kalo buat production disarankan untuk versinya di harcoded aja, misal:\n\u0026lt;script defer src=\u0026#34;https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; Sama, jangan lupa tambahin defer di script tagnya. Apa itu defer coba baca-baca dulu ini\nSebagai Module (pake NodeJS) Kita install package (tapi pastikan udah ngeinstall nodejs ama npm nya)\nnpm install alpinejs Jika udah, kita import kedalam project atau bundle app kita\nimport Alpine from \u0026#39;alpinejs\u0026#39; window.Apline = Apline Alpine.start() window.Apline = Apline sebenarnya opsional, tapi supaya kerja jadi gampang kita daftarin aja alpine kedalam window object biar debuggin jadi enak. Kalo misalkan kita juga make framework atau library lain selain Alpinejs tambahin kodenya diantara import Alpine from 'alpinejs' dan Alpine.start().\nKenalan Bentar Attributes x-data Ngebuat plus ngeinisialisasikan komponen Alpine\n\u0026lt;div x-data=\u0026#34;{ open: false }\u0026#34;\u0026gt; ... \u0026lt;/div\u0026gt; x-bind Supaya nilai dari attribut yang dipasangin x-bind bisa jadi dinamis (mudah digonta ganti, gitulah)\n\u0026lt;div x-bind:class=\u0026#34;! open ? \u0026#39;hidden\u0026#39; : \u0026#39;block\u0026#39;\u0026#34;\u0026gt; ... \u0026lt;/div\u0026gt; Kelas div-nya akan jadi block kalo misalkan variable open nilainya true. Kalo open nilainya false kelasnya jadi hidden.\nx-on Masang event listener ke elemen (misalkan kalo diklik gitu)\n\u0026lt;button x-on:click=\u0026#34;open = ! open\u0026#34;\u0026gt; Toggle \u0026lt;/button\u0026gt; Kalo button diklik maka variable open jadi kebalikan dari nilai sebelumnya (pusing?). Kalo nilai sebelumnya true ketika dklik nilainya jadi false.\nx-text Ngubah teks dalam elemen\n\u0026lt;span x-text=\u0026#34;new Date().getFullYear()\u0026#34;\u0026gt; Toggle \u0026lt;/span\u0026gt; Bisa pake js juga, tapi yang simple (bisa jalan satu baris)\nx-html Nambahin HTML kedalam HTML\n\u0026lt;div x-html=\u0026#34;(await axios.get(\u0026#39;/some/html/partial\u0026#39;)).data\u0026#34;\u0026gt; ... \u0026lt;/div\u0026gt; sama dengan x-html bisa pake js juga, tapi yang simpel.\nx-model Ngehubungin nilai dari elemen html yang inputan gitu ke elemen HTML lain.\n\u0026lt;div x-data=\u0026#34;{ search: \u0026#39;\u0026#39; }\u0026#34;\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; x-model=\u0026#34;search\u0026#34;\u0026gt; Searching for: \u0026lt;span x-text=\u0026#34;search\u0026#34;\u0026gt;\u0026lt;/span\u0026gt; \u0026lt;/div\u0026gt; x-show Buta nampilin atau nyembunyiin elemen HTML\n\u0026lt;div x-show=\u0026#34;open\u0026#34;\u0026gt; ... \u0026lt;/div\u0026gt; div akan ditampilkan kalo variable open bernilai true.\nx-transition Nambahin animasi dikit (pake css transition transition kayanya)\n\u0026lt;div x-show=\u0026#34;open\u0026#34; x-transition\u0026gt; ... \u0026lt;/div\u0026gt; x-for Ngebuat looping (perulangan) dari data (biasanya data yang bisa dilooping array of object tapi array aja atau obejct aja kayanya bisa juga deh)\n\u0026lt;template x-for=\u0026#34;post in posts\u0026#34;\u0026gt; \u0026lt;h2 x-text=\u0026#34;post.title\u0026#34;\u0026gt;\u0026lt;/h2\u0026gt; \u0026lt;/template\u0026gt; x-if Ngebuat kondisi gitu (kalo kondisinya ga terpenuhi ya elemennya dihapus dari DOM)\n\u0026lt;template x-if=\u0026#34;open\u0026#34;\u0026gt; \u0026lt;div\u0026gt;...\u0026lt;/div\u0026gt; \u0026lt;/template\u0026gt; x-init Constructor (otomatis jalan pas elemen Apline dibuat)\n\u0026lt;div x-init=\u0026#34;date = new Date()\u0026#34;\u0026gt;\u0026lt;/div\u0026gt; Membuat variable date dengan nilai dari object Date.\nx-effect Semacam useEffect pada React.js, akan dieksekusi ketika terjadi efek (efek gimana :v) pada DOM\n\u0026lt;div x-effect=\u0026#34;console.log(\u0026#39;Count is \u0026#39;+count)\u0026#34;\u0026gt;\u0026lt;/div\u0026gt; x-ref Reference elements directly by their specified keys using the $refs magic property (bingung dibahasa indonesiakan gimana?), intinya semacam mereferensikan satu nilai di variable.\n\u0026lt;input type=\u0026#34;text\u0026#34; x-ref=\u0026#34;content\u0026#34;\u0026gt; \u0026lt;button x-on:click=\u0026#34;navigator.clipboard.writeText($refs.content.value)\u0026#34;\u0026gt; Copy \u0026lt;/button\u0026gt; Kalo button Copy nya diklik ntar tulisan diinputannya bakalan ke-copy (masuk ke clipboard).\nx-cloak Pokoknya selama Alpinejs belom kelar di-load elemen dengan attribut ini bakalan disembunyikan (hidden)\n\u0026lt;div x-cloak\u0026gt; ... \u0026lt;/div\u0026gt; x-ignore Buat bilang ke Apline kalo elemen dengan attribut ni jangan dipedulikan (dinisialisasi)\n\u0026lt;div x-cloak\u0026gt; ... \u0026lt;/div\u0026gt; Properties $store Ngambil global store yang dibuat oleh Alpine.store(...)\n\u0026lt;h1 x-text=\u0026#34;$store.site.title\u0026#34;\u0026gt;\u0026lt;/h1\u0026gt; $el Ngambil elemen HTML yang dirinya sendiri (mangil dirinya sendiri gitu)\n\u0026lt;div x-init=\u0026#34;new Pikachu($el)\u0026#34;\u0026gt;\u0026lt;/div\u0026gt; $dispatch Nge-dispatch event kustom kebrowser (ntar ada yg ngedengerin lister-nya)\n\u0026lt;div x-on:notify=\u0026#34;...\u0026#34;\u0026gt; \u0026lt;button x-on:click=\u0026#34;$dispatch(\u0026#39;notify\u0026#39;)\u0026#34;\u0026gt;...\u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; Flownya, kalo buttonnya kita klik, ntar ada kaya pengumuman gitu dibrowser isinya notify. Terus ntar ada satu elemen yang bakalan khusus ngedengerin pengumumannya yang isinya notify.\n$watch Ngedeteksi kalo nilai dari satu variabel berubah.\n\u0026lt;div x-init=\u0026#34;$watch(\u0026#39;count\u0026#39;, value =\u0026gt; { console.log(\u0026#39;count is \u0026#39; + value) })\u0026#34;\u0026gt;...\u0026lt;/div\u0026gt; Kalo misalkan nilai variabel count berubah console.log('count is ' + value) akan dijalanin.\n$refs Pasangan dari attribut x-ref. Kaya ngereferensiin satu nilai berdasarkan namanya.\n\u0026lt;div x-init=\u0026#34;$refs.button.remove()\u0026#34;\u0026gt; \u0026lt;button x-ref=\u0026#34;button\u0026#34;\u0026gt;Remove Me\u0026lt;/button\u0026gt; \u0026lt;/div\u0026gt; $nextTick Wait until the next \u0026ldquo;tick\u0026rdquo; (browser paint) to run a bit of code (gimana ya jelasinnya, coba aja baca-baca tentang browser paint)\n\u0026lt;div x-text=\u0026#34;count\u0026#34; x-text=\u0026#34;$nextTick(() =\u0026gt; {\u0026#34; console.log(\u0026#39;count is \u0026#39; + $el.textContent) }) \u0026gt;...\u0026lt;/div\u0026gt; Methods Alpine.data Make ato ngambil data yang kita inisialisikan pake x-data die elemen HTML\n\u0026lt;div x-data=\u0026#34;dropdown\u0026#34;\u0026gt; ... \u0026lt;/div\u0026gt; ... Alpine.data(\u0026#39;dropdown\u0026#39;, () =\u0026gt; ({ open: false, toggle() { this.open = ! this.open } })) Alpine.store Ngebuat beberapa variable global yang datanya bisa kita panggil/baca dan pake. Buat ngambil datanya kita pake properti $store\n\u0026lt;button @click=\u0026#34;$store.notifications.notify(\u0026#39;...\u0026#39;)\u0026#34;\u0026gt; Notify \u0026lt;/button\u0026gt; ... Alpine.store(\u0026#39;notifications\u0026#39;, { items: [], notify(message) { this.items.push(message) } }) Halo Dunia! Sebagai programmer yang ganteng :v serta dijalan yang lurus (baik maksudnya). Ga afdhol rasa ne kalo kita belajar teknologi baru ga dimulai dari Halo Dunia (kalo kata orang putih mah Hello World). Maka dari itu mari kita mulai Hallo Dunia dengan membuat file `` baru beserta strukturnya dan jangan lupa juga script alpine nya di masukin.\n\u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;utf-8\u0026#34;\u0026gt; \u0026lt;meta name=\u0026#34;viewport\u0026#34; content=\u0026#34;width=device-width, initial-scale=1\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Hallo Dunia!\u0026lt;/title\u0026gt; \u0026lt;script defer src=\u0026#34;https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;h1 x-data=\u0026#34;{message: \u0026#39;Halo Dunia!\u0026#39;}\u0026#34; x-text=\u0026#34;message\u0026#34;\u0026gt;\u0026lt;/h1\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; Ayo kita buka file html kita melalui browser dan hasilnya akan seperti ini: Yup, benar sekali teks Hallo Dunia berasal dari x-data=\u0026quot;{message: 'Hallo Dunia!'}\u0026quot;. Jadi, berdasarkan contoh diatas, kita menginisialisasikan tag h1 sebagai komponen alpine, buktinya adalah di tag h1 terdapat attribut x-data yang merupakan attribut alpine, dan attribut x-data digunakan untuk menginisialisasikan komponen alpine. Attribute x-data membutuhkan data yang akan dimanipulasi dan digunakan (data ne dalam bentuk sebuah (1) object (biasa js :v)), pada contoh sebelumnya, data yang kita berikan kedalam attribut x-data adalah sebuah pasangan key-value, keynya message dan valuenya Halo Dunia.\nBelom kelar \u0026hellip;\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/belajar-alpine-js\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/mariadb-mysql-general-log\/": {
-                "title": "MariaDB\/MySQL: Menggunakan General Log",
-                "tags": ["MariaDB","MySQL","Database","DBMS",],
-                "content": "Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik debugging kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable general_log dimana ketika kita ubah nilainya menjadi 1 MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di /usr/local/var/mysql.\nMengaktifkan General Log Login kedalam console MariaDB:\nmariadb -u\u0026lt;username\u0026gt; -p Setelah berhasil login masukkan perintah:\nSET GLOBAL general_log = 1 ; Mematikan General Log SET GLOBAL general_log = 0 ; Perlu dicatat file log yang dihasilkan oleh MariaDB akan bertambah besar seiring dengan semakin banyaknya query dieksekusi.\nSelesai!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/mariadb-mysql-general-log\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/": {
-                "title": "Posts",
-                "tags": [],
-                "content": "",
-                "url": "https:\/\/aziyan99.github.io\/posts\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/composer-for-dummies\/": {
-                "title": "Composer Untuk Awam (Undone)",
-                "tags": ["Composer","PHP",],
-                "content": "Don\u0026rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.\nSebagian programmer adalah orang yang malas, akibatnya dari pada menulis kode yang sama secara berulang untuk satu fungsionalitas yang sama mereka membuat library-libray dan package-package untuk menjalankan satu fungsionalitas tadi sehingga ketika ingin membuat sebuah fungsionalitas yang sama kembali mereka tidak perlu menulis ulang koding yang sama tetapi mereka cukup menggunakan libraries atau packages yang sudah dibuat sebelumnya.\nApa itu Composer? Composer adalah sebuah alat (tools) untuk mengatur depedency pada bahasa pemrograman PHP. Dengan composer kita bisa mendeklarasikan library apa saja yang projek kita butuhkan, lalu composer akan mengaturnya, baik untuk meng-install, meng-update, atau menghapus library-library yang sudah kita deklarasikan. Perlu diingat composer bukan manajemen paket (package manager) seperti Yup ataupun Apt pada sistem operasi berbasis UNIX. Memang benar composer digunakan untuk memanajemen library-library tetapi ruang lingkup composer hanya terbatas pada projek saja dalam satu folder (vendor) bukan untuk keseluruhan sistem operasi.\nUntuk bisa menggunakan composer setidaknya kita membutuhkan PHP versi 5.3.2 keatas sehingga jika PHP yang digunakan versi 3.3.2 kebawah kita tidak bisa menggunakan composer untuk memanajemen libray-libray PHP pada projek kita. Composer juga akan memberitahukan ketika ada library-library yang tidak kompatibel dengan projek kita. Pada akhirnya dengan menggunakan composer kita tidak perlu lagi menginstall library yang dibutuhkan langsung dari source code langsung (zip), kita cukup mendeklarasikan library apa yang dibutuhkan kemudian composer akan meng-installnya. Konsekuensi dengan tidak meng-install library dari source code adalah kita akan membutuhkan version control system (VCS) seperti Git, SVN, Fossil, ataupun Hg tergantung bagaimana library yang kita butuhkan menggunakan (VCS) yang mana (walaupun sekarang sebagian besar paket dan library PHP menggunakan Git sebagai VCS-nya).\nMenginstall Composer Cara terbaik untuk menginstall composer adalah dengan mengikuti petunjuk penginstalasi composer dari website official composer di getcomposer.org. Terdapat dua opsi penginstalan composer opsi untuk menginstall secara lokal (project bases) atau secara global, sangat direkomendasikan untuk menginstall composer secara global.\nPerlu dicatat, sebelum menginstall composer pastikan sudah mengintal PHP karena untuk menjalankan composer membutuhkan interpreter dari bahasa pemrograman PHP.\nSitem Operasi Keluarga *NIX Menginstall composer pada keluarga sistem operasi bisa melalui executeable file dari installer composer atau kita bisa mengotomisasi penginstallan dengan:\nphp -r \u0026#34;copy(\u0026#39;https://getcomposer.org/installer\u0026#39;, \u0026#39;composer-setup.php\u0026#39;);\u0026#34; php -r \u0026#34;if (hash_file(\u0026#39;sha384\u0026#39;, \u0026#39;composer-setup.php\u0026#39;) === \u0026#39;906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8\u0026#39;) { echo \u0026#39;Installer verified\u0026#39;; } else { echo \u0026#39;Installer corrupt\u0026#39;; unlink(\u0026#39;composer-setup.php\u0026#39;); } echo PHP_EOL;\u0026#34; php composer-setup.php php -r \u0026#34;unlink(\u0026#39;composer-setup.php\u0026#39;);\u0026#34; Perintah diatas akan mendownloadkan sebuah file baru dengan nama composer.phar dan membuat composer bisa kita gunakan secara lokal (satu projek). PHAR (PHP archive) sendiri adalah binary file kompress dari kodingan PHP yang bisa kita jalankan lewat terminal.\nUntuk menjalan composer kita bisa menggunakan perintah:\nphp composer.phar \u0026lt;command\u0026gt; Langkah terbaik adalah memindahkan composer kedalam PATH dari sistem operasi kita sehingga kita tidak perlu mendownload composer lagi ketika memulai projek baru (install secara global).\nsudo mv composer.phar /usr/local/bin/composer Sistem Operasi Windows Pada sistem operasi windows penginstallan composer diawali dengan mendownload installer composer untuk sistem operasi window. Kemudian menjalankan installernya.\nPerlu dicatat, sebelum menginstall composer pastikan sudah mengintal PHP karena untuk menjalankan composer membutuhkan interpreter dari bahasa pemrograman PHP.\nSilahkan daftarkan composer kedalam path pada sistem operasi windows melalui environment variables kemudian pilih system variables\nJika proses penginstalasi compser berhasil maka ketika kita menjalan perintah:\ncomposer pada terminal, kita akan mendapatkan output yang lebih kurang seperi ini:\nOutput ______ / ____/___ ____ ___ ____ ____ ________ _____ / / / __ \\/ __ `__ \\/ __ \\/ __ \\/ ___/ _ \\/ ___/ / /___/ /_/ / / / / / / /_/ / /_/ (__ ) __/ / \\____/\\____/_/ /_/ /_/ .___/\\____/____/\\___/_/ /_/ Composer version 1.0-dev (9859859f1082d94e546aa75746867df127aa0d9e) 2015-08-17 14:57:00 Usage: command [options] [arguments] Options: --help (-h) Display this help message --quiet (-q) Do not output any message --verbose (-v|vv|vvv) Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug --version (-V) Display this application version --ansi Force ANSI output --no-ansi Disable ANSI output --no-interaction (-n) Do not ask any interactive question --profile Display timing and memory usage information --working-dir (-d) If specified, use the given directory as working directory. .... Autoloading Dengan Composer Untuk library yang sudah menggunakan autoloading, composer akan meng-generate file autoload.php yang ada pada vendor/autoload.php. Sehingga untuk menggunakan library yang sudah diinstall kita cukup me-load library-nya dengan:\nrequire_once __DIR__ . \u0026#39;/vendor/autoload.php\u0026#39;; require_once digunakan karena secara proses require_once akan mengecek apakah file sudah diload sebelumnya, jika sudah maka tidak perlu diload lagi, jika belum maka proses load file akan dilakukan.\nHal ini sangat memudahkan programmer untuk menggunakan library yang sudah diinstall. Sebagai contoh jika projek kita menggunakan library Monolog kita bisa langsung menggunakannya seperti:\n$log = new Monolog\\Logger(\u0026#39;name\u0026#39;); $log-\u0026gt;pushHandler(new Monolog\\Handler\\StreamHandler(\u0026#39;app.log\u0026#39;, Monolog\\Logger::WARNING)); $log-\u0026gt;addWarning(\u0026#39;Foo\u0026#39;); Kita juga bisa menambahkan kode kita kedalam autoloading-nya composer dengan menambahkan attribut kedalam file composer.json:\n{ \u0026#34;autoload\u0026#34;: { \u0026#34;psr-4\u0026#34;: {\u0026#34;MyCode\\\\\u0026#34;: \u0026#34;src/\u0026#34;} } } psr-4 merupakan bagian dari PHP Standard Recommendation (PSR) bagian 4 yang mengatur tentang autoloading\nPerintah Composer yang Sering Digunakan Sebelum jauh membahas tentang perintah-perintah composer yang sering digunakan sebaiknya kita kenalan dulu dengan file composer.json. Pada umumnya file composer.json yang digenerate oleh composer akan terlihat seperti:\n{ \u0026#34;name\u0026#34;: \u0026#34;laravel/laravel\u0026#34;, \u0026#34;type\u0026#34;: \u0026#34;project\u0026#34;, \u0026#34;description\u0026#34;: \u0026#34;The Laravel Framework.\u0026#34;, \u0026#34;keywords\u0026#34;: [\u0026#34;framework\u0026#34;, \u0026#34;laravel\u0026#34;], \u0026#34;license\u0026#34;: \u0026#34;MIT\u0026#34;, \u0026#34;require\u0026#34;: { \u0026#34;php\u0026#34;: \u0026#34;^8.0.2\u0026#34;, \u0026#34;guzzlehttp/guzzle\u0026#34;: \u0026#34;^7.2\u0026#34;, \u0026#34;laravel/framework\u0026#34;: \u0026#34;^9.2\u0026#34;, \u0026#34;laravel/sanctum\u0026#34;: \u0026#34;^2.14.1\u0026#34;, \u0026#34;laravel/tinker\u0026#34;: \u0026#34;^2.7\u0026#34; }, \u0026#34;require-dev\u0026#34;: { \u0026#34;fakerphp/faker\u0026#34;: \u0026#34;^1.9.1\u0026#34;, \u0026#34;laravel/sail\u0026#34;: \u0026#34;^1.0.1\u0026#34;, \u0026#34;mockery/mockery\u0026#34;: \u0026#34;^1.4.4\u0026#34;, \u0026#34;nunomaduro/collision\u0026#34;: \u0026#34;^6.1\u0026#34;, \u0026#34;phpunit/phpunit\u0026#34;: \u0026#34;^9.5.10\u0026#34;, \u0026#34;spatie/laravel-ignition\u0026#34;: \u0026#34;^1.0\u0026#34; }, \u0026#34;autoload\u0026#34;: { \u0026#34;psr-4\u0026#34;: { \u0026#34;App\\\\\u0026#34;: \u0026#34;app/\u0026#34;, \u0026#34;Database\\\\Factories\\\\\u0026#34;: \u0026#34;database/factories/\u0026#34;, \u0026#34;Database\\\\Seeders\\\\\u0026#34;: \u0026#34;database/seeders/\u0026#34; } }, \u0026#34;autoload-dev\u0026#34;: { \u0026#34;psr-4\u0026#34;: { \u0026#34;Tests\\\\\u0026#34;: \u0026#34;tests/\u0026#34; } }, \u0026#34;scripts\u0026#34;: { \u0026#34;post-autoload-dump\u0026#34;: [ \u0026#34;Illuminate\\\\Foundation\\\\ComposerScripts::postAutoloadDump\u0026#34;, \u0026#34;@php artisan package:discover --ansi\u0026#34; ], \u0026#34;post-update-cmd\u0026#34;: [ \u0026#34;@php artisan vendor:publish --tag=laravel-assets --ansi --force\u0026#34; ], \u0026#34;post-root-package-install\u0026#34;: [ \u0026#34;@php -r \\\u0026#34;file_exists(\u0026#39;.env\u0026#39;) || copy(\u0026#39;.env.example\u0026#39;, \u0026#39;.env\u0026#39;);\\\u0026#34;\u0026#34; ], \u0026#34;post-create-project-cmd\u0026#34;: [ \u0026#34;@php artisan key:generate --ansi\u0026#34; ] }, \u0026#34;extra\u0026#34;: { \u0026#34;laravel\u0026#34;: { \u0026#34;dont-discover\u0026#34;: [] } }, \u0026#34;config\u0026#34;: { \u0026#34;optimize-autoloader\u0026#34;: true, \u0026#34;preferred-install\u0026#34;: \u0026#34;dist\u0026#34;, \u0026#34;sort-packages\u0026#34;: true }, \u0026#34;minimum-stability\u0026#34;: \u0026#34;dev\u0026#34;, \u0026#34;prefer-stable\u0026#34;: true } File composer.json diatas adalah contoh dari file composer pada projek Laravel versi 9.x.\nBagian-bagian pada file composer.json terbagi menjadi 3 kategori besar: deskripsi projek, dependencies, dan konfigurasi.\nBagian deskripsi merupakan bagian yang berisi informasi dari projek yang sedang dikerjakan bagian ini berisi informasi seperti: nama projek, tipe projek, keterangan, keywords, dan lisensi yang digunakan.\nBagian depedencies merupakan bagian yang digunakan untuk mendeklarasikan libraries atau packages yang digunakan. Bagian ini termasuk: require dan require-dev. require dan require-dev sama-sama berperan sebagai tempat pendeklarasian libraries atau packages yang digunakan yang nantinya akan composer install, yang menjadi perbedaan adalah segala libraries atau packages yang dideklarasikan pada require-dev hanya akan digunakan pada proses development saja sehingga ketika projek memasuki area production packages atau libraries yang dideklarasikan di require-dev tidak akan diinstall oleh composer. Sebaliknya packages atau libraries yang didekalarasikan pada require akan diinstall oleh composer baik untuk proses development ataupun production.\nPerbedaan area menjalankan koding umumnya terbagi menjadi 3: development, staging, dan production. Untuk membuat composer mengetahui koding yang dibuat akan dijalankan pada area yang mana, biasanya dibuat sebuah environment variabel yang berisi status area yang digunakan saat ini.\nBagian konfigurasi biasanya berisi konfigurasi serta keterangan bagaimana composer harus men-treat projek kita. Bagian ini dimulai dari autoload sampai dengan prefer-stable. Bagian autoload dan autoload-dev merupakan bagian yang akan menginformasikan kepada composer untuk meng-autoloading sebuah file PHP ke PHP autoload.\nPenjelasan lebih detail tentang keterangan dan kegunaan masing-masing bagian pada file composer.json bisa dilihat pada The composer.json Schema\nInit Perintah composer init adalah perintah untuk menginisialisasi projek composer dalam satu folder.\ncd path/to/composer-project composer init Perintah ini akan menampilkan prompt yang harus dilengkapi seperti nama project, author, keywords, dan lain-lain. Silahkan lengkapi sesuai kebutuhan.\nWelcome to the Composer config generator This command will guide you through creating your composer.json config. Package name (\u0026lt;vendor\u0026gt;/\u0026lt;name\u0026gt;) [budiganteng/composer-pemula]: ... Perintah composer init akan membuat satu file baru dengan nama composer.json. File composer.json ini berisi informasi dari projek kita, mulai dari nama projek hingga depedencies yang digunakan.\nRequire Perintah composer require merupakan perintah yang digunakan untuk menginstall satu atau lebih library. Seperti contoh ketika mau menginstall library Guzzle:\ncomposer require guzzlehttp/guzzle perintah ini akan menambahkan attribut baru dalam file composer.json pada bagian require.\n{ \u0026#34;require\u0026#34;: { \u0026#34;guzzlehttp/guzzle\u0026#34;: \u0026#34;^7.4\u0026#34; } } ",
-                "url": "https:\/\/aziyan99.github.io\/posts\/composer-for-dummies\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-membuat-folder\/": {
-                "title": "Laravel: Membuat Folder",
-                "tags": ["Laravel","PHP",],
-                "content": "Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.\nDengan File System $path = storage_path(\u0026#39;app/public/profile_images\u0026#39;); if(!File::isDirectory($path)){ File::makeDirectory($path, 0777, true, true); } Dengan Storage System $path = storage_path(\u0026#39;app/public/profile_images\u0026#39;); Storage::makeDirectory($path, 0777, true, true); Dengan Core PHP $path = storage_path(\u0026#39;app/public/profile_images\u0026#39;); mkdir($path); Selesai!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-membuat-folder\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/install-nginx-macos\/": {
-                "title": "Nginx: Install di MacOS dengan Homebrew",
-                "tags": ["Nginx","OSX",],
-                "content": "NGINX adalah aplikasi open source untuk server web, NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, dan banyak lagi. Ini dimulai sebagai server web yang dirancang untuk kinerja dan stabilitas maksimum. Selain kemampuan server HTTP-nya, NGINX juga dapat berfungsi sebagai server proxy untuk email (IMAP, POP3, dan SMTP) dan proxy terbalik dan penyeimbang beban untuk server HTTP, TCP, dan UDP.\nInstall homebrew /usr/bin/ruby -e \u0026#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\u0026#34; Update home brew repository brew update Install Nginx brew install nginx Nginx akan diinstal di folder usr/local/cellar dan nginx berjalan dengan port default di 8080\nMe-restart Nginx brew services restart nginx Men-stop Nginx brew services stop nginx Jika installasi berhasil maka hasil log akan lebih kurang seperti\nusername@192.168.1.12:~$ brew install nginx Running `brew update --preinstall`... ==\u0026gt; Auto-updated Homebrew! Updated 3 taps (shivammathur/php, homebrew/cask and homebrew/services). ==\u0026gt; Updated Formulae Updated 1 formula. ==\u0026gt; New Casks abbyy-finereader-pdf roonbridge mediahuman-audio-converter rwts-pdfwriter paragon-camptune unicopedia-plus ==\u0026gt; Updated Casks Updated 174 casks. ==\u0026gt; Deleted Casks finereader ==\u0026gt; Downloading https://ghcr.io/v2/homebrew/core/nginx/manifests/1.21.6_1 ######################################################################## 100.0% ==\u0026gt; Downloading https://ghcr.io/v2/homebrew/core/nginx/blobs/sha256:dba847687a67 ==\u0026gt; Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh ######################################################################## 100.0% ==\u0026gt; Pouring nginx--1.21.6_1.monterey.bottle.tar.gz ==\u0026gt; Caveats Docroot is: /usr/local/var/www The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that nginx can run without sudo. nginx will load all files in /usr/local/etc/nginx/servers/. To restart nginx after an upgrade: brew services restart nginx Or, if you don\u0026#39;t want/need a background service you can just run: /usr/local/opt/nginx/bin/nginx -g daemon off; ==\u0026gt; Summary 🍺 /usr/local/Cellar/nginx/1.21.6_1: 26 files, 2.2MB ==\u0026gt; Running `brew cleanup nginx`... Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`). Beberapa catatan penting Folder konfigurasi Nginx -\u0026gt; /usr/local/etc/nginx/servers/. Konfig default -\u0026gt; /usr/local/etc/nginx/nginx.conf. Logs Nginx -\u0026gt; /usr/local/var/log/nginx/. Folder default webroot -\u0026gt; /usr/local/var/www/. Alamat default -\u0026gt; http://localhost:8080. Links https://www.nginx.com https://brew.sh/ ",
-                "url": "https:\/\/aziyan99.github.io\/posts\/install-nginx-macos\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-database-transaction\/": {
-                "title": "Laravel: Database Transaction",
-                "tags": ["Laravel","PHP","DBTransaction","Database",],
-                "content": "Database trasaction sangat berguna ketika kita bermain dengan database karena ketika terjadi kesalahan atau error ketika mengeksekusi perintah yang berkaitan dengan database, semua transaksi yang terjadi sebelumnya akan dibatalkan sehingag database tidak akan terganggu atau cacat. Penggunaan pada laravel sangat mudah dengan library yang sudah laravel sediakan jadi kita tidak perlu lagi menulis transaksi secara manual menggunakan SQL.\nContoh DB::transaction(function() { // database operation goes here }); Selesai!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-database-transaction\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-generate-sitemap\/": {
-                "title": "Laravel: Membuat Sitemap Secara Dinamis",
-                "tags": ["Laravel","PHP","Sitemap",],
-                "content": "Sitemap adalah sebuah file yang memberikan informasi tentang halaman, video, ataupun media apa saja dalam sebuah website. Search engine seperti Google menggunakan sitemap untuk mencari halaman yang dicari pengguna sehingga dengan membuat sitemap untuk website akan sangat membantu supaya google mengindeks website kita.\nHow to Buat projek laravel baru dengan laravel new \u0026lt;project-name\u0026gt; atau composer create-project laravel/laravel \u0026lt;project-name\u0026gt;. Buat satu database untuk projek laravel yang baru dibuat. Buat model dan migration untuk post dengan php artisan make:model Post -m. Ubah post migration dengan menambahkan kolom title, slug, dan body pada tabel posts. \u0026lt;?php use Illuminate\\Database\\Migrations\\Migration; use Illuminate\\Database\\Schema\\Blueprint; use Illuminate\\Support\\Facades\\Schema; class CreatePostsTable extends Migration { /** * Run the migrations. * * @return void */ public function up() { Schema::create(\u0026#39;posts\u0026#39;, function (Blueprint $table) { $table-\u0026gt;id(); $table-\u0026gt;string(\u0026#39;title\u0026#39;); $table-\u0026gt;string(\u0026#39;slug\u0026#39;); $table-\u0026gt;longText(\u0026#39;body\u0026#39;); $table-\u0026gt;timestamps(); }); } /** * Reverse the migrations. * * @return void */ public function down() { Schema::dropIfExists(\u0026#39;posts\u0026#39;); } } Lakukan migrasi dengan perintah php artisan migrate. Buat factory untuk mengenerate dummy data postingan php artisan make:factory PostFactory --model=Post. Kemudian isi dengan: \u0026lt;?php namespace Database\\Factories; use App\\Models\\Post; use Illuminate\\Database\\Eloquent\\Factories\\Factory; use Illuminate\\Support\\Str; class PostFactory extends Factory { /** * The name of the factory\u0026#39;s corresponding model. * * @var string */ protected $model = Post::class; /** * Define the model\u0026#39;s default state. * * @return array */ public function definition() { $title = $this-\u0026gt;faker-\u0026gt;sentence; $slug = Str::slug($title); return [ \u0026#39;title\u0026#39; =\u0026gt; $title, \u0026#39;slug\u0026#39; =\u0026gt; $slug, \u0026#39;body\u0026#39; =\u0026gt; $this-\u0026gt;faker-\u0026gt;paragraph(10) ]; } } Buka tinker melalui terminal php artisan tinker dan lakukan perintah App\\Models\\Post::factory()-\u0026gt;count(10)-\u0026gt;create(). Perintah ini akan membuat 10 postingan dummy. Install package laravel/sitemap dari spatie dengan perintah composer require spatie/laravel-sitemap. Jalankan perintah php artisan vendor:publish --provider=\u0026quot;Spatie\\Sitemap\\SitemapServiceProvider\u0026quot; --tag=config untuk memindahkan file sitemap.php kedalam konfigurasi laravel. Buka file web.php dan buat routing baru \u0026lt;?php use Illuminate\\Support\\Facades\\Route; use App\\Models\\Post; use Spatie\\Sitemap\\Sitemap; use Spatie\\Sitemap\\Tags\\Url; /* |-------------------------------------------------------------------------- | Web Routes |-------------------------------------------------------------------------- | | Here is where you can register web routes for your application. These | routes are loaded by the RouteServiceProvider within a group which | contains the \u0026#34;web\u0026#34; middleware group. Now create something great! | */ Route::get(\u0026#39;/\u0026#39;, function () { return view(\u0026#39;welcome\u0026#39;); }); Route::get(\u0026#39;/sitemap\u0026#39;, function(){ $sitemap = Sitemap::create() -\u0026gt;add(Url::create(\u0026#39;/about-us\u0026#39;)) -\u0026gt;add(Url::create(\u0026#39;/contact_us\u0026#39;)); $post = Post::all(); foreach ($post as $post) { $sitemap-\u0026gt;add(Url::create(\u0026#34;/post/{$post-\u0026gt;slug}\u0026#34;)); } $sitemap-\u0026gt;writeToFile(public_path(\u0026#39;sitemap.xml\u0026#39;)); }); Jalankan development server php artisan serve dan kunjungi http://localhost:8000/sitemap.xml atau http://localhost:8000/sitemap. Tentu saja penulisan sitemap tidak terbatasi hanya bisa di file web.php kita juga bisa membuat controller sendiri untuk menghandle sitemap.\nSelesai!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-generate-sitemap\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-path-gambar-dari-model\/": {
-                "title": "Laravel: Path Gambar dari Model",
-                "tags": ["Laravel","PHP","Image","Model",],
-                "content": "Avatar untuk pengguna (foto profile) bisa dibuat dinamis, jika pengguna tidak mengupload avatar nya sendiri kita bisa menggunakan inisialnya dan membuat avatar untuk pengguna tadi.\nRequirement Laravel project Kolom avatar pada table users Kolom avatar harus nullable Eksekusi Buka model User.php dan jangan lupa untuk menambahkan avatar pada $protected array. Kemudian buat sebuah accessor dengan nama getAvatarPathAttribute(). Kemudian bisa ikuti kode dibawah (dan bisa dimodifikasi sesuka hati)\nuse Illuminate\\Support\\Facades\\Storage; // jangan lupa import Facades Storage public function getAvatarPathAttribute() { if ($this-\u0026gt;avatar == null) { return \u0026#34;https://ui-avatars.com/api/?size=128\u0026amp;name=\u0026#34; . $this-\u0026gt;name; } else { return Storage::disk(\u0026#39;public\u0026#39;)-\u0026gt;url($this-\u0026gt;avatar); } } Untuk penggunaanya di blade seperti\n\u0026lt;img src=\u0026#34;{{ $user-\u0026gt;avatar_path }}\u0026#34; alt=\u0026#34;logo\u0026#34; class=\u0026#34;img-thumbnail\u0026#34; width=\u0026#34;128\u0026#34;\u0026gt; Selesai!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-path-gambar-dari-model\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-generate-barcode\/": {
-                "title": "Laravel: Mengenerate Barcode",
-                "tags": ["Laravel","PHP","Barcode",],
-                "content": "Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spasi) dengan berbagai lebar dan jarak garis paralel. Mesin menguraikan kode batang karena ditampilkan dalam bentuk yang dapat dibaca mesin.\nAda banyak package yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah milon/barcode untuk menginstallnya pada laravel bisa menggunakan composer:\nroot@192.168.1.12:~$ composer require milon/barcode Jika proses penginstallasian sudah selesai. Bisa mendaftarkan packagenya pada providers dan alias di config/app.php.\n\u0026lt;?php return [ \u0026#39;providers\u0026#39; =\u0026gt; [ .... .... .... Milon\\Barcode\\BarcodeServiceProvider::class, ], \u0026#39;aliases\u0026#39; =\u0026gt; [ .... .... .... \u0026#39;DNS1D\u0026#39; =\u0026gt; Milon\\Barcode\\Facades\\DNS1DFacade::class, \u0026#39;DNS2D\u0026#39; =\u0026gt; Milon\\Barcode\\Facades\\DNS2DFacade::class, ] Untuk menggunakannya bisa langsung digunakan pada blade dengan merendernya seperti:\n\u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;head\u0026gt; \u0026lt;meta charset=\u0026#34;utf-8\u0026#34;\u0026gt; \u0026lt;title\u0026gt;Laravel Generate Barcode Examples\u0026lt;/title\u0026gt; \u0026lt;meta name=\u0026#34;csrf-token\u0026#34; content=\u0026#34;{{ csrf_token() }}\u0026#34;\u0026gt; \u0026lt;link href=\u0026#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;/\u0026gt; \u0026lt;/head\u0026gt; \u0026lt;body\u0026gt; \u0026lt;div class=\u0026#34;container mt-4\u0026#34;\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS2D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;QRCODE\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;PHARMA\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;PHARMA2T\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;CODABAR\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;KIX\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;RMS4CC\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;div class=\u0026#34;mb-3\u0026#34;\u0026gt;{!! DNS1D::getBarcodeHTML(\u0026#39;4445645656\u0026#39;, \u0026#39;UPCA\u0026#39;) !!}\u0026lt;/div\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; Selesai!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-generate-barcode\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-select-between-date\/": {
-                "title": "Laravel: Select data diantara dua tanggal",
-                "tags": ["Laravel","PHP","Database","Model",],
-                "content": "Mengambil data dari database berdasarkan range tanggal (tanggal awal dan tanggal akhir) di laravel mudah dilakukan dengan bantuan Eloquent dari laravel (Model). Pengambilan data ini sangat membantu ketika kita ingin membuat laporan dari data atau kebutuhan lainnya yang membutuhkan pengguna bisa mengambil data berdasarkan tanggal.\nCara pertama (whereBetween) \u0026lt;?php namespace App\\Http\\Controllers; use Illuminate\\Http\\Request; use App\\Models\\User; use Carbon\\Carbon; class UserController extends Controller { /** * Display a listing of the resource. * * @return \\Illuminate\\Http\\Response */ public function index(Request $request) { $startDate = Carbon::createFromFormat(\u0026#39;d/m/Y\u0026#39;, \u0026#39;01/01/2021\u0026#39;); $endDate = Carbon::createFromFormat(\u0026#39;d/m/Y\u0026#39;, \u0026#39;06/01/2021\u0026#39;); $users = User::select(\u0026#39;id\u0026#39;, \u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;created_at\u0026#39;) -\u0026gt;whereBetween(\u0026#39;created_at\u0026#39;, [$startDate, $endDate]) -\u0026gt;get(); dd($users); } } Cara kedua (where) Navigasi ke folder /var/www/html/ kemudian buat 2 folder baru atau bisa dengan perintah\n\u0026lt;?php namespace App\\Http\\Controllers; use Illuminate\\Http\\Request; use App\\Models\\User; use Carbon\\Carbon; class UserController extends Controller { /** * Display a listing of the resource. * * @return \\Illuminate\\Http\\Response */ public function index(Request $request) { $startDate = Carbon::createFromFormat(\u0026#39;d/m/Y\u0026#39;, \u0026#39;01/01/2021\u0026#39;); $endDate = Carbon::createFromFormat(\u0026#39;d/m/Y\u0026#39;, \u0026#39;06/01/2021\u0026#39;); $users = User::select(\u0026#39;id\u0026#39;, \u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;created_at\u0026#39;) -\u0026gt;where(\u0026#39;created_at\u0026#39;, \u0026#39;\u0026gt;=\u0026#39;, $startDate) -\u0026gt;where(\u0026#39;created_at\u0026#39;, \u0026#39;\u0026lt;=\u0026#39;, $endDate) -\u0026gt;get(); dd($users); } } Cara ketiga (whereDate) ?php namespace App\\Http\\Controllers; use Illuminate\\Http\\Request; use App\\Models\\User; use Carbon\\Carbon; class UserController extends Controller { /** * Display a listing of the resource. * * @return \\Illuminate\\Http\\Response */ public function index(Request $request) { $startDate = \u0026#39;01/01/2021\u0026#39;; $endDate = \u0026#39;06/01/2021\u0026#39;; $users = User::select(\u0026#39;id\u0026#39;, \u0026#39;name\u0026#39;, \u0026#39;email\u0026#39;, \u0026#39;paid_date\u0026#39;) -\u0026gt;whereDate(\u0026#39;paid_date\u0026#39;, \u0026#39;\u0026gt;=\u0026#39;, $startDate) -\u0026gt;whereDate(\u0026#39;paid_date\u0026#39;, \u0026#39;\u0026lt;=\u0026#39;, $endDate) -\u0026gt;get(); dd($users); } } Tentu saja tanggal yang digunakan tidak perlu statis seperti pada contoh. Kita juga bisa menggunakan form inputan yang bertipe date.\nSelesai!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-select-between-date\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/nginx-virtual-host\/": {
-                "title": "Nginx: Membuat Virtual Host",
-                "tags": ["Nginx","VPS","Virtual Host","Ubuntu",],
-                "content": "Membuat satu VPS bisa menghost 2 atau lebih website gampang dilakukan dengan nginx. Untuk melakukannya kita akan memanfaatkan fitur dari nginx yaitu virtual host. Contoh ini dilakukan pada VPS dengan sistem operasi 18.0 atau diatasnya\nInstall Nginx root@192.168.1.12:~$ sudo apt install nginx Setelah proses instalasi selesai, cek apakah nginx sudah terinstall dan berjalan dengan benar\nroot@192.168.1.12:~$ systemctl status nginx Folder untuk website Navigasi ke folder /var/www/html/ kemudian buat 2 folder baru atau bisa dengan perintah\nroot@192.168.1.12:~$ mkdir /var/www/html/web1.iniserver.com root@192.168.1.12:~$ mkdir /var/www/html/web2.iniserver.com kita akan membuat 1 file html untuk masing-masing folder yang sudah dibuat sebelumnya\nroot@192.168.1.12:~$ nano /var/www/html/web1.iniserver.com/index.html kemudian file index.html isi dengan\n\u0026lt;html\u0026gt; \u0026lt;title\u0026gt;web1.iniserver.com\u0026lt;/title\u0026gt; \u0026lt;h1\u0026gt;Welcome to the web1.iniserver.com.\u0026lt;/h1\u0026gt; \u0026lt;/html\u0026gt; dan untuk folder we2.iniserver.com juga\nroot@192.168.1.12:~$ nano /var/www/html/web2.iniserver.com/index.html kemudian file index.html isi dengan\n\u0026lt;html\u0026gt; \u0026lt;title\u0026gt;web2.iniserver.com\u0026lt;/title\u0026gt; \u0026lt;h1\u0026gt;Welcome to the web2.iniserver.com.\u0026lt;/h1\u0026gt; \u0026lt;/html\u0026gt; Jika kedua folder tadi sudah diisi dengan file index.html, kita akan mengubah hak akses untuk masing-masing folder supaya bisa diakses melalu browser\nroot@192.168.1.12:~$ chown -R www-data:www-data /var/www/html/web1.iniserver.com root@192.168.1.12:~$ chown -R www-data:www-data /var/www/html/web2.iniserver.com Konfigurasi untuk virtual host nginx Buat konfigurasi untuk masing-masing website\nroot@192.168.1.12:~$ nano /etc/nginx/sites-available/web1.iniserver.com.conf kemudian isi dengan\nserver { listen 80; listen [::]:80; root /var/www/html/web1.iniserver.com; index index.html index.htm; server_name web1.iniserver.com; location / { try_files $uri $uri/ =404; } } dan untuk web2.iniserver.com\nroot@192.168.1.12:~$ nano /etc/nginx/sites-available/web2.iniserver.com.conf kemudian isi dengan\nserver { listen 80; listen [::]:80; root /var/www/html/web2.iniserver.com; index index.html index.htm; server_name web2.iniserver.com; location / { try_files $uri $uri/ =404; } } Untuk menghidupkan konfigurasinya kita bisa dengan membuat symlink antara sites-available dengan sites-enabled\nroot@192.168.1.12:~$ ln -s /etc/nginx/sites-available/web1.iniserver.com.conf /etc/nginx/sites-enabled/ root@192.168.1.12:~$ ln -s /etc/nginx/sites-available/web2.iniserver.com.conf /etc/nginx/sites-enabled/ Validasi konfigurasi dengan\nroot@192.168.1.12:~$ nginx -t Jika tidak ada masalah maka akan keluar pesan seperti\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /etc/nginx/nginx.conf test is successful Restart nginx\nroot@192.168.1.12:~$ systemctl restart nginx Coba kunjugi domain web1.iniserver.com danweb2.iniserver.com jika tidak ada kesalahan maka akan keluar halaman html yg sudah dibuat sebelumnya. Nama domain dan sub domain bisa disesuaikan dengan yang kita punya. Jika tidak mempunyai domain hal ini bisa juga dilakukan dengan alamat IP dari vps kita, dan untuk membuat virtual host nya kita bisa menggunakan port, misal 192.168.1.12:99 dan 192.168.1.12:98. pada konfigurasi virtual host nya tinggal diubah listen portnya ke port yang dinginkan dan ganti server_name dengan alamat IP. Jangan lupa untuk membuka firewall pada port yang ingin digunakan.\nMenghubungkan dengan PHP-FPM Tambahkan konfigurasi virtual host untuk website yang dinginkan bisa mengeksekusi file php dengan:\nserver { listen 80; root /var/www/html/web1.iniserver.com; index index.html index.htm index.php; server_name web1.iniserver.com; location ~ \\.php$ { fastcgi_split_path_info ^(.+\\.php)(/.+)$; fastcgi_pass unix:/var/run/php/php7.3-fpm.sock; fastcgi_index index.php; include fastcgi_params; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; fastcgi_intercept_errors off; fastcgi_buffer_size 16k; fastcgi_buffers 4 16k; fastcgi_connect_timeout 600; fastcgi_send_timeout 600; fastcgi_read_timeout 600; } location / { try_files $uri $uri/ =404; } } Contoh menambahkan support php pada folder web1.iniserver.com. Jangan lupa restart php-fpm dan nginx (contoh menggunakan php7.3).\nroot@192.168.1.12:~$ systemctl restart nginx root@192.168.1.12:~$ systemctl restart php7.3-fpm Selesai!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/nginx-virtual-host\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/install-lemp-stack-ubuntu\/": {
-                "title": "Install Lemp Stack Ubuntu",
-                "tags": ["Ubuntu","LEMP","apache2","PHP","MySQL","Linux",],
-                "content": "LEMP merupakan singakatan dari Linux, Nginx, MariDB atau MySQL dan PHP. LEMP merupakan bundelan aplikasi yang biasa kita gunakan untuk menghost sebuah website, terutama yang ditulis dengan bahasa pemrograman PHP.\nRefresh repository ubuntu\nsudo apt update Upgrade package yang harus diupgrade, jika ada.\nsudo apt upgrade Instalasi Nginx sudo apt install nginx Jika instalasi sudah selesai, kita bisa memverifiasinya dengan mengunjungi url didalam browser\nhttp://\u0026lt;ip\u0026gt; Jika ada pesan Welcome to nginx! maka bisa dipastikan instalasinya berhasil. Terkadang ada kasus dimana halaman nginx tidak muncul padahal instalasi sudah berhasil, hal ini biasanya disebabkan oleh pengaturan Firewal yang ada divps kita. Untuk mengatasinya bisa melalui aplikasi UFW dengan memberitahukan nginx untuk menerima request di port 80 (http) dan port 443 (https) difirewall.\nInstall UFW sudo apt install ufw Berikan akses ke traffic http dan https\nsudo ufw allow http sudo ufw allow https Restart nginx\nsystemctl restart nginx Install MariaDB sudo apt install mariadb-server Tambah pengguna baru di MariaDB\nsudo mariadb Didalam shell MariaDB ketikkan perintah\nCREATE USER \u0026#39;admin\u0026#39;@\u0026#39;localhost\u0026#39; IDENTIFIED BY \u0026#39;admin12345\u0026#39;; GRANT ALL PRIVILEGES ON *.* TO \u0026#39;admin\u0026#39;@\u0026#39;localhost\u0026#39;; FLUSH PRIVILEGES; exit; Nanti ketika ingin terhubung ke MariaDB gunakan user admin@localhost dan password admin12345\nmariadb -uadmin -p Install PHP sudo apt install php-fpm php-mysql Verifikasi apakah php sudah benar terinstall. Pergi ke direktori root server di /var/wwww/html/, buat sebuah file baru dengan nama phpinfo.php dan diisi dengan kode\n\u0026lt;?php phpinfo(); Kemudian buka browser dan pergi ke http://\u0026lt;ip\u0026gt;/phpinfo.php. Jika error permission denied blabla\u0026hellip;, bisa diatasi dengan mengubah user dari folder /var/www/html/ menjadi www-data atau hak aksesnya diganti 776, 766, atau 777\nSelesai!!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/install-lemp-stack-ubuntu\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/pencarian-jekyll\/": {
-                "title": "Jekyll: Menambahkan Searching",
-                "tags": ["GitHub Pages","Jekyll",],
-                "content": "Untuk membuat pencarian pada halaman github pages yang menggunakan jekyll bisa dilakukan dengan 3 cara: Lunr, Google Custom Search Engine dan Simple Jekyll Search. Lunr sangat senang diimplementasikan tetapi akan membuat halaman menjadi berat. Sedangkan Google Custom Search Engine terbilang cukup ringan dan sangat sulit untuk diimplementasikan. Sehingga pilihan kita jatuh pada opsi ketiga yaitu menggunakan Simple Jekyll Search\nPada dasarnya Simple Jekyll Search akan mengenerate sebuah file json yang berisi judul dari postingan-postingan yang pernah kita buat. Sehingga kita hanya perlu menambahkan sedikit client-side javascript untuk mengakses file json tadi.\nBuat satu file json dengan nama search.json dan simpan pada root folder projek. Kemudian isi file search.json dengan:\n--- --- [ {% for post in site.posts %} { \u0026#34;title\u0026#34; : \u0026#34;{{ post.title | strip_html | escape }}\u0026#34;, \u0026#34;url\u0026#34; : \u0026#34;{{ site.baseurl }}{{ post.url }}\u0026#34;, \u0026#34;category\u0026#34; : \u0026#34;{{post.categories | join: \u0026#39;, \u0026#39;}}\u0026#34;, \u0026#34;tags\u0026#34; : \u0026#34;{{ post.tags | join: \u0026#39;, \u0026#39; }}\u0026#34;, \u0026#34;date\u0026#34; : \u0026#34;{{ post.date }}\u0026#34;, \u0026#34;description\u0026#34; : \u0026#34;{{ post.description | strip_html | strip_newlines | escape }}\u0026#34; } {% unless forloop.last %},{% endunless %} {% endfor %} ] Buat satu file javascript dengan nama search-script.js dan simpan pada root folder projek. Kemudian isi file script.js dengan script:\n/*! * Simple-Jekyll-Search * Copyright 2015-2020, Christian Fei * Licensed under the MIT License. */ !function(){\u0026#34;use strict\u0026#34;;var f={compile:function(r){return i.template.replace(i.pattern,function(t,e){var n=i.middleware(e,r[e],i.template);return void 0!==n?n:r[e]||t})},setOptions:function(t){i.pattern=t.pattern||i.pattern,i.template=t.template||i.template,\u0026#34;function\u0026#34;==typeof t.middleware\u0026amp;\u0026amp;(i.middleware=t.middleware)}};const i={pattern:/\\{(.*?)\\}/g,template:\u0026#34;\u0026#34;,middleware:function(){}};var n=function(t,e){var n=e.length,r=t.length;if(n\u0026lt;r)return!1;if(r===n)return t===e;t:for(var i=0,o=0;i\u0026lt;r;i++){for(var u=t.charCodeAt(i);o\u0026lt;n;)if(e.charCodeAt(o++)===u)continue t;return!1}return!0},e=new function(){this.matches=function(t,e){return n(e.toLowerCase(),t.toLowerCase())}},r=new function(){this.matches=function(e,t){return!!e\u0026amp;\u0026amp;(e=e.trim().toLowerCase(),(t=t.trim().toLowerCase()).split(\u0026#34; \u0026#34;).filter(function(t){return 0\u0026lt;=e.indexOf(t)}).length===t.split(\u0026#34; \u0026#34;).length)}},d={put:function(t){if(l(t))return a(t);if(function(t){return Boolean(t)\u0026amp;\u0026amp;\u0026#34;[object Array]\u0026#34;===Object.prototype.toString.call(t)}(t))return function(n){const r=[];s();for(let t=0,e=n.length;t\u0026lt;e;t++)l(n[t])\u0026amp;\u0026amp;r.push(a(n[t]));return r}(t);return undefined},clear:s,search:function(t){return t?function(e,n,r,i){const o=[];for(let t=0;t\u0026lt;e.length\u0026amp;\u0026amp;o.length\u0026lt;i.limit;t++){var u=function(t,e,n,r){for(const i in t)if(!function(n,r){for(let t=0,e=r.length;t\u0026lt;e;t++){var i=r[t];if(new RegExp(i).test(n))return!0}return!1}(t[i],r.exclude)\u0026amp;\u0026amp;n.matches(t[i],e))return t}(e[t],n,r,i);u\u0026amp;\u0026amp;o.push(u)}return o}(u,t,c.searchStrategy,c).sort(c.sort):[]},setOptions:function(t){c=t||{},c.fuzzy=t.fuzzy||!1,c.limit=t.limit||10,c.searchStrategy=t.fuzzy?e:r,c.sort=t.sort||o,c.exclude=t.exclude||[]}};function o(){return 0}const u=[];let c={};function s(){return u.length=0,u}function l(t){return Boolean(t)\u0026amp;\u0026amp;\u0026#34;[object Object]\u0026#34;===Object.prototype.toString.call(t)}function a(t){return u.push(t),u}c.fuzzy=!1,c.limit=10,c.searchStrategy=c.fuzzy?e:r,c.sort=o,c.exclude=[];var p={load:function(t,e){const n=window.XMLHttpRequest?new window.XMLHttpRequest:new ActiveXObject(\u0026#34;Microsoft.XMLHTTP\u0026#34;);n.open(\u0026#34;GET\u0026#34;,t,!0),n.onreadystatechange=h(n,e),n.send()}};function h(e,n){return function(){if(4===e.readyState\u0026amp;\u0026amp;200===e.status)try{n(null,JSON.parse(e.responseText))}catch(t){n(t,null)}}}var m=function y(t){if(!(e=t)||!(\u0026#34;undefined\u0026#34;!=typeof e.required\u0026amp;\u0026amp;e.required instanceof Array))throw new Error(\u0026#34;-- OptionsValidator: required options missing\u0026#34;);var e;if(!(this instanceof y))return new y(t);const r=t.required;this.getRequiredOptions=function(){return r},this.validate=function(e){const n=[];return r.forEach(function(t){\u0026#34;undefined\u0026#34;==typeof e[t]\u0026amp;\u0026amp;n.push(t)}),n}},w={merge:function(t,e){const n={};for(const r in t)n[r]=t[r],\u0026#34;undefined\u0026#34;!=typeof e[r]\u0026amp;\u0026amp;(n[r]=e[r]);return n},isJSON:function(t){try{return t instanceof Object\u0026amp;\u0026amp;JSON.parse(JSON.stringify(t))?!0:!1}catch(e){return!1}}};!function(t){let i={searchInput:null,resultsContainer:null,json:[],success:Function.prototype,searchResultTemplate:\u0026#39;\u0026lt;li\u0026gt;\u0026lt;a href=\u0026#34;{url}\u0026#34; title=\u0026#34;{desc}\u0026#34;\u0026gt;{title}\u0026lt;/a\u0026gt;\u0026lt;/li\u0026gt;\u0026#39;,templateMiddleware:Function.prototype,sortMiddleware:function(){return 0},noResultsText:\u0026#34;No results found\u0026#34;,limit:10,fuzzy:!1,debounceTime:null,exclude:[]},n;const e=function(t,e){e?(clearTimeout(n),n=setTimeout(t,e)):t.call()};var r=[\u0026#34;searchInput\u0026#34;,\u0026#34;resultsContainer\u0026#34;,\u0026#34;json\u0026#34;];const o=m({required:r});function u(t){d.put(t),i.searchInput.addEventListener(\u0026#34;input\u0026#34;,function(t){-1===[13,16,20,37,38,39,40,91].indexOf(t.which)\u0026amp;\u0026amp;(c(),e(function(){l(t.target.value)},i.debounceTime))})}function c(){i.resultsContainer.innerHTML=\u0026#34;\u0026#34;}function s(t){i.resultsContainer.innerHTML+=t}function l(t){var e;(e=t)\u0026amp;\u0026amp;0\u0026lt;e.length\u0026amp;\u0026amp;(c(),function(e,n){var r=e.length;if(0===r)return s(i.noResultsText);for(let t=0;t\u0026lt;r;t++)e[t].query=n,s(f.compile(e[t]))}(d.search(t),t))}function a(t){throw new Error(\u0026#34;SimpleJekyllSearch --- \u0026#34;+t)}t.SimpleJekyllSearch=function(t){var n;0\u0026lt;o.validate(t).length\u0026amp;\u0026amp;a(\u0026#34;You must specify the following required options: \u0026#34;+r),i=w.merge(i,t),f.setOptions({template:i.searchResultTemplate,middleware:i.templateMiddleware}),d.setOptions({fuzzy:i.fuzzy,limit:i.limit,sort:i.sortMiddleware,exclude:i.exclude}),w.isJSON(i.json)?u(i.json):(n=i.json,p.load(n,function(t,e){t\u0026amp;\u0026amp;a(\u0026#34;failed to get JSON (\u0026#34;+n+\u0026#34;)\u0026#34;),u(e)}));t={search:l};return\u0026#34;function\u0026#34;==typeof i.success\u0026amp;\u0026amp;i.success.call(t),t}}(window)}(); Buat satu file markdown dengan nama search.md dan simpan pada root folder projek. Kemudian isi file search.md dengan script:\n\u0026lt;!-- Html Elements for Search --\u0026gt; \u0026lt;style\u0026gt; #search-container { max-width: 40em; padding: 1em; margin: 1em auto; border: 1px solid lightgrey; } #search-input { display: inline-block; padding: 0.5em; width: 100%; font-size: 0.8em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } \u0026lt;/style\u0026gt; \u0026lt;div id=\u0026#34;search-container\u0026#34;\u0026gt; \u0026lt;input type=\u0026#34;text\u0026#34; id=\u0026#34;search-input\u0026#34; placeholder=\u0026#34;search...\u0026#34; autocomplete=\u0026#34;off\u0026#34;\u0026gt; \u0026lt;ul id=\u0026#34;results-container\u0026#34;\u0026gt;\u0026lt;/ul\u0026gt; \u0026lt;/div\u0026gt; \u0026lt;!-- Script pointing to search-script.js --\u0026gt; \u0026lt;script src=\u0026#34;/search-script.js\u0026#34; type=\u0026#34;text/javascript\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; \u0026lt;!-- Configuration --\u0026gt; \u0026lt;script\u0026gt; SimpleJekyllSearch({ searchInput: document.getElementById(\u0026#39;search-input\u0026#39;), searchResultTemplate: \u0026#39;\u0026lt;li\u0026gt;\u0026lt;a href=\u0026#34;{url}\u0026#34;\u0026gt;{title}\u0026lt;/a\u0026gt;\u0026lt;/li\u0026gt;\u0026#39;, resultsContainer: document.getElementById(\u0026#39;results-container\u0026#39;), noResultsText: \u0026#39;No results found!\u0026#39;, json: \u0026#39;/search.json\u0026#39; }) \u0026lt;/script\u0026gt; Tinggal masukkan halaman pencarian kedalam menu navigasi sehingga halaman pencarian bisa diakses.\nSelesai!!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/pencarian-jekyll\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/laravel-setup-laravel-passport\/": {
-                "title": "Laravel: Setup Laravel Passport",
-                "tags": ["PHP","Laravel","Authentication","PHP",],
-                "content": "Laravel Passport provides a full OAuth2 server implementation for your Laravel application in a matter of minutes. Passport is built on top of the League OAuth2 server that is maintained by Andy Millington and Simon Hamp.\n{ \u0026#39;Accept\u0026#39;: \u0026#39;application/json\u0026#39; } Generate the middleware using artisan\nphp artisan make:middleware ForceJsonRequestMiddleware Content of ForceJsonRequestMiddleware.php in handle() function. The file locate at App/Http/Middleware/ForceJsonRequestMiddleware.php.\n$request-\u0026gt;headers-\u0026gt;set(\u0026#39;Accept\u0026#39;, \u0026#39;application/json\u0026#39;); return $next($request); Register the middleware to $routeMiddleware array at app/Http/Kernel.php.\n\u0026#39;json.response\u0026#39; =\u0026gt; \\App\\Http\\Middleware\\ForceJsonRequestMiddleware::class, Then, we’ll also add it to the $middleware array in the same file:\n\\App\\Http\\Middleware\\ForceJsonRequestMiddleware::class, That would make sure that the ForceJsonRequestMiddleware middleware is run on every request.\nphp artisan make:middleware CorsMiddleware Update the handle() function:\nreturn $next($request) -\u0026gt;header(\u0026#39;Access-Control-Allow-Origin\u0026#39;, \u0026#39;*\u0026#39;) -\u0026gt;header(\u0026#39;Access-Control-Allow-Methods\u0026#39;, \u0026#39;GET, POST, PUT, DELETE, OPTIONS\u0026#39;) -\u0026gt;header(\u0026#39;Access-Control-Allow-Headers\u0026#39;, \u0026#39;X-Requested-With, Content-Type, X-Token-Auth, Authorization\u0026#39;); Register the middleware to $routeMiddleware array at app/Http/Kernel.php.\n\u0026#39;cors\u0026#39; =\u0026gt; \\App\\Http\\Middleware\\CorsMiddleware::class, Then, we’ll also add it to the $middleware array in the same file:\n\\App\\Http\\Middleware\\CorsMiddleware::class, We can use the middlewares in our api.php routing like:\nRoute::group([\u0026#39;middleware\u0026#39; =\u0026gt; [\u0026#39;cors\u0026#39;, \u0026#39;json.response\u0026#39;]], function () { // route path... }); composer require laravel/passport Migrating the tables\nphp artisan migrate Generate secure access token using artisan\nphp artisan passport:install Updating User model\n\u0026lt;?php namespace App\\Models; ... use Laravel\\Passport\\HasApiTokens; //add the namespace class User extends Authenticatable { use HasApiTokens, HasFactory, Notifiable; //use it here } Registering passport routes to AuthServiceProvider, place at boot() function\nif (!$this-\u0026gt;app-\u0026gt;routesAreCached()) { Passport::routes(); } Add passport TokenGuard at config/auth.php\n\u0026#39;guards\u0026#39; =\u0026gt; [ \u0026#39;web\u0026#39; =\u0026gt; [ \u0026#39;driver\u0026#39; =\u0026gt; \u0026#39;session\u0026#39;, \u0026#39;provider\u0026#39; =\u0026gt; \u0026#39;users\u0026#39;, ], \u0026#39;api\u0026#39; =\u0026gt; [ \u0026#39;driver\u0026#39; =\u0026gt; \u0026#39;passport\u0026#39;, //update this line \u0026#39;provider\u0026#39; =\u0026gt; \u0026#39;users\u0026#39;, ], ], php artisan make:controller Api/AuthController At top of the controller don\u0026rsquo;t forget to import used depedencies\nuse Illuminate\\Support\\Facades\\Validator; public function login(Request $request) { $validator = Validator::make($request-\u0026gt;all(), [ \u0026#39;email\u0026#39; =\u0026gt; \u0026#39;required|email\u0026#39;, \u0026#39;password\u0026#39; =\u0026gt; \u0026#39;required\u0026#39; ]); if ($validator-\u0026gt;fails()) { return response()-\u0026gt;json([ \u0026#39;success\u0026#39; =\u0026gt; false, \u0026#39;msg\u0026#39; =\u0026gt; $validator-\u0026gt;errors()-\u0026gt;all(), \u0026#39;data\u0026#39; =\u0026gt; [] ], 422); } $data = $request-\u0026gt;only(\u0026#39;email\u0026#39;, \u0026#39;password\u0026#39;); if (!auth()-\u0026gt;attempt($data)) { return response()-\u0026gt;json([ \u0026#39;success\u0026#39; =\u0026gt; false, \u0026#39;msg\u0026#39; =\u0026gt; \u0026#39;Invalid email or password\u0026#39;, \u0026#39;data\u0026#39; =\u0026gt; [] ]); } $token = auth()-\u0026gt;user()-\u0026gt;createToken(\u0026#39;API Token\u0026#39;)-\u0026gt;accessToken; return response()-\u0026gt;json([ \u0026#39;success\u0026#39; =\u0026gt; true, \u0026#39;msg\u0026#39; =\u0026gt; \u0026#39;Logged in user data\u0026#39;, \u0026#39;data\u0026#39; =\u0026gt; [ \u0026#39;profile\u0026#39; =\u0026gt; auth()-\u0026gt;user(), \u0026#39;token\u0026#39; =\u0026gt; $token ] ]); } public function logout(Request $request) { $token = $request-\u0026gt;user()-\u0026gt;token(); $token-\u0026gt;revoke(); return response()-\u0026gt;json([ \u0026#39;success\u0026#39; =\u0026gt; true, \u0026#39;msg\u0026#39; =\u0026gt; \u0026#39;You have been successfully logged out\u0026#39;, \u0026#39;data\u0026#39; =\u0026gt; [] ]); } Route::group([\u0026#39;middleware\u0026#39; =\u0026gt; [\u0026#39;cors\u0026#39;, \u0026#39;json.response\u0026#39;]], function () { Route::post(\u0026#39;/login\u0026#39;, [AuthController::class, \u0026#39;login\u0026#39;]); Route::middleware(\u0026#39;auth:api\u0026#39;)-\u0026gt;group(function () { Route::post(\u0026#39;/logout\u0026#39;, [AuthController::class, \u0026#39;logout\u0026#39;]); }); }); Done!!!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/laravel-setup-laravel-passport\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/react-update-document-title\/": {
-                "title": "React: Mengubah Title Halaman Secara Dinamis",
-                "tags": ["React.js","DOM","React Hook",],
-                "content": "Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within \u0026lt;body\u0026gt;\u0026lt;/body\u0026gt; tag. Since React 16.8 we can built custom hook that can easly access the document.title and change the active page title.\nWe can create a hook like:\nimport { useEffect } from \u0026#34;react\u0026#34;; export default function useTitle(title) { useEffect(() =\u0026gt; { const prevTitle = document.title; document.title = title; return () =\u0026gt; { document.title = prevTitle; }; }); } And then we can use it anywhere in our pages. Like in Home.jsx\nimport useTitle from \u0026#34;./Hooks/useTitle\u0026#34; export default function Home () { useTitle(\u0026#34;Webname - Home\u0026#34;); return ( \u0026lt;div\u0026gt; ... \u0026lt;/div\u0026gt; ) } Done!!\n",
-                "url": "https:\/\/aziyan99.github.io\/posts\/react-update-document-title\/"
-            },
-            
-            "https:\/\/aziyan99.github.io\/posts\/planning\/": {
-                "title": "Planning",
-                "tags": [],
-                "content": "todo:\nGet understanding in php especially in codeigniter framework Get a better value in lecture Make a youtube tutorial channel ",
-                "url": "https:\/\/aziyan99.github.io\/posts\/planning\/"
-            },
-            
-        }
-    </script>
-    <script src="/js/lunr.min.js"></script>
-    <script src="/js/search.js"></script>
-</footer>
+</section>
+    </footer>
+  </div>
+  
 </body>
 
 </html>

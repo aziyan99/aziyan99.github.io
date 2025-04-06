@@ -1,0 +1,4 @@
+<form id="search" action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+    <label hidden for="search-input">Search</label>
+    <input type="text" id="search-input" name="query" placeholder="Search" class="outline-none focus:outline-none border border-neutral-300 focus:border-neutral-600 rounded py-1 px-2" autocomplete="off">
+</form>

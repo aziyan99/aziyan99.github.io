@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Js on Aziyan99</title>
+    <title>Js on Raja Azian</title>
     <link>https://aziyan99.github.io/tags/js/</link>
-    <description>Recent content in Js on Aziyan99</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Js on Raja Azian</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
     <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
-    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 01 Apr 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://aziyan99.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Belajar Alpinejs</title>
       <link>https://aziyan99.github.io/posts/belajar-alpine-js/</link>
-      <pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate>
-      <author>rajaazian08@gmail.com (Raja Azian)</author>
+      <pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
       <guid>https://aziyan99.github.io/posts/belajar-alpine-js/</guid>
       <description>Alpinejs adalah salah satu library yang bisa digunakan untuk membuat halaman HTML menjadi interaktif</description>
     </item>
-    
   </channel>
 </rss>

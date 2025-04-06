@@ -1,0 +1,237 @@
+@import './chroma.css';
+@import './font.css';
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+@reference 'tailwindcss';
+
+@layer base {
+    body {
+        font-family: 'LatoLatinWeb', sans-serif;
+        counter-reset: sidenote-counter;
+    }
+
+    nav a:hover {
+        @apply underline decoration-slate-300 decoration-2 underline-offset-4;
+    }
+
+    nav a.active,
+    nav a.ancestor {
+        @apply underline decoration-2 underline-offset-4;
+    }
+
+    nav a.ancestor {
+        @apply decoration-slate-300;
+    }
+
+    article.main a {
+        @apply !text-blue-800;
+    }
+
+    article.main a:hover {
+        @apply hover:decoration-2 hover:underline-offset-2;
+    }
+
+    article.main .codeblock-meta a {
+        @apply !text-white/70;
+    }
+
+    article.main .codeblock-meta a:hover {
+        @apply hover:!text-sky-400;
+    }
+
+    article.main figure img {
+        @apply mb-0 border p-1;
+    }
+
+    article.main figure figcaption {
+        @apply mt-1 text-center;
+    }
+
+    article.main figure figcaption h4 {
+        @apply mt-0;
+    }
+
+    article.main figure figcaption p {
+        @apply mt-1 italic;
+    }
+
+    a.taxonomy {
+        @apply whitespace-nowrap rounded-sm border border-slate-200 bg-slate-100 p-1 text-sm font-semibold lowercase no-underline;
+    }
+
+    a.taxonomy:hover {
+        @apply border-slate-300 bg-slate-200;
+    }
+
+    a.taxonomy .count {
+        @apply relative -top-px rounded bg-slate-300 px-[3px] py-[1px] text-[10px] font-normal tabular-nums text-slate-500;
+    }
+
+    a.taxonomy:hover .count {
+        @apply bg-slate-400 text-slate-600;
+    }
+
+    .pagination {
+        @apply mt-10 flex flex-row items-center justify-center space-x-4;
+    }
+
+    .pagination .active a {
+        @apply font-semibold underline decoration-2 underline-offset-4;
+    }
+
+    .pagination .disabled a {
+        @apply cursor-not-allowed opacity-50;
+    }
+
+    .sidenote {
+        @apply inline;
+        counter-increment: sidenote-counter;
+    }
+
+    .sidenote-checkbox ~ .sidenote-content {
+        @apply max-lg:sr-only;
+    }
+
+    .sidenote-checkbox:checked ~ .sidenote-content {
+        @apply max-lg:not-sr-only max-lg:left-auto max-lg:float-left max-lg:my-2 max-lg:block max-lg:min-w-full max-lg:pl-4 max-lg:text-sky-600;
+    }
+
+    .sidenote-checkbox:checked ~ .sidenote-mark {
+        @apply no-underline max-lg:text-sky-600;
+    }
+
+    .sidenote:active,
+    .sidenote:active .sidenote-content {
+        @apply text-sky-600;
+    }
+
+    .sidenote:hover .sidenote-mark::after,
+    .sidenote:hover .sidenote-content::before {
+        @apply text-sky-600;
+    }
+
+    .sidenote-mark::after {
+        @apply inline align-super text-xs font-semibold;
+        content: counter(sidenote-counter);
+    }
+
+    @media (max-width: 1023px) {
+        .sidenote-mark::after {
+            @apply hidden;
+        }
+        .sidenote-mark {
+            @apply cursor-pointer underline decoration-sky-600 decoration-dotted decoration-2 underline-offset-4;
+        }
+    }
+
+    .sidenote-content::before {
+        @apply absolute -left-16 bottom-0 top-0 flex w-14 items-start justify-end text-sm font-semibold;
+        content: counter(sidenote-counter) '.';
+    }
+
+    @media (max-width: 1023px) {
+        .sidenote-content::before {
+            @apply hidden;
+        }
+    }
+
+    .sidenote-content {
+        @apply motion-safe:transition-all;
+    }
+
+    @media (min-width: 1024px) {
+        .sidenote-content {
+            @apply absolute right-0 w-48 cursor-default;
+            margin-right: calc(-1 * 12rem - 1 * 4rem);
+        }
+    }
+
+    .footnote-ref {
+        @apply align-super text-xs font-semibold motion-safe:transition-all;
+    }
+
+    @media (max-width: 1023px) {
+        .footnote-ref {
+            @apply cursor-pointer underline decoration-sky-600 decoration-dotted decoration-2 underline-offset-4;
+        }
+        .footnote-ref:hover {
+            @apply underline-offset-4;
+        }
+    }
+
+    .admonition {
+        @apply my-6 rounded border bg-slate-100 py-4 pl-2 pr-4 text-slate-800 shadow-sm;
+    }
+
+    .admonition svg {
+        @apply relative -top-[2px];
+    }
+
+    .admonition a {
+        @apply underline decoration-1;
+    }
+
+    .admonition.tip {
+        @apply border-indigo-200 bg-indigo-100 text-indigo-800;
+    }
+
+    .admonition.tip a {
+        @apply !text-indigo-900;
+    }
+
+    .admonition.warning {
+        @apply border-orange-200 bg-orange-100 text-orange-800;
+    }
+
+    .admonition.warning a {
+        @apply !text-orange-900;
+    }
+
+    .admonition.danger {
+        @apply border-red-200 bg-red-100 text-red-800;
+    }
+
+    .admonition.danger a {
+        @apply !text-red-900;
+    }
+
+    .codeblock pre {
+        @apply overflow-x-scroll rounded p-2 text-sm;
+        color: #c0caf5;
+        background-color: #1a1b26;
+    }
+
+    .codeblock div.chroma,
+    pre code {
+        @apply overflow-x-scroll;
+    }
+
+    .codeblock .hl {
+        @apply bg-[#2f3248];
+    }
+
+    article.main .diagram-meta a {
+        @apply !text-gray-500 transition-colors;
+    }
+
+    article.main .diagram-meta a:hover {
+        @apply hover:!text-sky-400;
+    }
+
+    footer a {
+        @apply underline;
+    }
+
+    footer a:hover {
+        @apply hover:decoration-2;
+    }
+
+    .network-chart .node {
+        @apply hidden;
+    }
+
+    .network-chart .edge {
+        @apply hidden;
+    }
+}

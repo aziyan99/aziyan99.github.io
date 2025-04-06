@@ -1,17 +1,16 @@
 ---
-title: "Setup Unit Test dan Behat (Acceptance) Test Pada Moodle"
+title: "Moodle: Unit & Behat Test"
 date: 2023-03-24T21:28:52+07:00
 draft: false
 tags:
   [
-    "Moodle",
     "PHPUnit",
     "Unit Test",
     "Behat",
     "Acceptance Test",
-    "PHP",
-    "Software Testing",
+    "PHP"
   ]
+summary: "Setup Unit Test dan Acceptance Test pada Moodle LMS"
 ---
 
 ### 1. Kondisi Awal

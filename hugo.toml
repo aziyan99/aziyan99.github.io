@@ -1,0 +1,52 @@
+baseURL = 'https://aziyan99.github.io/'
+languageCode = 'en-us'
+title = 'Raja Azian'
+theme = 'simpla'
+enableRobotsTXT = true
+titleCaseStyle = "firstupper"
+
+[outputs]
+  home = ['html']
+  section = ['html', 'rss']
+  page = ['html']
+
+[frontmatter]
+  lastmod = ["lastmod", "modified"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 30
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = 'github'
+
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
+[params]
+  description = "Senior, -Full Time HTML Programmer."
+
+  [params.author]
+    name = "Raja Azian"
+    email = "rajaazian08@gmail.com"
+
+  [params.footer]
+    creativeCommonsLicense = 'by_sa'
+
+  [params.robotstxt]
+    blockCC = false
+    blockAI = true

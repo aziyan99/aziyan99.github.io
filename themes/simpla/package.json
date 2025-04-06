@@ -1,0 +1,20 @@
+{
+  "name": "simpla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.3",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.1.3"
+  }
+}

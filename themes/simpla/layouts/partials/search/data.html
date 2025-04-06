@@ -1,0 +1,13 @@
+<script>
+    window.store = {
+        {{ $pages := where .Site.Pages "Section" "posts" }}
+        {{ range $index, $page := $pages }}
+            "{{ $page.Permalink }}": {
+                "title": "{{ $page.Title }}",
+                "content": "{{ $page.Content | plainify }}",
+                "url": "{{ $page.Permalink }}",
+                "tags": [{{ range $tagIndex, $tag := $page.Params.Tags }}{{ if $tagIndex }}, {{ end }}"{{ $tag }}"{{ end }}]
+            }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
+        {{ end }}
+    }
+</script>

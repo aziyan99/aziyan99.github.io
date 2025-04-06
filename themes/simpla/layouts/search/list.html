@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+  {{ partial "search/data.html" . }}
+  
+  <h1 class="flex flex-row items-center space-x-2">
+    <span id="search-title">{{ .Title }}</span>
+  </h1>
+
+  {{ .Content }}
+
+  <div class="not-prose">
+    <ol id="results"></ol>
+  </div>
+{{ end }}

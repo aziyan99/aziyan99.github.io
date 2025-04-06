@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <h1 class="flex flex-row items-center space-x-2">
+    <span>{{ .Title }}</span>
+    {{- with .OutputFormats.Get "rss" }}
+      <a
+        rel="alternate"
+        type="application/rss+xml"
+        href="{{ .RelPermalink }}"
+        title="Subscribe to the {{ $.Title }} RSS feed"
+        class="text-slate-300 hover:text-orange-600"
+      >
+        {{ partial "svg/rss.html" }}
+      </a>
+    {{- end }}
+  </h1>
+
+  {{ .Content }}
+
+  <div class="flex flex-col space-y-8">
+    <section class="not-prose">
+      {{ $pager := .Paginate .Pages (default 20 site.Params.tags.pageSize) }}
+      {{ partial "tags/list.html" $pager.Pages }}
+      {{ if gt $pager.TotalPages 1 }}{{ partial "pagination.html" . }}{{ end }}
+    </section>
+  </div>
+{{ end }}

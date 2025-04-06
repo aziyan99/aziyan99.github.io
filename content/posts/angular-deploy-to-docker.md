@@ -12,7 +12,7 @@ Buat sebuah file baru di root folder projek angular dengan nama `Dockferfile` da
 
 Buka file `Dockerfile` kemudian tuliskan
 
-```
+```Dockerfile
 ### Tahap 1 ###
 FROM node:16.10-alpine AS build
 
@@ -30,7 +30,7 @@ COPY nginx/nginx.conf  /etc/nginx/conf.d/default.conf
 EXPOSE 80
 ```
 
-> Note: sesuaikan <nama-projek> dengan nama projek angular
+> Note: sesuaikan `<nama-projek>` dengan nama projek angular
 
 Pada **Tahap 1** kita akan mengambil image `node:16.10-alpine` dan menjadikannya sebagai dasar dari image kita, image ini akan secara default terinstall `Nodejs` versi 16, kemudian kita jadikan folder `/dist/src/app` sebagai folder untuk kita menempatkan projek angular kita yang akan dideploy. Baris `RUN npm cache clean --force` sebenarnya opsional perintah itu akan membersihkan cache dari npm.
 
@@ -38,7 +38,7 @@ Selanjutnya, baris `COPY . .` akan menyalin semua file dan folder dari projek an
 
 Sebelum ke **Tahap 2** buka file `nginx.conf` yang sudah dibuat sebelumnya. Disini kita akan menuliskan konfigurasi untuk bagaimana `nginx` seharusnya menangani projek angular kita
 
-```
+```nginx
 server {
   listen 80;
   sendfile on;
@@ -67,7 +67,7 @@ Pada **Tahap 2** kita mulai dengan mengambil image docker nginx, kemudian menyal
 
 Untuk membuat imagenya kita bisa menjalankan perintah
 
-```
+```bash
 docker build -t mydocker/angular:latest .
 ```
 
@@ -75,13 +75,13 @@ dan tunggu hingga proses build selesai.
 
 Menjalankannya kita bisa lakukan dengan perintah
 
-```
+```bash
 docker run docker run -d -t -i -p 4200:80 --name mydocker-angular  mydocker/angular:latest
 ```
 
 Buka browser dan pergi ke
 
-```
+```txt
 http://localhost:4200
 ```
 
@@ -95,7 +95,7 @@ Anggaplah kita mau membuat sebuah variabel environment dengan nama `ENV_NAME`.
 
 Ubah file `src/environment.ts` menjadi
 
-```
+```ts
 declare const window: any;
 
 export const environment = {
@@ -106,7 +106,7 @@ export const environment = {
 
 Dan file `src/environment.prod.ts` menjadi
 
-```
+```ts
 declare const window: any;
 
 export const environment = {
@@ -119,7 +119,7 @@ Kemudian buat dua file baru didalam folder `src/assets` dengan nama `env.js` dan
 
 File `env.js`.
 
-```
+```js
 // File: env.js
 (function (window) {
   window.env = window.env || {};
@@ -131,7 +131,7 @@ File `env.js`.
 
 Dan file `env.template.js`
 
-```
+```js
 (function (window) {
   window.env = window.env || {};
 
@@ -142,12 +142,12 @@ Dan file `env.template.js`
 
 Selanjutnya, ubah masukkan file `env.js` kedalam file `src/index.html`
 
-```
+```html
   <script src="assets/env.js"></script>
 ```
 
 Terakhir tambahkan baris
 
-```
+```bash
 CMD ["/bin/sh", "-c", "envsubst < /usr/share/nginx/html/assets/env.template.js > /usr/share/nginx/html/assets/env.js && exec nginx -g 'daemon off;'"]
 ```

@@ -1,0 +1,18 @@
+baseURL = 'https://github.com/aziyan99/gohugo-theme-simpla/'
+languageCode = 'en-US'
+title = 'Simpla'
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+    [module.hugoVersion]
+        extended = false
+        min = "0.116.0"
