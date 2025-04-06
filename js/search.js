@@ -1,1 +1,57 @@
-function displayResults(e,t){const s=document.getElementById("results");if(e.length){let n="<p class='ml-2 mt-5'>search results</p>";n+="<div class='border border-gray-400 p-2'>";for(const s in e){const o=t[e[s].ref];n+=`\n        <a href="${o.url}" class="text-blue-700 hover:underline block focus:outline focus:outline-blue-700">${o.title.substring(0,12)} ...</a> \n      `}n+="</div>",s.innerHTML=n}else resultList+="</div>",s.innerHTML="No results found."}const params=new URLSearchParams(window.location.search),query=params.get("query");if(query){document.getElementById("search-input").setAttribute("value",query);displayResults(lunr((function(){this.ref("id"),this.field("title",{boost:15}),this.field("tags"),this.field("content",{boost:10});for(const e in window.store)this.add({id:e,title:window.store[e].title,tags:window.store[e].category,content:window.store[e].content})})).search(query),window.store)}
+(() => {
+  // <stdin>
+  function displayResults(results, store) {
+    const searchResults = document.getElementById("results");
+    if (results.length) {
+      let resultList = "";
+      for (const n in results) {
+        const item = store[results[n].ref];
+        resultList += `
+        <li>
+          <article class="flex flex-row items-center">
+            <header class="grow">
+              <h3>
+                <a
+                  href="${item.url}"
+                  class="truncate text-sm underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
+                  title="${item.title}">${item.title}</a>
+              </h3>
+            </header>
+          </article>
+        </li>
+        `;
+      }
+      searchResults.innerHTML = resultList;
+    } else {
+      searchResults.innerHTML = "No results found.";
+    }
+  }
+  var params = new URLSearchParams(window.location.search);
+  var query = params.get("query");
+  if (query) {
+    document.getElementById("search-input").setAttribute("value", query);
+    const idx = lunr(function() {
+      this.ref("id");
+      this.field("title", {
+        // boost search to 15
+        boost: 15
+      });
+      this.field("tags");
+      this.field("content", {
+        // boost search to 10
+        boost: 10
+      });
+      for (const key in window.store) {
+        this.add({
+          id: key,
+          title: window.store[key].title,
+          tags: window.store[key].category,
+          content: window.store[key].content
+        });
+      }
+    });
+    const results = idx.search(query);
+    displayResults(results, window.store);
+    document.getElementById("search-title").innerText = "Results for " + query;
+  }
+})();

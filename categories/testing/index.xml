@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Raja Azian</title>
+    <link>http://localhost:1313/categories/testing/</link>
+    <description>Recent content in Testing on Raja Azian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>mchnrksn@gmail.com (Michael Henriksen)</managingEditor>
+    <webMaster>mchnrksn@gmail.com (Michael Henriksen)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adonisjs CRUD</title>
+      <link>http://localhost:1313/posts/redmine-docker-compose/</link>
+      <pubDate>Sat, 17 Sep 2022 19:02:23 +0700</pubDate><author>mchnrksn@gmail.com (Michael Henriksen)</author>
+      <guid>http://localhost:1313/posts/redmine-docker-compose/</guid>
+      <description>CRUD adalah salah satu komponen yang biasanya ada dalam sistem informasi atau aplikasi, kita akan membuat CRUD dengan AdonisJS</description>
+    </item>
+  </channel>
+</rss>

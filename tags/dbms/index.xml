@@ -1,2 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DBMS on Aziyan99</title><link>https://aziyan99.github.io/tags/dbms/</link><description>Recent content in DBMS on Aziyan99</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><copyright>2022 Raja Azian All rights reserved</copyright><lastBuildDate>Fri, 01 Apr 2022 21:29:54 +0700</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/dbms/index.xml" rel="self" type="application/rss+xml"/><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik debugging kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable general_log dimana ketika kita ubah nilainya menjadi 1 MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di /usr/local/var/mysql.
-Mengaktifkan General Log Login kedalam console MariaDB:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DBMS on Raja Azian</title><link>https://aziyan99.github.io/tags/dbms/</link><description>Recent content in DBMS on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/dbms/index.xml" rel="self" type="application/rss+xml"/><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>&lt;p>Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik &lt;em>debugging&lt;/em> kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable &lt;code>general_log&lt;/code> dimana ketika kita ubah nilainya menjadi &lt;code>1&lt;/code> MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di &lt;code>/usr/local/var/mysql&lt;/code>.&lt;/p>
+&lt;h2 id="mengaktifkan-general-log" class="scroll-mt-8 group">
+ Mengaktifkan General Log
+ 
+ &lt;a href="#mengaktifkan-general-log"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1">
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+>
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+&lt;/svg>
+
+ &lt;/a>
+ 
+&lt;/h2>
+&lt;p>Login kedalam console MariaDB:&lt;/p></description></item></channel></rss>

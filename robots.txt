@@ -1,139 +1,46 @@
+
+# Block generative AI/LLM bots (source: https://github.com/ai-robots-txt/ai.robots.txt)
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Amazonbot
+User-agent: anthropic-ai
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: ChatGPT-User
+User-agent: Claude-Web
+User-agent: ClaudeBot
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: FacebookBot
+User-agent: facebookexternalhit
+User-agent: FriendlyCrawler
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: GPTBot
+User-agent: iaskspider/2.0
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: ISSCyberRiskCrawler
+User-agent: Kangaroo Bot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: OAI-SearchBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PerplexityBot
+User-agent: PetalBot
+User-agent: Scrapy
+User-agent: Sidetrade indexer bot
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: Webzio-Extended
+User-agent: YouBot
+Disallow: /
 User-agent: *
-
-Allow: /tags/acceptance-test/
-
 Allow: /
 
-Allow: /tags/behat/
-
-Allow: /tags/moodle/
-
-Allow: /tags/php/
-
-Allow: /tags/phpunit/
-
-Allow: /posts/
-
-Allow: /posts/moodle-setup-unit-and-behat-test/
-
-Allow: /tags/software-testing/
-
-Allow: /tags/
-
-Allow: /tags/unit-test/
-
-Allow: /tags/angular/
-
-Allow: /posts/angular-deploy-to-docker/
-
-Allow: /tags/docker/
-
-Allow: /tags/adonisjs/
-
-Allow: /posts/adonisjs-crud/
-
-Allow: /tags/crud/
-
-Allow: /tags/framework/
-
-Allow: /tags/bar/
-
-Allow: /posts/dasar-dasar-php-programming/
-
-Allow: /tags/foo/
-
-Allow: /posts/backup-mysql-database/
-
-Allow: /tags/database/
-
-Allow: /tags/mariadb/
-
-Allow: /tags/mysql/
-
-Allow: /tags/laravel/
-
-Allow: /posts/belajar-laravel-queue/
-
-Allow: /tags/queue/
-
-Allow: /tags/composer/
-
-Allow: /posts/laravel-membuat-simple-package/
-
-Allow: /tags/alpinejs/
-
-Allow: /posts/belajar-alpine-js/
-
-Allow: /tags/dbms/
-
-Allow: /tags/js/
-
-Allow: /posts/mariadb-mysql-general-log/
-
-Allow: /posts/composer-for-dummies/
-
-Allow: /posts/laravel-membuat-folder/
-
-Allow: /tags/nginx/
-
-Allow: /posts/install-nginx-macos/
-
-Allow: /tags/osx/
-
-Allow: /tags/dbtransaction/
-
-Allow: /tags/image/
-
-Allow: /posts/laravel-database-transaction/
-
-Allow: /posts/laravel-generate-sitemap/
-
-Allow: /posts/laravel-path-gambar-dari-model/
-
-Allow: /tags/model/
-
-Allow: /tags/sitemap/
-
-Allow: /tags/barcode/
-
-Allow: /posts/laravel-generate-barcode/
-
-Allow: /posts/laravel-select-between-date/
-
-Allow: /posts/nginx-virtual-host/
-
-Allow: /tags/ubuntu/
-
-Allow: /tags/virtual-host/
-
-Allow: /tags/vps/
-
-Allow: /tags/apache2/
-
-Allow: /tags/authentication/
-
-Allow: /tags/dom/
-
-Allow: /tags/github-pages/
-
-Allow: /posts/install-lemp-stack-ubuntu/
-
-Allow: /tags/jekyll/
-
-Allow: /posts/pencarian-jekyll/
-
-Allow: /posts/laravel-setup-laravel-passport/
-
-Allow: /tags/lemp/
-
-Allow: /tags/linux/
-
-Allow: /tags/react-hook/
-
-Allow: /posts/react-update-document-title/
-
-Allow: /tags/react.js/
-
-Allow: /posts/planning/
-
-Allow: /categories/
+Sitemap: https://aziyan99.github.io/sitemap.xml
