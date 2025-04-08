@@ -3,6 +3,7 @@ title: "Nginx: Install di MacOS dengan Homebrew"
 date: 2022-02-20T21:29:54+07:00
 draft: false
 tags: ['Nginx', 'OSX']
+summary: "Cara install Nginx di MacOS"
 ---
 
 NGINX adalah aplikasi open source untuk server web, NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, dan banyak lagi. Ini dimulai sebagai server web yang dirancang untuk kinerja dan stabilitas maksimum. Selain kemampuan server HTTP-nya, NGINX juga dapat berfungsi sebagai server proxy untuk email (IMAP, POP3, dan SMTP) dan proxy terbalik dan penyeimbang beban untuk server HTTP, TCP, dan UDP.

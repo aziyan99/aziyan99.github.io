@@ -3,6 +3,7 @@ title: "Install Lemp Stack Ubuntu"
 date: 2022-02-04T21:29:54+07:00
 draft: false
 tags: ['Ubuntu', 'LEMP', 'apache2', 'PHP', 'MySQL', 'Linux']
+summary: "Tutorial instalasi LEMP (Linux, Nginx, MariaDB, PHP) pada ubuntu"
 ---
 
 LEMP merupakan singakatan dari Linux, Nginx, MariDB atau MySQL dan PHP. LEMP merupakan bundelan aplikasi yang biasa kita gunakan untuk menghost sebuah website, terutama yang ditulis dengan bahasa pemrograman PHP.

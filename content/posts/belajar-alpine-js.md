@@ -2,7 +2,7 @@
 title: "Belajar Alpinejs"
 date: 2022-04-01T21:29:54+07:00
 draft: false
-tags: ['Js', 'Alpinejs']
+tags: ['JS', 'Alpinejs']
 summary: "Alpinejs adalah salah satu library yang bisa digunakan untuk membuat halaman HTML menjadi interaktif"
 ---
 
