@@ -197,7 +197,7 @@
     }
 
     .codeblock pre {
-        @apply overflow-x-scroll rounded p-2 text-sm;
+        @apply overflow-x-auto rounded p-2 text-sm;
         color: #c0caf5;
         background-color: #1a1b26;
     }

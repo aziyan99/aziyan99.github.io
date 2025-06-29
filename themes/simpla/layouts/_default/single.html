@@ -7,7 +7,7 @@
       {{- with .Date }}
         {{- $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" -}}
         {{- $dateHuman := . | time.Format (default ":date_long" site.Params.dateFormat) -}}
-        <div class="flex flex-row items-center space-x-4">
+        <div class="flex flex-row items-center space-x-4 mt-3">
           <time class="text-sm italic opacity-80" datetime="{{ $dateMachine }}"
             >{{ $dateHuman }}</time
           >

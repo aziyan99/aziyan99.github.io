@@ -18,7 +18,7 @@
             >
           </header>
 
-          <div class="text-sm">{{ .Summary }}</div>
+          <div class="text-sm">{{ .Summary | safeHTML | truncate 50 }}</div>
         </article>
       </li>
     {{- end }}

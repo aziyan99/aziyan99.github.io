@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aziyan99.github.io/tags/filamentphp/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/laravel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/php/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/php-delete-directory-recursively/</loc>
+  </url><url>
     <loc>https://aziyan99.github.io/tags/docker/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/docker-compose/</loc>
@@ -10,15 +22,11 @@
   </url><url>
     <loc>https://aziyan99.github.io/posts/redmine-docker-compose/</loc>
   </url><url>
-    <loc>https://aziyan99.github.io/tags/</loc>
-  </url><url>
     <loc>https://aziyan99.github.io/tags/acceptance-test/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/behat/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/tags/php/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/phpunit/</loc>
   </url><url>
@@ -40,12 +48,6 @@
   </url><url>
     <loc>https://aziyan99.github.io/tags/framework/</loc>
   </url><url>
-    <loc>https://aziyan99.github.io/tags/bar/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/posts/dasar-dasar-php-programming/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/tags/foo/</loc>
-  </url><url>
     <loc>https://aziyan99.github.io/posts/backup-mysql-database/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/database/</loc>
@@ -53,8 +55,6 @@
     <loc>https://aziyan99.github.io/tags/mariadb/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/mysql/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/tags/laravel/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/posts/belajar-laravel-queue/</loc>
   </url><url>

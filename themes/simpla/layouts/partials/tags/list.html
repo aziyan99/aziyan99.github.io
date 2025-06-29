@@ -9,13 +9,13 @@
                   href="{{ .RelPermalink }}"
                   class="truncate text-sm underline decoration-slate-300 decoration-2 underline-offset-4 hover:decoration-inherit"
                   title="{{ .Title }}"
-                  >{{ .Title }}</a
+                  >{{ .Title | truncate 40 }}</a
                 >
               </h3>
             </header>
             {{ with .Page.GetTerms "tags" }}
               <!-- TODO: Responsive layout -->
-              <ul class="flex flex-row items-center justify-end space-x-2">
+              <ul class="hidden md:flex flex-row items-center justify-end space-x-2">
                 {{ range . }}
                   <li>
                     <a
