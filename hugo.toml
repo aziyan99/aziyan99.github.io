@@ -50,3 +50,7 @@ titleCaseStyle = "firstupper"
   [params.robotstxt]
     blockCC = false
     blockAI = true
+  
+  [params.google]
+    enable = true
+    siteverification = 'r6crExYmwMlxrLMZbeL-qhluBe7m3eRvqH-fRWCr4J0'

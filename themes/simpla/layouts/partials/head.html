@@ -37,6 +37,7 @@
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 {{ partialCached "head/search.html" . }}
+{{ partialCached "head/google.html" . }}
 
 {{- if or .Params.math site.Params.math }}
   {{ partial "head/math" . }}
