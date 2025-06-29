@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on Raja Azian</title><link>https://aziyan99.github.io/tags/php/</link><description>Recent content in PHP on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Composer Untuk Awam (Undone)</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p>Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p></description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p>Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PHP on Raja Azian</title><link>https://aziyan99.github.io/tags/php/</link><description>Recent content in PHP on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Laravel-Filament: Kustomisasi Halaman Login tanpa Membuat Theme Baru</title><link>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</link><pubDate>Sat, 10 May 2025 11:28:12 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</guid><description>&lt;p>Secara &lt;em>default&lt;/em> halaman &lt;em>login&lt;/em> pada &lt;a href="https://filamentphp.com/">Filament PHP&lt;/a> berada di &lt;code>/admin/login&lt;/code>, dengan informasi ini kita bisa mengkustomisasi halaman login -nya filament dengan mengoverride route ini, pertama kita definisikan terlebih dahulu routing untuk ke halaman loginnya&lt;/p>
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+ &lt;aside
+ class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+ >
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+ &lt;span class="relative">php&lt;/span>
+ &lt;/div>
+ &lt;div>
+ &lt;clipboard-copy
+ type="button"
+ aria-label="Copy code to clipboard"
+ title="Copy code to clipboard"
+ class="block cursor-pointer transition-colors hover:text-sky-400"
+ target="#codeblock-01 code"
+ >
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ class="lucide lucide-clipboard h-4 w-4"
+ viewBox="0 0 24 24"
+>
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+&lt;/svg>
+
+ &lt;/clipboard-copy>
+ &lt;/div>
+ &lt;div>
+ &lt;a
+ href="#codeblock-01"
+ class="block"
+ aria-label="Link to this code block"
+ title="Link to this code block"
+ >
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+>
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+&lt;/svg>
+
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;/aside>
+ &lt;p class="sr-only">php code snippet start&lt;/p></description></item><item><title>PHP: Menghapus directory secara rekursif</title><link>https://aziyan99.github.io/posts/php-delete-directory-recursively/</link><pubDate>Tue, 08 Apr 2025 13:04:41 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/php-delete-directory-recursively/</guid><description>&lt;p>Menghapus direktori yang didalamnya terdapat direktori-direktori lainmenggunakan PHP agak &lt;em>tricky&lt;/em>, karena kita tidak bisa langsung menghapus direktori jika didalamnya terdapat satu atau lebih file. Untuk mengatasi masalah ini, fungsi ini yang selalu penulis gunakan adalah:&lt;/p>
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+ &lt;aside
+ class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+ >
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+ &lt;span class="relative">php&lt;/span>
+ &lt;/div>
+ &lt;div>
+ &lt;clipboard-copy
+ type="button"
+ aria-label="Copy code to clipboard"
+ title="Copy code to clipboard"
+ class="block cursor-pointer transition-colors hover:text-sky-400"
+ target="#codeblock-01 code"
+ >
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ class="lucide lucide-clipboard h-4 w-4"
+ viewBox="0 0 24 24"
+>
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+&lt;/svg>
+
+ &lt;/clipboard-copy>
+ &lt;/div>
+ &lt;div>
+ &lt;a
+ href="#codeblock-01"
+ class="block"
+ aria-label="Link to this code block"
+ title="Link to this code block"
+ >
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+>
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+&lt;/svg>
+
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+ &lt;/aside>
+ &lt;p class="sr-only">php code snippet start&lt;/p></description></item><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Composer Untuk Awam (Undone)</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p>Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p></description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p>Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p>
 &lt;h2 id="dengan-file-system" class="scroll-mt-8 group">
  Dengan File System
  

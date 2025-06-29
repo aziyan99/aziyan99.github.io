@@ -982,6 +982,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing, 0.25rem) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing, 0.25rem) * 3);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing, 0.25rem) * 20);
   }
@@ -1620,6 +1623,16 @@
       }
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:inline-block {
     @media (width >= 48rem) {
       display: inline-block;
@@ -1959,7 +1972,7 @@
     color: var(--color-red-900, oklch(39.6% 0.141 25.723)) !important;
   }
   .codeblock pre {
-    overflow-x: scroll;
+    overflow-x: auto;
     border-radius: 0.25rem;
     padding: calc(var(--spacing, 0.25rem) * 2);
     font-size: var(--text-sm, 0.875rem);
