@@ -16,3 +16,7 @@ weight = 30
     [module.hugoVersion]
         extended = false
         min = "0.116.0"
+
+[params.google]
+  enable = false
+  siteverification = ''
