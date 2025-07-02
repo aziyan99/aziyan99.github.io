@@ -2,15 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aziyan99.github.io/tags/filamentphp/</loc>
-  </url><url>
     <loc>https://aziyan99.github.io/tags/laravel/</loc>
   </url><url>
-    <loc>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</loc>
+    <loc>https://aziyan99.github.io/posts/laravel-upload-file/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/php/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/filamentphp/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/posts/php-delete-directory-recursively/</loc>
   </url><url>
