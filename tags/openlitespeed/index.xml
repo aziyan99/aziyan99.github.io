@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenLiteSpeed on Raja Azian</title><link>https://aziyan99.github.io/tags/openlitespeed/</link><description>Recent content in OpenLiteSpeed on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/openlitespeed/index.xml" rel="self" type="application/rss+xml"/><item><title>Laravel: Deploy ke CyberPanel + OpenLiteSpeed</title><link>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</link><pubDate>Sat, 12 Jul 2025 10:18:40 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</guid><description>&lt;p&gt;Kalau ngerasa cPanel kemahalan dan &lt;em&gt;setup&lt;/em&gt; VPS kosongan terlalu &lt;em&gt;njelimet&lt;/em&gt;, &lt;strong&gt;CyberPanel&lt;/strong&gt; adalah jalan pintas yang paling &lt;em&gt;superb&lt;/em&gt;. Mengusung OpenLiteSpeed yang &lt;em&gt;ngebut parah&lt;/em&gt;, CyberPanel ngasih &lt;em&gt;interface&lt;/em&gt; yang ramah laiknya &lt;em&gt;shared hosting&lt;/em&gt; tapi &lt;em&gt;power&lt;/em&gt;-nya dapet &lt;em&gt;full server&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Nah, nge-&lt;em&gt;deploy&lt;/em&gt; Laravel di CyberPanel beda dikit triknya dibanding Nginx/Apache karena kita berurusan sama arsitektur LiteSpeed. &lt;em&gt;But hey, nothing is impossible, right?&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="1-siapin-website-di-cyberpanel" class="scroll-mt-8 group"&gt;
+ 1. Siapin Website di CyberPanel
+ 
+ &lt;a href="#1-siapin-website-di-cyberpanel"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Pertama, kita harus bikin kontainer &lt;em&gt;website&lt;/em&gt; barunya dulu:&lt;/p&gt;</description></item></channel></rss>

@@ -1,43 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Raja Azian</title><link>https://aziyan99.github.io/posts/</link><description>Recent content in Posts on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Laravel: Upload file</title><link>https://aziyan99.github.io/posts/laravel-upload-file/</link><pubDate>Wed, 02 Jul 2025 22:17:59 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-upload-file/</guid><description>&lt;p>Untuk membuat proses upload file pada laravel caranya cukup mudah atau mungkin sangat &lt;em>mudah&lt;/em>. Jika kita membuat proses uploadnya secara manual hal yang sebagian besar kita lakukan adalah:&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
- &lt;aside
- class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
- &lt;clipboard-copy
- type="button"
- aria-label="Copy code to clipboard"
- title="Copy code to clipboard"
- class="block cursor-pointer transition-colors hover:text-sky-400"
- target="#codeblock-01 code"
- >
- &lt;svg
- xmlns="http://www.w3.org/2000/svg"
- fill="none"
- stroke="currentColor"
- stroke-width="2"
- stroke-linecap="round"
- stroke-linejoin="round"
- class="lucide lucide-clipboard h-4 w-4"
- viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
-
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
- &lt;a
- href="#codeblock-01"
- class="block"
- aria-label="Link to this code block"
- title="Link to this code block"
- >
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Raja Azian</title><link>https://aziyan99.github.io/posts/</link><description>Recent content in Posts on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Unit Test: Naming Convention Biar Nggak Pusing Sendiri</title><link>https://aziyan99.github.io/posts/unit-test-naming-convention/</link><pubDate>Mon, 21 Jul 2025 10:44:18 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/unit-test-naming-convention/</guid><description>&lt;p&gt;Pernah nggak sih buka &lt;em&gt;project&lt;/em&gt; lama, trus liat deretan &lt;em&gt;unit test&lt;/em&gt; yang namanya abstrak kayak password wifi tetangga? &lt;code&gt;test1&lt;/code&gt;, &lt;code&gt;test_function_a&lt;/code&gt;, atau yang paling parah: &lt;code&gt;test_works&lt;/code&gt;. Seriusan, &lt;em&gt;naming convention&lt;/em&gt; atau aturan penamaan buat &lt;em&gt;unit testing&lt;/em&gt; itu super krusial.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Test&lt;/em&gt; yang ditulis dengan baik harusnya bertindak sebagai &amp;ldquo;dokumentasi hidup&amp;rdquo; dari kode aplikasi. Kalau ada orang baru (atau kita sendiri 6 bulan dari sekarang) baca nama &lt;em&gt;test&lt;/em&gt;-nya, mereka harus langsung paham &lt;em&gt;&amp;ldquo;Oh, fitur ini tuh kerjanya begini toh&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Laravel: Deploy ke CyberPanel + OpenLiteSpeed</title><link>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</link><pubDate>Sat, 12 Jul 2025 10:18:40 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</guid><description>&lt;p&gt;Kalau ngerasa cPanel kemahalan dan &lt;em&gt;setup&lt;/em&gt; VPS kosongan terlalu &lt;em&gt;njelimet&lt;/em&gt;, &lt;strong&gt;CyberPanel&lt;/strong&gt; adalah jalan pintas yang paling &lt;em&gt;superb&lt;/em&gt;. Mengusung OpenLiteSpeed yang &lt;em&gt;ngebut parah&lt;/em&gt;, CyberPanel ngasih &lt;em&gt;interface&lt;/em&gt; yang ramah laiknya &lt;em&gt;shared hosting&lt;/em&gt; tapi &lt;em&gt;power&lt;/em&gt;-nya dapet &lt;em&gt;full server&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Nah, nge-&lt;em&gt;deploy&lt;/em&gt; Laravel di CyberPanel beda dikit triknya dibanding Nginx/Apache karena kita berurusan sama arsitektur LiteSpeed. &lt;em&gt;But hey, nothing is impossible, right?&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="1-siapin-website-di-cyberpanel" class="scroll-mt-8 group"&gt;
+ 1. Siapin Website di CyberPanel
+ 
+ &lt;a href="#1-siapin-website-di-cyberpanel"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -49,32 +18,35 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Laravel-Filament: Kustomisasi Halaman Login tanpa Membuat Theme Baru</title><link>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</link><pubDate>Sat, 10 May 2025 11:28:12 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</guid><description>&lt;p>Secara &lt;em>default&lt;/em> halaman &lt;em>login&lt;/em> pada &lt;a href="https://filamentphp.com/">Filament PHP&lt;/a> berada di &lt;code>/admin/login&lt;/code>, dengan informasi ini kita bisa mengkustomisasi halaman login -nya filament dengan mengoverride route ini, pertama kita definisikan terlebih dahulu routing untuk ke halaman loginnya&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Pertama, kita harus bikin kontainer &lt;em&gt;website&lt;/em&gt; barunya dulu:&lt;/p&gt;</description></item><item><title>Laravel: Deploy ke cPanel</title><link>https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/</link><pubDate>Sat, 12 Jul 2025 10:18:34 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/</guid><description>&lt;p&gt;Deploy aplikasi Laravel ke VPS memang &lt;em&gt;keren&lt;/em&gt; dan ngasih kita kontrol penuh, tapi kenyataannya di lapangan kadang kita (atau klien) cuma punya budget buat &lt;em&gt;shared hosting&lt;/em&gt; dengan cPanel. &lt;em&gt;No problem!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Proses &lt;em&gt;deploy&lt;/em&gt; Laravel ke cPanel sebenarnya &lt;em&gt;tricky&lt;/em&gt; tapi gampang kalau kita paham konsepnya. Masalah utama di &lt;em&gt;shared hosting&lt;/em&gt; biasanya adalah struktur direktorinya yang memaksakan &lt;code&gt;public_html&lt;/code&gt; sebagai &lt;em&gt;document root&lt;/em&gt;, sementara Laravel menggunakan folder &lt;code&gt;public&lt;/code&gt;. Belum lagi akses terminal (SSH) yang kadang &lt;em&gt;kaga ada&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Laravel: Deploy ke Shared Hosting Biasa (Non-cPanel)</title><link>https://aziyan99.github.io/posts/laravel-deploy-ke-shared-hosting/</link><pubDate>Sat, 12 Jul 2025 10:18:16 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-deploy-ke-shared-hosting/</guid><description>&lt;p&gt;Bicara soal &lt;em&gt;deploy&lt;/em&gt; Laravel ke &lt;em&gt;Shared Hosting&lt;/em&gt; itu hampir selalu identik dengan &lt;strong&gt;cPanel&lt;/strong&gt;. Tapi nyatanya, nggak semua penyedia &lt;em&gt;hosting&lt;/em&gt; pakai cPanel. Ada yang pakai DirectAdmin, Plesk, atau bahkan panel kustom buatan mereka sendiri.&lt;/p&gt;
+&lt;p&gt;Nah, gimana ceritanya kalau kita ketemu panel &lt;em&gt;random&lt;/em&gt; yang konfigurasinya serba dikunci? &lt;em&gt;Core concept&lt;/em&gt; penyelesaian dari teka-teki ini sebenarnya simpel: &lt;strong&gt;pisahin &lt;em&gt;logic&lt;/em&gt; Laravel dari dokumen web publik (document root).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cara deploy ini sifatnya lebih &amp;ldquo;Brute Force&amp;rdquo; daripada &lt;a href="https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/"&gt;cara modifikasi &lt;code&gt;index.php&lt;/code&gt; ala cPanel&lt;/a&gt;, tapi sangat efektif. &lt;em&gt;Here we go!&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Laravel: Deploy ke VPS Tanpa Bikin Pusing</title><link>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</link><pubDate>Sat, 12 Jul 2025 10:18:02 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</guid><description>&lt;p&gt;Pindah dari &lt;em&gt;shared hosting&lt;/em&gt; ke VPS itu ibarat pindah dari kos-kosan ke apartemen studio. Kita punya kontrol penuh, tapi kalau apartemennya mati listrik, kita sendiri yang pusing benerinnya. Berbeda dengan cPanel yang tinggal klika-kliki, &lt;em&gt;deploy&lt;/em&gt; Laravel ke VPS (katakanlah Ubuntu) butuh &lt;em&gt;effort&lt;/em&gt; buat setup &lt;em&gt;environment&lt;/em&gt; dari nol.&lt;/p&gt;
+&lt;p&gt;Tapi tenang aja, kalau udah biasa, proses ini &lt;em&gt;fun&lt;/em&gt; banget karena kita bakal lebih paham &lt;em&gt;behind the scene&lt;/em&gt;-nya. &lt;em&gt;Let&amp;rsquo;s get down to business!&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Laravel: Upload file</title><link>https://aziyan99.github.io/posts/laravel-upload-file/</link><pubDate>Wed, 02 Jul 2025 22:17:59 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-upload-file/</guid><description>&lt;p&gt;Untuk membuat proses upload file pada laravel caranya cukup mudah atau mungkin sangat &lt;em&gt;mudah&lt;/em&gt;. Jika kita membuat proses uploadnya secara manual hal yang sebagian besar kita lakukan adalah:&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">php&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -84,20 +56,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -109,32 +81,32 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only">php code snippet start&lt;/p></description></item><item><title>PHP: Menghapus directory secara rekursif</title><link>https://aziyan99.github.io/posts/php-delete-directory-recursively/</link><pubDate>Tue, 08 Apr 2025 13:04:41 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/php-delete-directory-recursively/</guid><description>&lt;p>Menghapus direktori yang didalamnya terdapat direktori-direktori lainmenggunakan PHP agak &lt;em>tricky&lt;/em>, karena kita tidak bisa langsung menghapus direktori jika didalamnya terdapat satu atau lebih file. Untuk mengatasi masalah ini, fungsi ini yang selalu penulis gunakan adalah:&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Laravel-Filament: Kustomisasi Halaman Login tanpa Membuat Theme Baru</title><link>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</link><pubDate>Sat, 10 May 2025 11:28:12 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-filament-customize-login-page-without-creating-theme/</guid><description>&lt;p&gt;Secara &lt;em&gt;default&lt;/em&gt; halaman &lt;em&gt;login&lt;/em&gt; pada &lt;a href="https://filamentphp.com/"&gt;Filament PHP&lt;/a&gt; berada di &lt;code&gt;/admin/login&lt;/code&gt;, dengan informasi ini kita bisa mengkustomisasi halaman login -nya filament dengan mengoverride route ini, pertama kita definisikan terlebih dahulu routing untuk ke halaman loginnya&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">php&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;php&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -144,20 +116,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -169,22 +141,82 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only">php code snippet start&lt;/p></description></item><item><title>Redmine: Setup Redmine dengan Docker Compose</title><link>https://aziyan99.github.io/posts/redmine-docker-compose/</link><pubDate>Mon, 17 Mar 2025 19:54:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/redmine-docker-compose/</guid><description>Redmine adalah web-based project management yang bisa menjadi alternatif Jira, Trello, Azure Board, Asana, ataupun project management lainnya</description></item><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Angular Deploy to Docker</title><link>https://aziyan99.github.io/posts/angular-deploy-to-docker/</link><pubDate>Sat, 12 Nov 2022 12:02:53 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/angular-deploy-to-docker/</guid><description>Tahapan singkat mendeploy angular dengan docker</description></item><item><title>Adonisjs CRUD</title><link>https://aziyan99.github.io/posts/adonisjs-crud/</link><pubDate>Sat, 17 Sep 2022 19:02:23 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/adonisjs-crud/</guid><description>CRUD adalah salah satu komponen yang biasanya ada dalam sistem informasi atau aplikasi, kita akan membuat CRUD dengan AdonisJS</description></item><item><title>Backup Mysql/MariaDB Database</title><link>https://aziyan99.github.io/posts/backup-mysql-database/</link><pubDate>Mon, 12 Sep 2022 16:55:21 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/backup-mysql-database/</guid><description>Membackup dan merestrore database (MySQl dan MariaDB) pada dasarnya sangat mudah dilakukan dengan memanfaatkan perintah mysqldump, hanya dengan satu perintah kita bisa membackup dan merestore database</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Belajar Alpinejs</title><link>https://aziyan99.github.io/posts/belajar-alpine-js/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-alpine-js/</guid><description>Alpinejs adalah salah satu library yang bisa digunakan untuk membuat halaman HTML menjadi interaktif</description></item><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>&lt;p>Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik &lt;em>debugging&lt;/em> kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable &lt;code>general_log&lt;/code> dimana ketika kita ubah nilainya menjadi &lt;code>1&lt;/code> MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di &lt;code>/usr/local/var/mysql&lt;/code>.&lt;/p>
-&lt;h2 id="mengaktifkan-general-log" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt;php code snippet start&lt;/p&gt;</description></item><item><title>PHP: Menghapus directory secara rekursif</title><link>https://aziyan99.github.io/posts/php-delete-directory-recursively/</link><pubDate>Tue, 08 Apr 2025 13:04:41 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/php-delete-directory-recursively/</guid><description>&lt;p&gt;Menghapus direktori yang didalamnya terdapat direktori-direktori lainmenggunakan PHP agak &lt;em&gt;tricky&lt;/em&gt;, karena kita tidak bisa langsung menghapus direktori jika didalamnya terdapat satu atau lebih file. Untuk mengatasi masalah ini, fungsi ini yang selalu penulis gunakan adalah:&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
+ &lt;aside
+ class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;php&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
+ &lt;clipboard-copy
+ type="button"
+ aria-label="Copy code to clipboard"
+ title="Copy code to clipboard"
+ class="block cursor-pointer transition-colors hover:text-sky-400"
+ target="#codeblock-01 code"
+ &gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ class="lucide lucide-clipboard h-4 w-4"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
+
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
+ &lt;a
+ href="#codeblock-01"
+ class="block"
+ aria-label="Link to this code block"
+ title="Link to this code block"
+ &gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt;php code snippet start&lt;/p&gt;</description></item><item><title>Redmine: Setup Redmine dengan Docker Compose</title><link>https://aziyan99.github.io/posts/redmine-docker-compose/</link><pubDate>Mon, 17 Mar 2025 19:54:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/redmine-docker-compose/</guid><description>Redmine adalah web-based project management yang bisa menjadi alternatif Jira, Trello, Azure Board, Asana, ataupun project management lainnya</description></item><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Angular Deploy to Docker</title><link>https://aziyan99.github.io/posts/angular-deploy-to-docker/</link><pubDate>Sat, 12 Nov 2022 12:02:53 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/angular-deploy-to-docker/</guid><description>Tahapan singkat mendeploy angular dengan docker</description></item><item><title>Adonisjs CRUD</title><link>https://aziyan99.github.io/posts/adonisjs-crud/</link><pubDate>Sat, 17 Sep 2022 19:02:23 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/adonisjs-crud/</guid><description>CRUD adalah salah satu komponen yang biasanya ada dalam sistem informasi atau aplikasi, kita akan membuat CRUD dengan AdonisJS</description></item><item><title>Backup Mysql/MariaDB Database</title><link>https://aziyan99.github.io/posts/backup-mysql-database/</link><pubDate>Mon, 12 Sep 2022 16:55:21 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/backup-mysql-database/</guid><description>Membackup dan merestrore database (MySQl dan MariaDB) pada dasarnya sangat mudah dilakukan dengan memanfaatkan perintah mysqldump, hanya dengan satu perintah kita bisa membackup dan merestore database</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Belajar Alpinejs</title><link>https://aziyan99.github.io/posts/belajar-alpine-js/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-alpine-js/</guid><description>Alpinejs adalah salah satu library yang bisa digunakan untuk membuat halaman HTML menjadi interaktif</description></item><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>&lt;p&gt;Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik &lt;em&gt;debugging&lt;/em&gt; kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable &lt;code&gt;general_log&lt;/code&gt; dimana ketika kita ubah nilainya menjadi &lt;code&gt;1&lt;/code&gt; MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di &lt;code&gt;/usr/local/var/mysql&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="mengaktifkan-general-log" class="scroll-mt-8 group"&gt;
  Mengaktifkan General Log
  
  &lt;a href="#mengaktifkan-general-log"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -196,21 +228,21 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;p>Login kedalam console MariaDB:&lt;/p></description></item><item><title>Composer Untuk Awam (Undone)</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p>Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p></description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p>Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p>
-&lt;h2 id="dengan-file-system" class="scroll-mt-8 group">
+&lt;/h2&gt;
+&lt;p&gt;Login kedalam console MariaDB:&lt;/p&gt;</description></item><item><title>Composer Untuk Awam (Undone)</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p&gt;Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p&gt;</description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p&gt;Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p&gt;
+&lt;h2 id="dengan-file-system" class="scroll-mt-8 group"&gt;
  Dengan File System
  
  &lt;a href="#dengan-file-system"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -222,30 +254,30 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -255,20 +287,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -280,22 +312,22 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Nginx: Install di MacOS dengan Homebrew</title><link>https://aziyan99.github.io/posts/install-nginx-macos/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/install-nginx-macos/</guid><description>Cara install Nginx di MacOS</description></item><item><title>Laravel: Database Transaction</title><link>https://aziyan99.github.io/posts/laravel-database-transaction/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-database-transaction/</guid><description>&lt;p>Database trasaction sangat berguna ketika kita bermain dengan database karena ketika terjadi kesalahan atau error ketika mengeksekusi perintah yang berkaitan dengan database, semua transaksi yang terjadi sebelumnya akan dibatalkan sehingag database tidak akan terganggu atau cacat. Penggunaan pada laravel sangat mudah dengan library yang sudah laravel sediakan jadi kita tidak perlu lagi menulis transaksi secara manual menggunakan SQL.&lt;/p>
-&lt;h2 id="contoh" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Nginx: Install di MacOS dengan Homebrew</title><link>https://aziyan99.github.io/posts/install-nginx-macos/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/install-nginx-macos/</guid><description>Cara install Nginx di MacOS</description></item><item><title>Laravel: Database Transaction</title><link>https://aziyan99.github.io/posts/laravel-database-transaction/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-database-transaction/</guid><description>&lt;p&gt;Database trasaction sangat berguna ketika kita bermain dengan database karena ketika terjadi kesalahan atau error ketika mengeksekusi perintah yang berkaitan dengan database, semua transaksi yang terjadi sebelumnya akan dibatalkan sehingag database tidak akan terganggu atau cacat. Penggunaan pada laravel sangat mudah dengan library yang sudah laravel sediakan jadi kita tidak perlu lagi menulis transaksi secara manual menggunakan SQL.&lt;/p&gt;
+&lt;h2 id="contoh" class="scroll-mt-8 group"&gt;
  Contoh
  
  &lt;a href="#contoh"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -307,30 +339,30 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -340,20 +372,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -365,22 +397,22 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Laravel: Membuat Sitemap Secara Dinamis</title><link>https://aziyan99.github.io/posts/laravel-generate-sitemap/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-generate-sitemap/</guid><description>&lt;p>Sitemap adalah sebuah file yang memberikan informasi tentang halaman, video, ataupun media apa saja dalam sebuah website. Search engine seperti Google menggunakan sitemap untuk mencari halaman yang dicari pengguna sehingga dengan membuat sitemap untuk website akan sangat membantu supaya google mengindeks website kita.&lt;/p>
-&lt;h2 id="how-to" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Laravel: Membuat Sitemap Secara Dinamis</title><link>https://aziyan99.github.io/posts/laravel-generate-sitemap/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-generate-sitemap/</guid><description>&lt;p&gt;Sitemap adalah sebuah file yang memberikan informasi tentang halaman, video, ataupun media apa saja dalam sebuah website. Search engine seperti Google menggunakan sitemap untuk mencari halaman yang dicari pengguna sehingga dengan membuat sitemap untuk website akan sangat membantu supaya google mengindeks website kita.&lt;/p&gt;
+&lt;h2 id="how-to" class="scroll-mt-8 group"&gt;
  How to
  
  &lt;a href="#how-to"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -392,36 +424,36 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;ul>
-&lt;li>Buat projek laravel baru dengan &lt;code>laravel new &amp;lt;project-name&amp;gt;&lt;/code> atau &lt;code>composer create-project laravel/laravel &amp;lt;project-name&amp;gt;&lt;/code>.&lt;/li>
-&lt;li>Buat satu database untuk projek laravel yang baru dibuat.&lt;/li>
-&lt;li>Buat model dan migration untuk post dengan &lt;code>php artisan make:model Post -m&lt;/code>.&lt;/li>
-&lt;li>Ubah post migration dengan menambahkan kolom &lt;code>title&lt;/code>, &lt;code>slug&lt;/code>, dan &lt;code>body&lt;/code> pada tabel posts.&lt;/li>
-&lt;/ul>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Buat projek laravel baru dengan &lt;code&gt;laravel new &amp;lt;project-name&amp;gt;&lt;/code&gt; atau &lt;code&gt;composer create-project laravel/laravel &amp;lt;project-name&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Buat satu database untuk projek laravel yang baru dibuat.&lt;/li&gt;
+&lt;li&gt;Buat model dan migration untuk post dengan &lt;code&gt;php artisan make:model Post -m&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Ubah post migration dengan menambahkan kolom &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;slug&lt;/code&gt;, dan &lt;code&gt;body&lt;/code&gt; pada tabel posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -431,20 +463,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -456,22 +488,22 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Laravel: Path Gambar dari Model</title><link>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</guid><description>&lt;p>Avatar untuk pengguna (foto profile) bisa dibuat dinamis, jika pengguna tidak mengupload avatar nya sendiri kita bisa menggunakan inisialnya dan membuat avatar untuk pengguna tadi.&lt;/p>
-&lt;h2 id="requirement" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Laravel: Path Gambar dari Model</title><link>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</link><pubDate>Tue, 08 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-path-gambar-dari-model/</guid><description>&lt;p&gt;Avatar untuk pengguna (foto profile) bisa dibuat dinamis, jika pengguna tidak mengupload avatar nya sendiri kita bisa menggunakan inisialnya dan membuat avatar untuk pengguna tadi.&lt;/p&gt;
+&lt;h2 id="requirement" class="scroll-mt-8 group"&gt;
  Requirement
  
  &lt;a href="#requirement"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -483,25 +515,25 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;ol>
-&lt;li>Laravel project&lt;/li>
-&lt;li>Kolom avatar pada table users&lt;/li>
-&lt;li>Kolom avatar harus &lt;code>nullable&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;h2 id="eksekusi" class="scroll-mt-8 group">
+&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Laravel project&lt;/li&gt;
+&lt;li&gt;Kolom avatar pada table users&lt;/li&gt;
+&lt;li&gt;Kolom avatar harus &lt;code&gt;nullable&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="eksekusi" class="scroll-mt-8 group"&gt;
  Eksekusi
  
  &lt;a href="#eksekusi"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -513,32 +545,32 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;p>Buka model &lt;code>User.php&lt;/code> dan jangan lupa untuk menambahkan avatar pada &lt;code>$protected&lt;/code> array. Kemudian buat sebuah &lt;code>accessor&lt;/code> dengan nama &lt;code>getAvatarPathAttribute()&lt;/code>. Kemudian bisa ikuti kode dibawah (dan bisa dimodifikasi sesuka hati)&lt;/p></description></item><item><title>Laravel: Mengenerate Barcode</title><link>https://aziyan99.github.io/posts/laravel-generate-barcode/</link><pubDate>Sun, 06 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-generate-barcode/</guid><description>&lt;p>Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spasi) dengan berbagai lebar dan jarak garis paralel. Mesin menguraikan kode batang karena ditampilkan dalam bentuk yang dapat dibaca mesin.&lt;/p>
-&lt;p>Ada banyak &lt;code>package&lt;/code> yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah &lt;code>milon/barcode&lt;/code> untuk menginstallnya pada laravel bisa menggunakan composer:&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;p&gt;Buka model &lt;code&gt;User.php&lt;/code&gt; dan jangan lupa untuk menambahkan avatar pada &lt;code&gt;$protected&lt;/code&gt; array. Kemudian buat sebuah &lt;code&gt;accessor&lt;/code&gt; dengan nama &lt;code&gt;getAvatarPathAttribute()&lt;/code&gt;. Kemudian bisa ikuti kode dibawah (dan bisa dimodifikasi sesuka hati)&lt;/p&gt;</description></item><item><title>Laravel: Mengenerate Barcode</title><link>https://aziyan99.github.io/posts/laravel-generate-barcode/</link><pubDate>Sun, 06 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-generate-barcode/</guid><description>&lt;p&gt;Barcode adalah bentuk visual dari data yang berbentuk skrip (berisi bar dan spasi) dengan berbagai lebar dan jarak garis paralel. Mesin menguraikan kode batang karena ditampilkan dalam bentuk yang dapat dibaca mesin.&lt;/p&gt;
+&lt;p&gt;Ada banyak &lt;code&gt;package&lt;/code&gt; yang bisa digunakan pada laravel untuk membuat barcode salah satunya adalah &lt;code&gt;milon/barcode&lt;/code&gt; untuk menginstallnya pada laravel bisa menggunakan composer:&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -548,20 +580,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -573,22 +605,22 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Laravel: Select data diantara dua tanggal</title><link>https://aziyan99.github.io/posts/laravel-select-between-date/</link><pubDate>Sun, 06 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-select-between-date/</guid><description>&lt;p>Mengambil data dari database berdasarkan range tanggal (tanggal awal dan tanggal akhir) di laravel mudah dilakukan dengan bantuan Eloquent dari laravel (Model). Pengambilan data ini sangat membantu ketika kita ingin membuat laporan dari data atau kebutuhan lainnya yang membutuhkan pengguna bisa mengambil data berdasarkan tanggal.&lt;/p>
-&lt;h2 id="cara-pertama-wherebetween" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Laravel: Select data diantara dua tanggal</title><link>https://aziyan99.github.io/posts/laravel-select-between-date/</link><pubDate>Sun, 06 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-select-between-date/</guid><description>&lt;p&gt;Mengambil data dari database berdasarkan range tanggal (tanggal awal dan tanggal akhir) di laravel mudah dilakukan dengan bantuan Eloquent dari laravel (Model). Pengambilan data ini sangat membantu ketika kita ingin membuat laporan dari data atau kebutuhan lainnya yang membutuhkan pengguna bisa mengambil data berdasarkan tanggal.&lt;/p&gt;
+&lt;h2 id="cara-pertama-wherebetween" class="scroll-mt-8 group"&gt;
  Cara pertama (whereBetween)
  
  &lt;a href="#cara-pertama-wherebetween"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -600,30 +632,30 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -633,20 +665,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -658,22 +690,22 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Nginx: Membuat Virtual Host</title><link>https://aziyan99.github.io/posts/nginx-virtual-host/</link><pubDate>Sat, 05 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/nginx-virtual-host/</guid><description>&lt;p>Membuat satu VPS bisa menghost 2 atau lebih website gampang dilakukan dengan nginx. Untuk melakukannya kita akan memanfaatkan fitur dari nginx yaitu virtual host. Contoh ini dilakukan pada VPS dengan sistem operasi 18.0 atau diatasnya&lt;/p>
-&lt;h2 id="install-nginx" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Nginx: Membuat Virtual Host</title><link>https://aziyan99.github.io/posts/nginx-virtual-host/</link><pubDate>Sat, 05 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/nginx-virtual-host/</guid><description>&lt;p&gt;Membuat satu VPS bisa menghost 2 atau lebih website gampang dilakukan dengan nginx. Untuk melakukannya kita akan memanfaatkan fitur dari nginx yaitu virtual host. Contoh ini dilakukan pada VPS dengan sistem operasi 18.0 atau diatasnya&lt;/p&gt;
+&lt;h2 id="install-nginx" class="scroll-mt-8 group"&gt;
  Install Nginx
  
  &lt;a href="#install-nginx"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -685,30 +717,30 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h2&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -718,20 +750,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -743,23 +775,23 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Install Lemp Stack Ubuntu</title><link>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</guid><description>Tutorial instalasi LEMP (Linux, Nginx, MariaDB, PHP) pada ubuntu</description></item><item><title>Jekyll: Menambahkan Searching</title><link>https://aziyan99.github.io/posts/pencarian-jekyll/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/pencarian-jekyll/</guid><description>&lt;p>Untuk membuat pencarian pada halaman github pages yang menggunakan jekyll bisa dilakukan dengan 3 cara: Lunr, Google Custom Search Engine dan Simple Jekyll Search. Lunr sangat senang diimplementasikan tetapi akan membuat halaman menjadi berat. Sedangkan Google Custom Search Engine terbilang cukup ringan dan sangat sulit untuk diimplementasikan. Sehingga pilihan kita jatuh pada opsi ketiga yaitu menggunakan Simple Jekyll Search&lt;/p>
-&lt;p>Pada dasarnya Simple Jekyll Search akan mengenerate sebuah file &lt;code>json&lt;/code> yang berisi judul dari postingan-postingan yang pernah kita buat. Sehingga kita hanya perlu menambahkan sedikit &lt;code>client-side&lt;/code> javascript untuk mengakses file &lt;code>json&lt;/code> tadi.&lt;/p></description></item><item><title>Laravel: Setup Laravel Passport</title><link>https://aziyan99.github.io/posts/laravel-setup-laravel-passport/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-setup-laravel-passport/</guid><description>&lt;p>Laravel Passport provides a full OAuth2 server implementation for your Laravel application in a matter of minutes. Passport is built on top of the League OAuth2 server that is maintained by Andy Millington and Simon Hamp.&lt;/p>
-&lt;h3 id="1-requirements" class="scroll-mt-8 group">
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Install Lemp Stack Ubuntu</title><link>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/install-lemp-stack-ubuntu/</guid><description>Tutorial instalasi LEMP (Linux, Nginx, MariaDB, PHP) pada ubuntu</description></item><item><title>Jekyll: Menambahkan Searching</title><link>https://aziyan99.github.io/posts/pencarian-jekyll/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/pencarian-jekyll/</guid><description>&lt;p&gt;Untuk membuat pencarian pada halaman github pages yang menggunakan jekyll bisa dilakukan dengan 3 cara: Lunr, Google Custom Search Engine dan Simple Jekyll Search. Lunr sangat senang diimplementasikan tetapi akan membuat halaman menjadi berat. Sedangkan Google Custom Search Engine terbilang cukup ringan dan sangat sulit untuk diimplementasikan. Sehingga pilihan kita jatuh pada opsi ketiga yaitu menggunakan Simple Jekyll Search&lt;/p&gt;
+&lt;p&gt;Pada dasarnya Simple Jekyll Search akan mengenerate sebuah file &lt;code&gt;json&lt;/code&gt; yang berisi judul dari postingan-postingan yang pernah kita buat. Sehingga kita hanya perlu menambahkan sedikit &lt;code&gt;client-side&lt;/code&gt; javascript untuk mengakses file &lt;code&gt;json&lt;/code&gt; tadi.&lt;/p&gt;</description></item><item><title>Laravel: Setup Laravel Passport</title><link>https://aziyan99.github.io/posts/laravel-setup-laravel-passport/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-setup-laravel-passport/</guid><description>&lt;p&gt;Laravel Passport provides a full OAuth2 server implementation for your Laravel application in a matter of minutes. Passport is built on top of the League OAuth2 server that is maintained by Andy Millington and Simon Hamp.&lt;/p&gt;
+&lt;h3 id="1-requirements" class="scroll-mt-8 group"&gt;
  1 Requirements
  
  &lt;a href="#1-requirements"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -771,32 +803,32 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h3>
-&lt;p>Installation prerequisites:&lt;/p></description></item><item><title>React: Mengubah Title Halaman Secara Dinamis</title><link>https://aziyan99.github.io/posts/react-update-document-title/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/react-update-document-title/</guid><description>&lt;p>Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;code>&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code> tag. Since React 16.8 we can built custom hook that can easly access the &lt;code>document.title&lt;/code> and change the active page title.&lt;/p>
-&lt;p>We can create a hook like:&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+&lt;/h3&gt;
+&lt;p&gt;Installation prerequisites:&lt;/p&gt;</description></item><item><title>React: Mengubah Title Halaman Secara Dinamis</title><link>https://aziyan99.github.io/posts/react-update-document-title/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/react-update-document-title/</guid><description>&lt;p&gt;Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tag. Since React 16.8 we can built custom hook that can easly access the &lt;code&gt;document.title&lt;/code&gt; and change the active page title.&lt;/p&gt;
+&lt;p&gt;We can create a hook like:&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -806,20 +838,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -831,18 +863,18 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item><item><title>Planning</title><link>https://aziyan99.github.io/posts/planning/</link><pubDate>Tue, 23 Apr 2019 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/planning/</guid><description>&lt;p>todo:&lt;/p>
-&lt;ul>
-&lt;li>Get understanding in php especially in codeigniter framework&lt;/li>
-&lt;li>Get a better value in lecture&lt;/li>
-&lt;li>Make a youtube tutorial channel&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item><item><title>Planning</title><link>https://aziyan99.github.io/posts/planning/</link><pubDate>Tue, 23 Apr 2019 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/planning/</guid><description>&lt;p&gt;todo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get understanding in php especially in codeigniter framework&lt;/li&gt;
+&lt;li&gt;Get a better value in lecture&lt;/li&gt;
+&lt;li&gt;Make a youtube tutorial channel&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React Hook on Raja Azian</title><link>https://aziyan99.github.io/tags/react-hook/</link><description>Recent content in React Hook on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/react-hook/index.xml" rel="self" type="application/rss+xml"/><item><title>React: Mengubah Title Halaman Secara Dinamis</title><link>https://aziyan99.github.io/posts/react-update-document-title/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/react-update-document-title/</guid><description>&lt;p>Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;code>&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code> tag. Since React 16.8 we can built custom hook that can easly access the &lt;code>document.title&lt;/code> and change the active page title.&lt;/p>
-&lt;p>We can create a hook like:&lt;/p>
-&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React Hook on Raja Azian</title><link>https://aziyan99.github.io/tags/react-hook/</link><description>Recent content in React Hook on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/react-hook/index.xml" rel="self" type="application/rss+xml"/><item><title>React: Mengubah Title Halaman Secara Dinamis</title><link>https://aziyan99.github.io/posts/react-update-document-title/</link><pubDate>Fri, 04 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/react-update-document-title/</guid><description>&lt;p&gt;Changing document title in pages that was built with React can be little bit tricky. Because, our working area only within &lt;code&gt;&amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;&lt;/code&gt; tag. Since React 16.8 we can built custom hook that can easly access the &lt;code&gt;document.title&lt;/code&gt; and change the active page title.&lt;/p&gt;
+&lt;p&gt;We can create a hook like:&lt;/p&gt;
+&lt;figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01"&gt;
  &lt;aside
  class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
- >
- &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
- &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
- &lt;span class="relative">&lt;/span>
- &lt;/div>
- &lt;div>
+ &gt;
+ &lt;div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3"&gt;
+ &lt;div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true"&gt;
+ &lt;span class="relative"&gt;&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;clipboard-copy
  type="button"
  aria-label="Copy code to clipboard"
  title="Copy code to clipboard"
  class="block cursor-pointer transition-colors hover:text-sky-400"
  target="#codeblock-01 code"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  fill="none"
@@ -25,20 +25,20 @@
  stroke-linejoin="round"
  class="lucide lucide-clipboard h-4 w-4"
  viewBox="0 0 24 24"
->
- &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
- &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-&lt;/svg>
+&gt;
+ &lt;rect width="8" height="4" x="8" y="2" rx="1" ry="1" /&gt;
+ &lt;path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /&gt;
+&lt;/svg&gt;
 
- &lt;/clipboard-copy>
- &lt;/div>
- &lt;div>
+ &lt;/clipboard-copy&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
  &lt;a
  href="#codeblock-01"
  class="block"
  aria-label="Link to this code block"
  title="Link to this code block"
- >
+ &gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -50,13 +50,13 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
- &lt;/div>
- &lt;/div>
- &lt;/aside>
- &lt;p class="sr-only"> code snippet start&lt;/p></description></item></channel></rss>
+ &lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;p class="sr-only"&gt; code snippet start&lt;/p&gt;</description></item></channel></rss>

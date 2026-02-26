@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MariaDB on Raja Azian</title><link>https://aziyan99.github.io/tags/mariadb/</link><description>Recent content in MariaDB on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/mariadb/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Mysql/MariaDB Database</title><link>https://aziyan99.github.io/posts/backup-mysql-database/</link><pubDate>Mon, 12 Sep 2022 16:55:21 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/backup-mysql-database/</guid><description>Membackup dan merestrore database (MySQl dan MariaDB) pada dasarnya sangat mudah dilakukan dengan memanfaatkan perintah mysqldump, hanya dengan satu perintah kita bisa membackup dan merestore database</description></item><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>&lt;p>Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik &lt;em>debugging&lt;/em> kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable &lt;code>general_log&lt;/code> dimana ketika kita ubah nilainya menjadi &lt;code>1&lt;/code> MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di &lt;code>/usr/local/var/mysql&lt;/code>.&lt;/p>
-&lt;h2 id="mengaktifkan-general-log" class="scroll-mt-8 group">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MariaDB on Raja Azian</title><link>https://aziyan99.github.io/tags/mariadb/</link><description>Recent content in MariaDB on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/mariadb/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Mysql/MariaDB Database</title><link>https://aziyan99.github.io/posts/backup-mysql-database/</link><pubDate>Mon, 12 Sep 2022 16:55:21 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/backup-mysql-database/</guid><description>Membackup dan merestrore database (MySQl dan MariaDB) pada dasarnya sangat mudah dilakukan dengan memanfaatkan perintah mysqldump, hanya dengan satu perintah kita bisa membackup dan merestore database</description></item><item><title>MariaDB/MySQL: Menggunakan General Log</title><link>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</link><pubDate>Fri, 01 Apr 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/mariadb-mysql-general-log/</guid><description>&lt;p&gt;Sebagai seorang programmer yang keren (pastinya), log adalah salah satu dari sekian banyak teman baik &lt;em&gt;debugging&lt;/em&gt; kita. Melihat riwayat dari query-query yang dieksekusi oleh MariaDB juga akan menjadi informasi yang penting ketika kita mau menelusuri bagaimana tahapan eksekusi penyimpanan data dari aplikasi kita. MariaDB punya variable &lt;code&gt;general_log&lt;/code&gt; dimana ketika kita ubah nilainya menjadi &lt;code&gt;1&lt;/code&gt; MariaDB akan me-log suluruh history eksekusi query kedalama file. File tersebut biasanya disimpan di &lt;code&gt;/usr/local/var/mysql&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="mengaktifkan-general-log" class="scroll-mt-8 group"&gt;
  Mengaktifkan General Log
  
  &lt;a href="#mengaktifkan-general-log"
  class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
- aria-hidden="true" title="Link to this heading" tabindex="-1">
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="16"
@@ -16,12 +16,12 @@
  stroke-width="2"
  class="lucide lucide-link w-4 h-4 block"
  viewBox="0 0 24 24"
->
- &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
- &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-&lt;/svg>
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
 
- &lt;/a>
+ &lt;/a&gt;
  
-&lt;/h2>
-&lt;p>Login kedalam console MariaDB:&lt;/p></description></item></channel></rss>
+&lt;/h2&gt;
+&lt;p&gt;Login kedalam console MariaDB:&lt;/p&gt;</description></item></channel></rss>
