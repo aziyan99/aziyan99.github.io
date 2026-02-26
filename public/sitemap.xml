@@ -2,13 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aziyan99.github.io/tags/laravel/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/posts/laravel-upload-file/</loc>
+    <loc>https://aziyan99.github.io/tags/best-practices/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/php/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/tdd/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/unit-test-naming-convention/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/unit-testing/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/cyberpanel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/deployment/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/laravel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/openlitespeed/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/cpanel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-deploy-ke-shared-hosting/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/shared-hosting/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/ubuntu/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/tags/vps/</loc>
+  </url><url>
+    <loc>https://aziyan99.github.io/posts/laravel-upload-file/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/filamentphp/</loc>
   </url><url>
@@ -108,11 +138,7 @@
   </url><url>
     <loc>https://aziyan99.github.io/posts/nginx-virtual-host/</loc>
   </url><url>
-    <loc>https://aziyan99.github.io/tags/ubuntu/</loc>
-  </url><url>
     <loc>https://aziyan99.github.io/tags/virtual-host/</loc>
-  </url><url>
-    <loc>https://aziyan99.github.io/tags/vps/</loc>
   </url><url>
     <loc>https://aziyan99.github.io/tags/apache2/</loc>
   </url><url>

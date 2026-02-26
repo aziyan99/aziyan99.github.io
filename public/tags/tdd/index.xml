@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TDD on Raja Azian</title>
+    <link>https://aziyan99.github.io/tags/tdd/</link>
+    <description>Recent content in TDD on Raja Azian</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor>
+    <webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://aziyan99.github.io/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit Test: Naming Convention Biar Nggak Pusing Sendiri</title>
+      <link>https://aziyan99.github.io/posts/unit-test-naming-convention/</link>
+      <pubDate>Mon, 21 Jul 2025 10:44:18 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/unit-test-naming-convention/</guid>
+      <description>&lt;p&gt;Pernah nggak sih buka &lt;em&gt;project&lt;/em&gt; lama, trus liat deretan &lt;em&gt;unit test&lt;/em&gt; yang namanya abstrak kayak password wifi tetangga? &lt;code&gt;test1&lt;/code&gt;, &lt;code&gt;test_function_a&lt;/code&gt;, atau yang paling parah: &lt;code&gt;test_works&lt;/code&gt;. Seriusan, &lt;em&gt;naming convention&lt;/em&gt; atau aturan penamaan buat &lt;em&gt;unit testing&lt;/em&gt; itu super krusial.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Test&lt;/em&gt; yang ditulis dengan baik harusnya bertindak sebagai &amp;ldquo;dokumentasi hidup&amp;rdquo; dari kode aplikasi. Kalau ada orang baru (atau kita sendiri 6 bulan dari sekarang) baca nama &lt;em&gt;test&lt;/em&gt;-nya, mereka harus langsung paham &lt;em&gt;&amp;ldquo;Oh, fitur ini tuh kerjanya begini toh&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

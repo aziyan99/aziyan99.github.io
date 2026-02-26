@@ -11,6 +11,13 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aziyan99.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Laravel: Deploy ke VPS Tanpa Bikin Pusing</title>
+      <link>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</link>
+      <pubDate>Sat, 12 Jul 2025 10:18:02 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</guid>
+      <description>&lt;p&gt;Pindah dari &lt;em&gt;shared hosting&lt;/em&gt; ke VPS itu ibarat pindah dari kos-kosan ke apartemen studio. Kita punya kontrol penuh, tapi kalau apartemennya mati listrik, kita sendiri yang pusing benerinnya. Berbeda dengan cPanel yang tinggal klika-kliki, &lt;em&gt;deploy&lt;/em&gt; Laravel ke VPS (katakanlah Ubuntu) butuh &lt;em&gt;effort&lt;/em&gt; buat setup &lt;em&gt;environment&lt;/em&gt; dari nol.&lt;/p&gt;&#xA;&lt;p&gt;Tapi tenang aja, kalau udah biasa, proses ini &lt;em&gt;fun&lt;/em&gt; banget karena kita bakal lebih paham &lt;em&gt;behind the scene&lt;/em&gt;-nya. &lt;em&gt;Let&amp;rsquo;s get down to business!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Nginx: Membuat Virtual Host</title>
       <link>https://aziyan99.github.io/posts/nginx-virtual-host/</link>
       <pubDate>Sat, 05 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>

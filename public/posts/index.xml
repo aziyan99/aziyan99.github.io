@@ -11,6 +11,41 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aziyan99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Unit Test: Naming Convention Biar Nggak Pusing Sendiri</title>
+      <link>https://aziyan99.github.io/posts/unit-test-naming-convention/</link>
+      <pubDate>Mon, 21 Jul 2025 10:44:18 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/unit-test-naming-convention/</guid>
+      <description>&lt;p&gt;Pernah nggak sih buka &lt;em&gt;project&lt;/em&gt; lama, trus liat deretan &lt;em&gt;unit test&lt;/em&gt; yang namanya abstrak kayak password wifi tetangga? &lt;code&gt;test1&lt;/code&gt;, &lt;code&gt;test_function_a&lt;/code&gt;, atau yang paling parah: &lt;code&gt;test_works&lt;/code&gt;. Seriusan, &lt;em&gt;naming convention&lt;/em&gt; atau aturan penamaan buat &lt;em&gt;unit testing&lt;/em&gt; itu super krusial.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Test&lt;/em&gt; yang ditulis dengan baik harusnya bertindak sebagai &amp;ldquo;dokumentasi hidup&amp;rdquo; dari kode aplikasi. Kalau ada orang baru (atau kita sendiri 6 bulan dari sekarang) baca nama &lt;em&gt;test&lt;/em&gt;-nya, mereka harus langsung paham &lt;em&gt;&amp;ldquo;Oh, fitur ini tuh kerjanya begini toh&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laravel: Deploy ke CyberPanel &#43; OpenLiteSpeed</title>
+      <link>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</link>
+      <pubDate>Sat, 12 Jul 2025 10:18:40 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-deploy-ke-cyberpanel/</guid>
+      <description>&lt;p&gt;Kalau ngerasa cPanel kemahalan dan &lt;em&gt;setup&lt;/em&gt; VPS kosongan terlalu &lt;em&gt;njelimet&lt;/em&gt;, &lt;strong&gt;CyberPanel&lt;/strong&gt; adalah jalan pintas yang paling &lt;em&gt;superb&lt;/em&gt;. Mengusung OpenLiteSpeed yang &lt;em&gt;ngebut parah&lt;/em&gt;, CyberPanel ngasih &lt;em&gt;interface&lt;/em&gt; yang ramah laiknya &lt;em&gt;shared hosting&lt;/em&gt; tapi &lt;em&gt;power&lt;/em&gt;-nya dapet &lt;em&gt;full server&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Nah, nge-&lt;em&gt;deploy&lt;/em&gt; Laravel di CyberPanel beda dikit triknya dibanding Nginx/Apache karena kita berurusan sama arsitektur LiteSpeed. &lt;em&gt;But hey, nothing is impossible, right?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-siapin-website-di-cyberpanel&#34; class=&#34;scroll-mt-8 group&#34;&gt;&#xA;  1. Siapin Website di CyberPanel&#xA;  &#xA;    &lt;a href=&#34;#1-siapin-website-di-cyberpanel&#34;&#xA;        class=&#34;no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block&#34;&#xA;        aria-hidden=&#34;true&#34; title=&#34;Link to this heading&#34; tabindex=&#34;-1&#34;&gt;&#xA;        &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;16&#34;&#xA;  height=&#34;16&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  class=&#34;lucide lucide-link w-4 h-4 block&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;&gt;&#xA;  &lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; /&gt;&#xA;  &lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&#xA;    &lt;/a&gt;&#xA;  &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Pertama, kita harus bikin kontainer &lt;em&gt;website&lt;/em&gt; barunya dulu:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laravel: Deploy ke cPanel</title>
+      <link>https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/</link>
+      <pubDate>Sat, 12 Jul 2025 10:18:34 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/</guid>
+      <description>&lt;p&gt;Deploy aplikasi Laravel ke VPS memang &lt;em&gt;keren&lt;/em&gt; dan ngasih kita kontrol penuh, tapi kenyataannya di lapangan kadang kita (atau klien) cuma punya budget buat &lt;em&gt;shared hosting&lt;/em&gt; dengan cPanel. &lt;em&gt;No problem!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Proses &lt;em&gt;deploy&lt;/em&gt; Laravel ke cPanel sebenarnya &lt;em&gt;tricky&lt;/em&gt; tapi gampang kalau kita paham konsepnya. Masalah utama di &lt;em&gt;shared hosting&lt;/em&gt; biasanya adalah struktur direktorinya yang memaksakan &lt;code&gt;public_html&lt;/code&gt; sebagai &lt;em&gt;document root&lt;/em&gt;, sementara Laravel menggunakan folder &lt;code&gt;public&lt;/code&gt;. Belum lagi akses terminal (SSH) yang kadang &lt;em&gt;kaga ada&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laravel: Deploy ke Shared Hosting Biasa (Non-cPanel)</title>
+      <link>https://aziyan99.github.io/posts/laravel-deploy-ke-shared-hosting/</link>
+      <pubDate>Sat, 12 Jul 2025 10:18:16 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-deploy-ke-shared-hosting/</guid>
+      <description>&lt;p&gt;Bicara soal &lt;em&gt;deploy&lt;/em&gt; Laravel ke &lt;em&gt;Shared Hosting&lt;/em&gt; itu hampir selalu identik dengan &lt;strong&gt;cPanel&lt;/strong&gt;. Tapi nyatanya, nggak semua penyedia &lt;em&gt;hosting&lt;/em&gt; pakai cPanel. Ada yang pakai DirectAdmin, Plesk, atau bahkan panel kustom buatan mereka sendiri.&lt;/p&gt;&#xA;&lt;p&gt;Nah, gimana ceritanya kalau kita ketemu panel &lt;em&gt;random&lt;/em&gt; yang konfigurasinya serba dikunci? &lt;em&gt;Core concept&lt;/em&gt; penyelesaian dari teka-teki ini sebenarnya simpel: &lt;strong&gt;pisahin &lt;em&gt;logic&lt;/em&gt; Laravel dari dokumen web publik (document root).&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cara deploy ini sifatnya lebih &amp;ldquo;Brute Force&amp;rdquo; daripada &lt;a href=&#34;https://aziyan99.github.io/posts/laravel-deploy-ke-cpanel/&#34;&gt;cara modifikasi &lt;code&gt;index.php&lt;/code&gt; ala cPanel&lt;/a&gt;, tapi sangat efektif. &lt;em&gt;Here we go!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Laravel: Deploy ke VPS Tanpa Bikin Pusing</title>
+      <link>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</link>
+      <pubDate>Sat, 12 Jul 2025 10:18:02 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
+      <guid>https://aziyan99.github.io/posts/laravel-deploy-ke-vps/</guid>
+      <description>&lt;p&gt;Pindah dari &lt;em&gt;shared hosting&lt;/em&gt; ke VPS itu ibarat pindah dari kos-kosan ke apartemen studio. Kita punya kontrol penuh, tapi kalau apartemennya mati listrik, kita sendiri yang pusing benerinnya. Berbeda dengan cPanel yang tinggal klika-kliki, &lt;em&gt;deploy&lt;/em&gt; Laravel ke VPS (katakanlah Ubuntu) butuh &lt;em&gt;effort&lt;/em&gt; buat setup &lt;em&gt;environment&lt;/em&gt; dari nol.&lt;/p&gt;&#xA;&lt;p&gt;Tapi tenang aja, kalau udah biasa, proses ini &lt;em&gt;fun&lt;/em&gt; banget karena kita bakal lebih paham &lt;em&gt;behind the scene&lt;/em&gt;-nya. &lt;em&gt;Let&amp;rsquo;s get down to business!&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Laravel: Upload file</title>
       <link>https://aziyan99.github.io/posts/laravel-upload-file/</link>
       <pubDate>Wed, 02 Jul 2025 22:17:59 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author>
