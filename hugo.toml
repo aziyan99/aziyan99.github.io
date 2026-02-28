@@ -4,6 +4,7 @@ title = 'Raja Azian'
 theme = 'simpla'
 enableRobotsTXT = true
 titleCaseStyle = "firstupper"
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [outputs]
   home = ['html']
@@ -14,6 +15,12 @@ titleCaseStyle = "firstupper"
   lastmod = ["lastmod", "modified"]
 
 [menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
 
   [[menu.main]]
     identifier = "posts"
@@ -50,7 +57,7 @@ titleCaseStyle = "firstupper"
   [params.robotstxt]
     blockCC = false
     blockAI = true
-  
+
   [params.google]
     enable = true
     siteverification = 'r6crExYmwMlxrLMZbeL-qhluBe7m3eRvqH-fRWCr4J0'

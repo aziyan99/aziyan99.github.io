@@ -1,5 +1,5 @@
 ---
-title: "Composer Untuk Awam (Undone)"
+title: "Composer Untuk Awam"
 date: 2022-02-20T21:29:54+07:00
 draft: false
 tags: ['Composer', 'PHP']
@@ -200,16 +200,16 @@ Perintah ini akan menampilkan prompt yang harus dilengkapi seperti nama project,
 
 ```
 
-                                            
-  Welcome to the Composer config generator  
-                                            
+
+  Welcome to the Composer config generator
+
 
 
 This command will guide you through creating your composer.json config.
 
 Package name (<vendor>/<name>) [budiganteng/composer-pemula]:
 
-... 
+...
 ```
 Perintah `composer init` akan membuat satu file baru dengan nama `composer.json`. File `composer.json` ini berisi informasi dari projek kita, mulai dari nama projek hingga depedencies yang digunakan.
 
@@ -228,3 +228,42 @@ perintah ini akan menambahkan attribut baru dalam file `composer.json` pada bagi
     }
 }
 ```
+
+## Install
+Perintah `composer install` digunakan untuk membaca file `composer.json` (jika file `composer.lock` belum ada) atau membaca file `composer.lock` (jika sudah ada) dan menginstall semua dependencies beserta versi persis yang tercantum di dalamnya ke dalam folder `vendor`.
+
+```bash
+composer install
+```
+
+Perintah ini sangat berguna ketika kita baru saja melakukan *clone* pada projek yang sudah ada (misalnya dari GitHub), sehingga semua library yang dibutuhkan dapat diinstall sesuai dengan versi yang seharusnya.
+
+## Update
+Perintah `composer update` digunakan untuk memperbarui dependencies ke versi terbaru yang sesuai dengan batasan versi (_version constraints_) yang ditentukan dalam file `composer.json`.
+
+```bash
+composer update
+```
+
+Perintah ini juga akan memperbarui file `composer.lock` dengan versi terbaru yang berhasil diinstall. Jika kita hanya ingin memperbarui library tertentu, kita dapat menspesifikasikannya di akhir perintah:
+```bash
+composer update guzzlehttp/guzzle
+```
+
+## Remove
+Kebalikan dari `require`, perintah `composer remove` digunakan untuk menghapus library dari projek kita. Perintah ini akan otomatis menghapus deklarasi package dari file `composer.json`, memperbarui file `composer.lock`, dan menghapus file library tersebut dari folder `vendor`.
+
+```bash
+composer remove guzzlehttp/guzzle
+```
+
+## Dump-Autoload
+Semasa pengembangan, terkadang kita menambahkan class baru (terutama yang menggunakan classmap atau files autoloading) dan Composer tidak langsung mendeteksi file tersebut. Perintah `composer dump-autoload` (bisa juga disingkat `dumpautoload`) digunakan untuk meng-*generate* ulang file autoload Composer.
+
+```bash
+composer dump-autoload -o
+```
+*(Flag `-o` dianjurkan untuk production karena akan mengoptimasi classmap autoloader agar lebih cepat diload).*
+
+# Kesimpulan
+Composer adalah *tools* esensial dan standar industri bagi para *developer* PHP modern dewasa ini. Dengan kemampuan Composer, pengerjaan manajemen dependency, instalasi library pihak ketiga, dan sistem *autoloading* menjadi jauh lebih rapi, terstruktur, dan mudah diatur. Sebagai programmer yang memprioritaskan DRY (Don't Repeat Yourself), menggunakan Composer dan ekosistem package di Packagist adalah sebuah keharusan demi kelancaran sebuah projek pengembangan perangkat lunak berbasis PHP.
