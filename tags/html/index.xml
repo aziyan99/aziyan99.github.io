@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HTML on Raja Azian</title><link>https://aziyan99.github.io/tags/html/</link><description>Recent content in HTML on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/html/index.xml" rel="self" type="application/rss+xml"/><item><title>Vagrant Lamp Stack</title><link>https://aziyan99.github.io/posts/vagrant-lamp-stack/</link><pubDate>Wed, 23 Aug 2023 05:40:49 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/vagrant-lamp-stack/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/vagrant-lamp-stack?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/vagrant-lamp-stack?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/vagrant-lamp-stack?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An vagrant file to provision LAMP stack&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;An Vagrant file to build a lamp stack on VM&lt;/p&gt;</description></item><item><title>Laravel Vue Starter</title><link>https://aziyan99.github.io/posts/laravel-vue-starter/</link><pubDate>Sat, 27 Mar 2021 20:05:32 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-vue-starter/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/laravel-vue-starter?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/laravel-vue-starter?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/laravel-vue-starter?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An starter app for laravel and vuejs&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src="https://i.ibb.co/zV5VDVV/laravel-vue-starter.png" alt="ss1"&gt;&lt;/p&gt;</description></item><item><title>Brainjs Menilai Kelayakan Tugas Akhir Mahasiswa</title><link>https://aziyan99.github.io/posts/brainjs-menilai-kelayakan-tugas-akhir-mahasiswa/</link><pubDate>Wed, 04 Dec 2019 03:25:09 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/brainjs-menilai-kelayakan-tugas-akhir-mahasiswa/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/brainjs-menilai-kelayakan-tugas-akhir-mahasiswa?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/brainjs-menilai-kelayakan-tugas-akhir-mahasiswa?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/brainjs-menilai-kelayakan-tugas-akhir-mahasiswa?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;A project by Raja Azian.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="brainjs-menilai-kelayakan-tugas-akhir-mahasiswa" class="scroll-mt-8 group"&gt;
+ Brainjs Menilai kelayakan tugas akhir mahasiswa
+ 
+ &lt;a href="#brainjs-menilai-kelayakan-tugas-akhir-mahasiswa"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Repositori ini merupakan repositori dari tugas akhir mata kuliah Kecerdasan Buatan. Web ini mengunakan library Brainjs dengan materialize css.&lt;/p&gt;</description></item><item><title>Ci Craftman</title><link>https://aziyan99.github.io/posts/ci-craftman/</link><pubDate>Thu, 17 Oct 2019 13:41:10 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/ci-craftman/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/ci-craftman?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/ci-craftman?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/ci-craftman?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An codeigniter3 example of using command line to generate migration, controller, and model&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;No README available for this repository.&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

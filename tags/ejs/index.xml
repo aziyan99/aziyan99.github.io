@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EJS on Raja Azian</title><link>https://aziyan99.github.io/tags/ejs/</link><description>Recent content in EJS on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/ejs/index.xml" rel="self" type="application/rss+xml"/><item><title>Simplicia</title><link>https://aziyan99.github.io/posts/simplicia/</link><pubDate>Fri, 28 Jan 2022 14:42:46 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/simplicia/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/simplicia?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/simplicia?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/simplicia?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An simple admin panel with tailwind&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://i.ibb.co/9pSJL8N/simplicia.png" alt="img-1"&gt;&lt;/p&gt;
+&lt;h3 id="about" class="scroll-mt-8 group"&gt;
+ About
+ 
+ &lt;a href="#about"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Simple admin dashboard using tailwindcss inspired by Laravel Nova UI&lt;/p&gt;</description></item></channel></rss>

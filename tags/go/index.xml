@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on Raja Azian</title><link>https://aziyan99.github.io/tags/go/</link><description>Recent content in Go on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Corn</title><link>https://aziyan99.github.io/posts/corn/</link><pubDate>Thu, 04 Sep 2025 13:44:30 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/corn/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/corn?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/corn?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/corn?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;crontab-like-daemon (it is just looping actually)&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Simple, dependency-free cron-like daemon. Designed to be a portable replacement for Windows Scheduled Tasks.&lt;/p&gt;</description></item><item><title>Wamp</title><link>https://aziyan99.github.io/posts/wamp/</link><pubDate>Sun, 31 Aug 2025 11:31:49 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/wamp/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/wamp?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/wamp?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/wamp?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;Yet another Windows, Apache, MySQL, PHP (WAMP) for windows&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]
+THIS WAMP STACK IS A WORK IN PROGRESS! ANYTHING CAN CHANGE AT ANY MOMENT WITHOUT ANY NOTICE! USE THIS WAMP STACK AT YOUR OWN RISK!&lt;/p&gt;</description></item><item><title>Dirselector</title><link>https://aziyan99.github.io/posts/dirselector/</link><pubDate>Sun, 29 Dec 2024 07:52:19 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/dirselector/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/dirselector?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/dirselector?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/dirselector?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;A simple directory selector written in Golang&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;dirselector&lt;/code&gt; is a simple cli app that show directory selector and print the selected
+directory into the console.&lt;/p&gt;</description></item><item><title>Hostsrw</title><link>https://aziyan99.github.io/posts/hostsrw/</link><pubDate>Fri, 27 Dec 2024 10:11:23 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/hostsrw/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/hostsrw?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/hostsrw?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/hostsrw?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;Read and Write windows hosts file&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;hostsrw&lt;/code&gt; is a simple cli app / package that able to read and write windows hosts file.&lt;/p&gt;</description></item></channel></rss>

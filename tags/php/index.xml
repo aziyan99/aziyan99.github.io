@@ -210,7 +210,230 @@
  &lt;/div&gt;
  &lt;/div&gt;
  &lt;/aside&gt;
- &lt;p class="sr-only"&gt;php code snippet start&lt;/p&gt;</description></item><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Composer Untuk Awam (Undone)</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p&gt;Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p&gt;</description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p&gt;Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p&gt;
+ &lt;p class="sr-only"&gt;php code snippet start&lt;/p&gt;</description></item><item><title>Slims Search_Recommendations</title><link>https://aziyan99.github.io/posts/slims-search_recommendations/</link><pubDate>Tue, 01 Aug 2023 21:19:38 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/slims-search_recommendations/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/slims-search_recommendations?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/slims-search_recommendations?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/slims-search_recommendations?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An SLIMS (Senayan Library Management System) Plugin&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;This is a plugin to get the search recommendation(s) results(s) by using word2vec model serves as a proof of concept implementation for academic research in the field of natural language processing.&lt;/p&gt;</description></item><item><title>Moodle: Unit &amp; Behat Test</title><link>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</link><pubDate>Fri, 24 Mar 2023 21:28:52 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-setup-unit-and-behat-test/</guid><description>Setup Unit Test dan Acceptance Test pada Moodle LMS</description></item><item><title>Laravel: Belajar Laravel Queue</title><link>https://aziyan99.github.io/posts/belajar-laravel-queue/</link><pubDate>Tue, 06 Sep 2022 23:26:32 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/belajar-laravel-queue/</guid><description>Laravel queue adalah sebuah mekanisme untuk menjalankan proses yang memakan waktu dibelakang layar (background)</description></item><item><title>Laravel: Membuat Simple Package</title><link>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</link><pubDate>Sun, 04 Sep 2022 13:27:13 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-simple-package/</guid><description>Laravel package memudahkan programmer untuk menambahkan fungsionalitas pada framework laravel.</description></item><item><title>Moodle Local_Usergenerator</title><link>https://aziyan99.github.io/posts/moodle-local_usergenerator/</link><pubDate>Tue, 23 Aug 2022 09:18:56 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/moodle-local_usergenerator/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/moodle-local_usergenerator?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/moodle-local_usergenerator?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/moodle-local_usergenerator?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;A project by Raja Azian.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Moodle local plugin to generate users&lt;/p&gt;
+&lt;h3 id="install" class="scroll-mt-8 group"&gt;
+ Install
+ 
+ &lt;a href="#install"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h4 id="installing-from-zipped-repository-file" class="scroll-mt-8 group"&gt;
+ Installing from zipped Repository file
+ 
+ &lt;a href="#installing-from-zipped-repository-file"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download this Repo as a zipped file&lt;/li&gt;
+&lt;li&gt;Install from Moodle &lt;strong&gt;Site administration&lt;/strong&gt;, plugins menu&lt;/li&gt;
+&lt;li&gt;Refresh Moodle web page, and follow the instructions to install and upgrades the DB&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id="installing-by-clonning-repository" class="scroll-mt-8 group"&gt;
+ Installing by clonning Repository
+ 
+ &lt;a href="#installing-by-clonning-repository"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Copy clonned plugin directory to Moodle local path: &lt;strong&gt;&amp;lt;moodle_base_dir&amp;gt;/local&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Refresh Moodle web page, and follow the instructions to install and upgrades the DB&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="usage" class="scroll-mt-8 group"&gt;
+ Usage
+ 
+ &lt;a href="#usage"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;To open the generator form, login as &lt;strong&gt;administrator&lt;/strong&gt; and go to Site administration &amp;gt; Plugins &amp;gt; Local plugins &amp;gt; User
+Generator. Fill the form information and submit the form.&lt;/p&gt;</description></item><item><title>Kbbireferences</title><link>https://aziyan99.github.io/posts/kbbireferences/</link><pubDate>Sat, 25 Jun 2022 14:36:06 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/kbbireferences/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/kbbireferences?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/kbbireferences?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/kbbireferences?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;Simple mediawiki extension&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="kbbi-references" class="scroll-mt-8 group"&gt;
+ KBBI References
+ 
+ &lt;a href="#kbbi-references"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Mediawiki extension for create anchor tag &lt;code&gt;a&lt;/code&gt; to references KBBI (Kamus Besar Bahasa Indonesia). Mainly using word definition of KBBI from &lt;a href="https://kbbi.web.id/"&gt;https://kbbi.web.id/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Composer Untuk Awam</title><link>https://aziyan99.github.io/posts/composer-for-dummies/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/composer-for-dummies/</guid><description>&lt;p&gt;Don&amp;rsquo;t Repeat Yourself (DRY) adalah salah satu principle dalam software engineering untuk menghindari pengulangan penulisan koding yang sama dalam satu software pattern dengan menggantikannya kode yang berulang menjadi satu abstract class atau dengan data normalization. Walaupun demikian DRY sendiri jika diartikan dalam artian yang luas, bisa dipahami sebagai untuk tidak menulis mengulangi pembuatan suatu kode untuk suatu fungsionalitas dimana kode untuk satu fungsionalitas tadi sudah pernah dibuat oleh orang lain.&lt;/p&gt;</description></item><item><title>Laravel: Membuat Folder</title><link>https://aziyan99.github.io/posts/laravel-membuat-folder/</link><pubDate>Sun, 20 Feb 2022 21:29:54 +0700</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-membuat-folder/</guid><description>&lt;p&gt;Tulisan ini merupakan tutorial singkat bagaimana membuat sebuah folder pada projek laravel. Pembuatan sebuah folder umumnya digunakan untuk menyimpan gambar-gambar yang bisa pengguna kita upload, seperti logo, foto profile, silder, dan sebagainnya.&lt;/p&gt;
 &lt;h2 id="dengan-file-system" class="scroll-mt-8 group"&gt;
  Dengan File System
  
@@ -699,4 +922,216 @@
  &lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;Installation prerequisites:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Installation prerequisites:&lt;/p&gt;</description></item><item><title>Simple Support Ticket System</title><link>https://aziyan99.github.io/posts/simple-support-ticket-system/</link><pubDate>Sun, 29 Aug 2021 15:16:12 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/simple-support-ticket-system/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/simple-support-ticket-system?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/simple-support-ticket-system?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/simple-support-ticket-system?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;an simple support ticket system&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id="simple-support-ticket-system" class="scroll-mt-8 group"&gt;
+ Simple Support Ticket System
+ 
+ &lt;a href="#simple-support-ticket-system"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://i.ibb.co/BfVGzgX/screencapture-support-ticket-test-dashboard-2021-08-29-21-58-53.png" alt="img-1"&gt;&lt;/p&gt;</description></item><item><title>Microblog</title><link>https://aziyan99.github.io/posts/microblog/</link><pubDate>Tue, 20 Apr 2021 14:48:36 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/microblog/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/microblog?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/microblog?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/microblog?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;an ordinary blog&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Revision History&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Date&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Version&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;April 16, 2021&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;V1.0.0&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="introduction" class="scroll-mt-8 group"&gt;
+ Introduction
+ 
+ &lt;a href="#introduction"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Microblog is a minimalist content management system,including categories management, posts management, messages, and users management, other than that microblog also have seo-friendly URL by using slug. Microblog was built with laravel framework and livewire library using full page component. For the database, microblog using MySQL DBMS. List of current available features in microblog:&lt;/p&gt;</description></item><item><title>Web Based Test</title><link>https://aziyan99.github.io/posts/web-based-test/</link><pubDate>Fri, 15 Nov 2019 09:34:27 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/web-based-test/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/web-based-test?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/web-based-test?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/web-based-test?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;web base test build with codeigniter framework for last pipl exam&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;No README available for this repository.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Sistem Informasi RT</title><link>https://aziyan99.github.io/posts/sistem-informasi-rt/</link><pubDate>Sat, 27 Jul 2019 07:57:10 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/sistem-informasi-rt/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/Sistem-Informasi-RT?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/Sistem-Informasi-RT?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/Sistem-Informasi-RT?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;A project by Raja Azian.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;No README available for this repository.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Ci Base Development System</title><link>https://aziyan99.github.io/posts/ci-base-development-system/</link><pubDate>Fri, 19 Jul 2019 12:32:33 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/ci-base-development-system/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/ci-base-development-system?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/ci-base-development-system?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/ci-base-development-system?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An codeigniter3 starter development&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;No README available for this repository.&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

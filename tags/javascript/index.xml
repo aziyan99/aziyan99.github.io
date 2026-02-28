@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on Raja Azian</title><link>https://aziyan99.github.io/tags/javascript/</link><description>Recent content in JavaScript on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>Steps Recorder Extension</title><link>https://aziyan99.github.io/posts/steps-recorder-extension/</link><pubDate>Sat, 21 Sep 2024 18:37:20 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/steps-recorder-extension/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/steps-recorder-extension?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/steps-recorder-extension?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/steps-recorder-extension?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;A project by Raja Azian.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;Steps Recorder is a versatile Chrome extension designed to make documenting workflows easier than ever. With the ability to capture screenshots of the area around your cursor with each click and a built-in editor to add instructions, this tool is perfect for creating detailed tutorials, tracking processes, or recording user actions step by step.&lt;/p&gt;</description></item><item><title>Laravel Coreui Starter</title><link>https://aziyan99.github.io/posts/laravel-coreui-starter/</link><pubDate>Thu, 21 Apr 2022 19:03:51 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-coreui-starter/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/laravel-coreui-starter?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/laravel-coreui-starter?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/laravel-coreui-starter?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;Simple laravel starter with coreui template&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src="https://i.ibb.co/JrrtgsJ/laravel-coreui.png" alt="ss1"&gt;&lt;/p&gt;</description></item></channel></rss>

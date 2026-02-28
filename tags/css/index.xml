@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSS on Raja Azian</title><link>https://aziyan99.github.io/tags/css/</link><description>Recent content in CSS on Raja Azian</description><generator>Hugo</generator><language>en-us</language><managingEditor>rajaazian08@gmail.com (Raja Azian)</managingEditor><webMaster>rajaazian08@gmail.com (Raja Azian)</webMaster><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://aziyan99.github.io/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>Laravel Adminlte Starter</title><link>https://aziyan99.github.io/posts/laravel-adminlte-starter/</link><pubDate>Mon, 14 Mar 2022 13:14:30 +0000</pubDate><author>rajaazian08@gmail.com (Raja Azian)</author><guid>https://aziyan99.github.io/posts/laravel-adminlte-starter/</guid><description>&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/laravel-adminlte-starter?style=social" alt="GitHub Repo stars"&gt; &lt;img src="https://img.shields.io/github/forks/aziyan99/laravel-adminlte-starter?style=social" alt="GitHub forks"&gt; &lt;img src="https://img.shields.io/github/issues/aziyan99/laravel-adminlte-starter?style=social" alt="GitHub issues"&gt;&lt;/p&gt;
+&lt;p&gt;An starter adminlte dashboard with laravel&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h3 id="readme" class="scroll-mt-8 group"&gt;
+ README
+ 
+ &lt;a href="#readme"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/aziyan99/laravel-adminlte-starter/graphs/contributors"&gt;&lt;img src="https://img.shields.io/github/contributors/aziyan99/laravel-adminlte-starter.svg?style=for-the-badge" alt="Contributors"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/aziyan99/laravel-adminlte-starter/network/members"&gt;&lt;img src="https://img.shields.io/github/forks/aziyan99/laravel-adminlte-starter.svg?style=for-the-badge" alt="Forks"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/aziyan99/laravel-adminlte-starter/stargazers"&gt;&lt;img src="https://img.shields.io/github/stars/aziyan99/laravel-adminlte-starter.svg?style=for-the-badge" alt="Stargazers"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/aziyan99/laravel-adminlte-starter/issues"&gt;&lt;img src="https://img.shields.io/github/issues/aziyan99/laravel-adminlte-starter.svg?style=for-the-badge" alt="Issues"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/aziyan99/laravel-adminlte-starter/blob/main/LICENCE.txt"&gt;&lt;img src="https://img.shields.io/github/license/aziyan99/laravel-adminlte-starter.svg?style=for-the-badge" alt="MIT License"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id="about-the-project" class="scroll-mt-8 group"&gt;
+ About The Project
+ 
+ &lt;a href="#about-the-project"
+ class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+ aria-hidden="true" title="Link to this heading" tabindex="-1"&gt;
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="16"
+ height="16"
+ fill="none"
+ stroke="currentColor"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ stroke-width="2"
+ class="lucide lucide-link w-4 h-4 block"
+ viewBox="0 0 24 24"
+&gt;
+ &lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /&gt;
+ &lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /&gt;
+&lt;/svg&gt;
+
+ &lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://localhost"&gt;&lt;img src="https://i.ibb.co/q7KVQgT/screencapture-laravel-adminlte-starter-test-backend-settings-index-2022-03-18-12-45-47.png" alt="Product Name Screen Shot"&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
